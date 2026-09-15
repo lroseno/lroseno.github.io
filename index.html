@@ -10,17 +10,14 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>
-        Leonardo Roseno | People Analytics & RH Tech
-    </title>
+    <title>Leonardo Roseno | RH, People Analytics & Dados</title>
 
 
     <style>
 
-
-        /* ================================
+        /* ==========================================
            CONFIGURAÇÕES GERAIS
-        ================================= */
+        ========================================== */
 
         * {
             margin: 0;
@@ -28,1101 +25,1202 @@
             box-sizing: border-box;
         }
 
-
         html {
             scroll-behavior: smooth;
         }
 
-
         body {
             font-family: Arial, Helvetica, sans-serif;
-
             background: #07111f;
-
             color: white;
         }
 
+        a {
+            transition: 0.3s;
+        }
 
 
-        /* ================================
+        /* ==========================================
            MENU
-        ================================= */
+        ========================================== */
 
         nav {
             width: 100%;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
-
             padding: 28px 8%;
-
             position: absolute;
             top: 0;
-
             z-index: 10;
         }
-
 
         .logo {
             font-size: 24px;
             font-weight: bold;
         }
 
-
         .logo span {
             color: #4da3ff;
         }
 
-
         nav ul {
             list-style: none;
-
             display: flex;
-
             gap: 30px;
         }
 
-
         nav a {
             color: #dbe7f5;
-
             text-decoration: none;
-
             font-size: 15px;
-
-            transition: 0.3s;
         }
-
 
         nav a:hover {
             color: #4da3ff;
         }
 
 
-
-        /* ================================
+        /* ==========================================
            CAPA
-        ================================= */
+        ========================================== */
 
         .hero {
             min-height: 100vh;
-
             display: flex;
             align-items: center;
-
             padding: 120px 8% 60px;
 
             background:
-
                 radial-gradient(
                     circle at 80% 30%,
                     #143a66 0%,
                     transparent 35%
                 ),
-
                 #07111f;
         }
 
-
         .hero-content {
-            max-width: 850px;
+            max-width: 900px;
         }
-
 
         .tagline {
             color: #4da3ff;
-
             font-size: 14px;
-
             letter-spacing: 3px;
-
             font-weight: bold;
-
             margin-bottom: 25px;
         }
 
-
         h1 {
             font-size: clamp(50px, 8vw, 100px);
-
             line-height: 0.95;
-
             margin-bottom: 28px;
         }
-
 
         h1 span {
             color: #4da3ff;
         }
 
-
         .descricao {
-            max-width: 700px;
-
+            max-width: 760px;
             font-size: 20px;
-
             line-height: 1.7;
-
             color: #aebed0;
-
             margin-bottom: 35px;
         }
 
-
         .botoes {
             display: flex;
-
             gap: 15px;
-
             flex-wrap: wrap;
-
             margin-bottom: 45px;
         }
 
-
         .botao {
             display: inline-block;
-
             padding: 15px 25px;
-
             border-radius: 8px;
-
             text-decoration: none;
-
             font-weight: bold;
-
-            transition: 0.3s;
         }
-
 
         .principal {
             background: #4da3ff;
-
             color: #07111f;
         }
-
 
         .principal:hover {
             transform: translateY(-3px);
         }
 
-
         .secundario {
             border: 1px solid #3d5874;
-
             color: white;
         }
-
 
         .secundario:hover {
             border-color: #4da3ff;
-
             color: #4da3ff;
         }
-
 
         .skills {
             display: flex;
-
             flex-wrap: wrap;
-
             gap: 10px;
         }
 
-
         .skills span {
             border: 1px solid #27435f;
-
             padding: 9px 14px;
-
             border-radius: 50px;
-
             font-size: 13px;
-
             color: #b9cbe0;
-
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(255,255,255,0.03);
         }
 
 
-
-        /* ================================
+        /* ==========================================
            SOBRE MIM
-        ================================= */
+        ========================================== */
 
         .sobre {
             background: #0b1726;
-
             padding: 120px 8%;
-
             border-top: 1px solid #162b42;
         }
 
-
         .sobre-container {
             max-width: 1250px;
-
             margin: 0 auto;
 
             display: grid;
-
             grid-template-columns: 1fr 1fr;
-
             gap: 100px;
         }
 
-
         .section-label {
             color: #4da3ff;
-
             font-size: 13px;
-
             font-weight: bold;
-
             letter-spacing: 3px;
-
             margin-bottom: 25px;
         }
 
-
         .sobre h2 {
             font-size: clamp(38px, 5vw, 65px);
-
             line-height: 1.05;
-
             color: white;
         }
-
 
         .sobre h2 span {
             color: #4da3ff;
         }
 
-
         .sobre-conteudo p {
             color: #aebed0;
-
             font-size: 18px;
-
             line-height: 1.8;
-
             margin-bottom: 22px;
         }
 
-
         .sobre-numeros {
             display: grid;
-
             grid-template-columns: repeat(2, 1fr);
-
             gap: 15px;
-
             margin-top: 45px;
         }
 
-
         .numero {
             border: 1px solid #27435f;
-
-            background: rgba(255, 255, 255, 0.02);
-
+            background: rgba(255,255,255,0.02);
             padding: 22px;
-
             border-radius: 12px;
         }
 
-
         .numero strong {
             display: block;
-
             color: #4da3ff;
-
             font-size: 23px;
-
-            margin-bottom: 5px;
+            margin-bottom: 7px;
         }
-
 
         .numero span {
             color: #aebed0;
-
             font-size: 13px;
+            line-height: 1.5;
         }
 
 
-
-        /* ================================
-           PROJETOS
-        ================================= */
+        /* ==========================================
+           PROJETO EM DESTAQUE
+        ========================================== */
 
         .projetos {
             background: #07111f;
-
             padding: 120px 8%;
-
             border-top: 1px solid #162b42;
         }
 
-
         .projetos-container {
             max-width: 1250px;
-
             margin: 0 auto;
         }
 
-
         .projeto-cabecalho {
             max-width: 850px;
-
             margin-bottom: 60px;
         }
 
-
         .projeto-cabecalho h2 {
             font-size: clamp(42px, 6vw, 75px);
-
             line-height: 1.05;
-
             color: white;
-
             margin-bottom: 25px;
         }
-
 
         .projeto-cabecalho h2 span {
             color: #4da3ff;
         }
 
-
         .projeto-intro {
             color: #aebed0;
-
             font-size: 20px;
-
             line-height: 1.7;
-
             max-width: 750px;
         }
 
 
-
-        /* ================================
-           IMAGEM PRINCIPAL DO PROJETO
-        ================================= */
+        /* IMAGEM PRINCIPAL */
 
         .projeto-imagem {
             width: 100%;
-
             overflow: hidden;
-
             border-radius: 18px;
-
             border: 1px solid #27435f;
-
             margin-bottom: 70px;
-
             background: #0b1726;
         }
 
-
         .projeto-imagem img {
             display: block;
-
             width: 100%;
-
             height: auto;
         }
 
 
-
-        /* ================================
-           DESAFIO E SOLUÇÃO
-        ================================= */
+        /* DESAFIO E SOLUÇÃO */
 
         .projeto-detalhes {
             display: grid;
-
             grid-template-columns: 1fr 1fr;
-
             gap: 70px;
-
             margin-bottom: 70px;
         }
 
-
         .projeto-label {
             color: #4da3ff;
-
             font-size: 12px;
-
             font-weight: bold;
-
             letter-spacing: 2px;
-
             margin-bottom: 15px;
         }
-
 
         .projeto-bloco h3 {
             color: white;
-
             font-size: 28px;
-
             margin-bottom: 15px;
         }
 
-
         .projeto-bloco p {
             color: #aebed0;
-
             line-height: 1.8;
-
             font-size: 17px;
         }
 
 
-
-        /* ================================
+        /* ==========================================
            PRINCIPAIS ENTREGAS
-        ================================= */
+        ========================================== */
 
         .funcionalidades {
             margin: 80px 0;
-
             padding: 70px 0;
-
             border-top: 1px solid #20364d;
-
             border-bottom: 1px solid #20364d;
         }
-
 
         .funcionalidades-titulo {
             color: white;
-
             font-size: clamp(32px, 4vw, 48px);
-
             margin-bottom: 18px;
         }
 
-
         .funcionalidades-intro {
             max-width: 720px;
-
             color: #aebed0;
-
             font-size: 18px;
-
             line-height: 1.7;
-
             margin-bottom: 45px;
         }
 
-
         .funcionalidades-grid {
             display: grid;
-
             grid-template-columns: repeat(3, 1fr);
-
             gap: 18px;
         }
 
-
         .funcionalidade-card {
             background: #0b1726;
-
             border: 1px solid #27435f;
-
             border-radius: 14px;
-
             padding: 28px;
-
             transition: 0.3s;
         }
 
-
         .funcionalidade-card:hover {
             transform: translateY(-5px);
-
             border-color: #4da3ff;
         }
 
-
         .funcionalidade-numero {
             display: block;
-
             color: #4da3ff;
-
             font-size: 12px;
-
             letter-spacing: 2px;
-
             margin-bottom: 25px;
         }
 
-
         .funcionalidade-card h4 {
             color: white;
-
             font-size: 20px;
-
             margin-bottom: 12px;
         }
 
-
         .funcionalidade-card p {
             color: #aebed0;
-
             font-size: 15px;
-
             line-height: 1.7;
         }
 
 
-
-        /* ================================
+        /* ==========================================
            PROCESSO DE DESENVOLVIMENTO
-        ================================= */
+        ========================================== */
 
         .processo {
             margin: 100px 0;
-
             padding: 80px 0;
-
             border-top: 1px solid #20364d;
-
             border-bottom: 1px solid #20364d;
         }
 
-
         .processo-cabecalho {
             max-width: 760px;
-
             margin-bottom: 60px;
         }
 
-
         .processo-cabecalho h3 {
             color: white;
-
             font-size: clamp(36px, 5vw, 58px);
-
             line-height: 1.1;
-
             margin-bottom: 22px;
         }
-
 
         .processo-cabecalho h3 span {
             color: #4da3ff;
         }
 
-
         .processo-cabecalho > p:last-child {
             color: #aebed0;
-
             font-size: 18px;
-
             line-height: 1.8;
         }
-
 
         .processo-lista {
             max-width: 950px;
         }
 
-
         .processo-item {
             display: grid;
-
             grid-template-columns: 90px 1fr;
-
             gap: 30px;
-
             padding: 35px 0;
-
             border-top: 1px solid #20364d;
-
             transition: 0.3s;
         }
-
 
         .processo-item:last-child {
             border-bottom: 1px solid #20364d;
         }
 
-
         .processo-item:hover {
             padding-left: 15px;
         }
 
-
         .processo-numero {
             color: #4da3ff;
-
             font-size: 14px;
-
             font-weight: bold;
-
             letter-spacing: 2px;
-
             padding-top: 3px;
         }
 
-
         .processo-conteudo span {
             display: block;
-
             color: #4da3ff;
-
             font-size: 11px;
-
             font-weight: bold;
-
             letter-spacing: 2px;
-
             margin-bottom: 10px;
         }
 
-
         .processo-conteudo h4 {
             color: white;
-
             font-size: 25px;
-
             margin-bottom: 12px;
         }
 
-
         .processo-conteudo p {
             color: #aebed0;
-
             font-size: 16px;
-
             line-height: 1.8;
-
             max-width: 720px;
         }
 
 
-
-        /* ================================
+        /* ==========================================
            IMPACTO
-        ================================= */
+        ========================================== */
 
         .impacto {
             margin: 100px 0;
         }
 
-
         .impacto-cabecalho {
             max-width: 800px;
-
             margin-bottom: 50px;
         }
 
-
         .impacto-cabecalho h3 {
             color: white;
-
             font-size: clamp(36px, 5vw, 58px);
-
             line-height: 1.1;
-
             margin-bottom: 22px;
         }
-
 
         .impacto-cabecalho h3 span {
             color: #4da3ff;
         }
 
-
         .impacto-cabecalho > p:last-child {
             color: #aebed0;
-
             font-size: 18px;
-
             line-height: 1.8;
         }
 
-
         .impacto-grid {
             display: grid;
-
             grid-template-columns: repeat(2, 1fr);
-
             gap: 18px;
         }
 
-
         .impacto-card {
-            background: linear-gradient(
-                145deg,
-                #0b1726,
-                #0d1d30
-            );
+            background:
+                linear-gradient(
+                    145deg,
+                    #0b1726,
+                    #0d1d30
+                );
 
             border: 1px solid #27435f;
-
             border-radius: 16px;
-
             padding: 35px;
-
             min-height: 230px;
-
             transition: 0.3s;
         }
 
-
         .impacto-card:hover {
             transform: translateY(-5px);
-
             border-color: #4da3ff;
         }
 
-
         .impacto-card > span {
             display: block;
-
             color: #4da3ff;
-
             font-size: 12px;
-
             font-weight: bold;
-
             letter-spacing: 2px;
-
             margin-bottom: 35px;
         }
 
-
         .impacto-card h4 {
             color: white;
-
             font-size: 25px;
-
             margin-bottom: 14px;
         }
 
-
         .impacto-card p {
             color: #aebed0;
-
             font-size: 16px;
-
             line-height: 1.7;
         }
 
 
-
-        /* ================================
+        /* ==========================================
            GALERIA
-        ================================= */
+        ========================================== */
 
         .galeria-projeto {
             margin: 110px 0;
-
             padding-top: 80px;
-
             border-top: 1px solid #20364d;
         }
 
-
         .galeria-cabecalho {
             max-width: 800px;
-
             margin-bottom: 50px;
         }
 
-
         .galeria-cabecalho h3 {
             color: white;
-
             font-size: clamp(36px, 5vw, 58px);
-
             line-height: 1.1;
-
             margin-bottom: 22px;
         }
-
 
         .galeria-cabecalho h3 span {
             color: #4da3ff;
         }
 
-
         .galeria-cabecalho > p:last-child {
             color: #aebed0;
-
             font-size: 18px;
-
             line-height: 1.8;
         }
 
-
         .galeria-grid {
             display: grid;
-
             grid-template-columns: 1.4fr 1fr;
-
             gap: 20px;
         }
-
 
         .galeria-grande {
             grid-row: span 2;
         }
 
-
         .galeria-item {
             position: relative;
-
             overflow: hidden;
-
             border-radius: 16px;
-
             border: 1px solid #27435f;
-
             background: #0b1726;
         }
 
-
         .galeria-item img {
             width: 100%;
-
             height: 100%;
-
             min-height: 280px;
-
             object-fit: cover;
-
             display: block;
-
             transition: 0.4s;
         }
-
 
         .galeria-grande img {
             min-height: 580px;
         }
 
-
         .galeria-item:hover img {
             transform: scale(1.02);
         }
 
-
         .galeria-legenda {
             position: absolute;
-
             bottom: 0;
             left: 0;
             right: 0;
 
             display: flex;
-
             gap: 18px;
-
             align-items: flex-start;
 
             padding: 25px;
 
-            background: linear-gradient(
-                transparent,
-                rgba(7, 17, 31, 0.95)
-            );
+            background:
+                linear-gradient(
+                    transparent,
+                    rgba(7,17,31,0.95)
+                );
         }
-
 
         .galeria-legenda > span {
             color: #4da3ff;
-
             font-size: 12px;
-
             font-weight: bold;
         }
 
-
         .galeria-legenda strong {
             display: block;
-
             color: white;
-
             font-size: 18px;
-
             margin-bottom: 4px;
         }
 
-
         .galeria-legenda p {
             color: #aebed0;
-
             font-size: 13px;
         }
 
 
-
-        /* ================================
+        /* ==========================================
            EXPERIÊNCIA MOBILE
-        ================================= */
+        ========================================== */
 
         .mobile-showcase {
             margin-top: 25px;
 
             display: grid;
-
             grid-template-columns: 0.8fr 1.2fr;
-
             align-items: center;
-
             gap: 70px;
 
             background: #0b1726;
-
             border: 1px solid #27435f;
-
             border-radius: 18px;
 
             padding: 60px;
-
             overflow: hidden;
         }
 
-
         .mobile-imagem {
             display: flex;
-
             justify-content: center;
         }
 
-
         .mobile-imagem img {
             width: 100%;
-
             max-width: 320px;
-
             height: auto;
 
             border-radius: 22px;
 
             box-shadow:
-                0 25px 70px rgba(0, 0, 0, 0.35);
+                0 25px 70px rgba(0,0,0,0.35);
         }
-
 
         .mobile-conteudo h3 {
             color: white;
-
             font-size: clamp(32px, 4vw, 48px);
-
             line-height: 1.1;
-
             margin-bottom: 20px;
         }
-
 
         .mobile-conteudo h3 span {
             color: #4da3ff;
         }
 
-
         .mobile-conteudo > p {
             color: #aebed0;
-
             font-size: 17px;
-
             line-height: 1.8;
-
             max-width: 600px;
         }
 
-
         .mobile-tags {
             display: flex;
-
             flex-wrap: wrap;
-
             gap: 10px;
-
             margin-top: 30px;
         }
 
-
         .mobile-tags span {
             border: 1px solid #27435f;
-
             padding: 9px 14px;
-
             border-radius: 50px;
 
             color: #b9cbe0;
-
             font-size: 13px;
 
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(255,255,255,0.03);
         }
 
 
+        /* ==========================================
+           MEU PAPEL NO PROJETO
+        ========================================== */
 
-        /* ================================
-           MINHA ATUAÇÃO / TECNOLOGIAS
-        ================================= */
+        .papel-projeto {
+            margin: 110px 0 70px;
+            padding-top: 80px;
+            border-top: 1px solid #20364d;
+        }
 
-        .projeto-info {
+        .papel-cabecalho {
+            max-width: 820px;
+            margin-bottom: 55px;
+        }
+
+        .papel-cabecalho h3 {
+            color: white;
+            font-size: clamp(36px, 5vw, 58px);
+            line-height: 1.1;
+            margin-bottom: 22px;
+        }
+
+        .papel-cabecalho h3 span {
+            color: #4da3ff;
+        }
+
+        .papel-cabecalho > p:last-child {
+            color: #aebed0;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .papel-grid {
             display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
 
+        .papel-card {
+            background: #0b1726;
+            border: 1px solid #27435f;
+            border-radius: 15px;
+            padding: 30px;
+            min-height: 290px;
+            transition: 0.3s;
+        }
+
+        .papel-card:hover {
+            transform: translateY(-5px);
+            border-color: #4da3ff;
+        }
+
+        .papel-numero {
+            display: block;
+            color: #4da3ff;
+            font-size: 12px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .papel-etapa {
+            color: #4da3ff !important;
+            font-size: 10px !important;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .papel-card h4 {
+            color: white;
+            font-size: 21px;
+            margin-bottom: 14px;
+        }
+
+        .papel-card > p:last-child {
+            color: #aebed0;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .stack-projeto {
+            display: grid;
             grid-template-columns: 1fr 1fr;
+            gap: 60px;
 
-            gap: 70px;
-
+            margin-top: 55px;
             padding-top: 45px;
 
             border-top: 1px solid #20364d;
-
-            margin-top: 80px;
         }
-
 
         .projeto-tags {
             display: flex;
-
             flex-wrap: wrap;
-
             gap: 10px;
         }
 
-
         .projeto-tags span {
             border: 1px solid #27435f;
-
             padding: 9px 14px;
-
             border-radius: 50px;
-
             font-size: 13px;
-
             color: #b9cbe0;
-
-            background: rgba(255, 255, 255, 0.03);
+            background: rgba(255,255,255,0.03);
         }
 
 
-        .projeto-acao {
-            margin-top: 50px;
+        /* ==========================================
+           CTA FINAL DO CASE
+        ========================================== */
+
+        .case-cta {
+            margin-top: 100px;
+            padding: 60px;
+
+            display: grid;
+            grid-template-columns: 1.3fr 0.7fr;
+            gap: 70px;
+            align-items: center;
+
+            background:
+                radial-gradient(
+                    circle at 90% 20%,
+                    rgba(77,163,255,0.18),
+                    transparent 40%
+                ),
+                #0b1726;
+
+            border: 1px solid #27435f;
+            border-radius: 20px;
+        }
+
+        .case-cta-conteudo h3 {
+            color: white;
+            font-size: clamp(32px, 4vw, 50px);
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .case-cta-conteudo h3 span {
+            color: #4da3ff;
+        }
+
+        .case-cta-conteudo > p:last-child {
+            color: #aebed0;
+            font-size: 17px;
+            line-height: 1.8;
+            max-width: 650px;
+        }
+
+        .case-cta-acao {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 14px;
+        }
+
+        .botao-case {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+
+            width: 100%;
+            padding: 20px 24px;
+
+            background: #4da3ff;
+            color: #07111f;
+
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .botao-case:hover {
+            transform: translateY(-4px);
+        }
+
+        .botao-case span {
+            font-size: 20px;
+        }
+
+        .case-cta-acao p {
+            color: #71869d;
+            font-size: 12px;
         }
 
 
+        /* ==========================================
+           EXPERIÊNCIA PROFISSIONAL
+        ========================================== */
 
-        /* ================================
+        .experiencia {
+            background: #0b1726;
+            padding: 120px 8%;
+            border-top: 1px solid #162b42;
+        }
+
+        .experiencia-container {
+            max-width: 1250px;
+            margin: 0 auto;
+        }
+
+        .experiencia-cabecalho {
+            max-width: 850px;
+            margin-bottom: 75px;
+        }
+
+        .experiencia-cabecalho h2 {
+            color: white;
+            font-size: clamp(42px, 6vw, 70px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+        }
+
+        .experiencia-cabecalho h2 span {
+            color: #4da3ff;
+        }
+
+        .experiencia-intro {
+            color: #aebed0;
+            font-size: 19px;
+            line-height: 1.8;
+            max-width: 780px;
+        }
+
+
+        /* TIMELINE */
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 160px 30px 1fr;
+            gap: 25px;
+            padding-bottom: 48px;
+        }
+
+        .timeline-data {
+            padding-top: 5px;
+        }
+
+        .timeline-data strong {
+            display: block;
+            color: white;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .timeline-data span {
+            color: #71869d;
+            font-size: 13px;
+        }
+
+        .timeline-marcador {
+            position: relative;
+            display: flex;
+            justify-content: center;
+        }
+
+        .timeline-marcador::after {
+            content: "";
+            position: absolute;
+            top: 22px;
+            bottom: -48px;
+            width: 1px;
+            background: #27435f;
+        }
+
+        .timeline-item:last-child .timeline-marcador::after {
+            display: none;
+        }
+
+        .timeline-ponto {
+            width: 14px;
+            height: 14px;
+
+            margin-top: 6px;
+
+            border: 2px solid #4da3ff;
+            border-radius: 50%;
+
+            background: #0b1726;
+            z-index: 2;
+        }
+
+        .timeline-card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid #27435f;
+            border-radius: 16px;
+            padding: 30px;
+            transition: 0.3s;
+        }
+
+        .timeline-card:hover {
+            border-color: #4da3ff;
+            transform: translateY(-3px);
+        }
+
+        .timeline-etapa {
+            color: #4da3ff;
+            font-size: 11px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .timeline-card h3 {
+            color: white;
+            font-size: 27px;
+            margin-bottom: 6px;
+        }
+
+        .timeline-cargo {
+            color: #4da3ff;
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        .timeline-card > p:last-of-type {
+            color: #aebed0;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .timeline-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 22px;
+        }
+
+        .timeline-tags span {
+            border: 1px solid #27435f;
+            border-radius: 50px;
+            padding: 7px 12px;
+            color: #9eb3ca;
+            font-size: 12px;
+        }
+
+
+        /* DIREÇÃO ATUAL */
+
+        .direcao-atual {
+            margin-top: 55px;
+            padding: 45px;
+
+            display: grid;
+            grid-template-columns: 0.7fr 1.3fr;
+            gap: 50px;
+
+            background:
+                radial-gradient(
+                    circle at 10% 20%,
+                    rgba(77,163,255,0.12),
+                    transparent 38%
+                ),
+                #07111f;
+
+            border: 1px solid #27435f;
+            border-radius: 18px;
+        }
+
+        .direcao-atual h3 {
+            color: white;
+            font-size: 29px;
+            line-height: 1.2;
+        }
+
+        .direcao-atual h3 span {
+            color: #4da3ff;
+        }
+
+        .direcao-atual-texto p {
+            color: #aebed0;
+            font-size: 17px;
+            line-height: 1.8;
+            margin-bottom: 22px;
+        }
+
+        .direcao-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 9px;
+        }
+
+        .direcao-tags span {
+            border: 1px solid #27435f;
+            border-radius: 50px;
+            padding: 8px 13px;
+            color: #b9cbe0;
+            font-size: 12px;
+        }
+
+
+        /* ==========================================
+           CONTATO
+        ========================================== */
+
+        .contato {
+            background: #07111f;
+            padding: 120px 8%;
+            border-top: 1px solid #162b42;
+        }
+
+        .contato-container {
+            max-width: 1250px;
+            margin: 0 auto;
+
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .contato h2 {
+            color: white;
+            font-size: clamp(42px, 6vw, 70px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+        }
+
+        .contato h2 span {
+            color: #4da3ff;
+        }
+
+        .contato-texto {
+            color: #aebed0;
+            font-size: 18px;
+            line-height: 1.8;
+            max-width: 700px;
+        }
+
+        .contato-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contato-link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 22px;
+
+            text-decoration: none;
+            color: white;
+
+            border: 1px solid #27435f;
+            border-radius: 12px;
+
+            background: rgba(255,255,255,0.02);
+        }
+
+        .contato-link:hover {
+            border-color: #4da3ff;
+            transform: translateY(-3px);
+        }
+
+        .contato-link span {
+            color: #4da3ff;
+        }
+
+
+        /* ==========================================
            RESPONSIVIDADE
-        ================================= */
+        ========================================== */
 
         @media (max-width: 900px) {
 
             .funcionalidades-grid {
                 grid-template-columns: 1fr 1fr;
+            }
+
+            .papel-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
 
         }
@@ -1134,16 +1232,13 @@
                 grid-template-columns: 1fr;
             }
 
-
             .galeria-grande {
                 grid-row: auto;
             }
 
-
             .galeria-grande img,
             .galeria-item img {
                 min-height: auto;
-
                 height: auto;
             }
 
@@ -1156,54 +1251,61 @@
                 padding: 80px 6%;
             }
 
-
             .sobre-container {
                 grid-template-columns: 1fr;
-
                 gap: 45px;
             }
-
 
             .sobre-numeros {
                 grid-template-columns: 1fr 1fr;
             }
 
-
             .projetos {
                 padding: 80px 6%;
             }
 
-
             .projeto-detalhes {
                 grid-template-columns: 1fr;
-
                 gap: 40px;
             }
-
-
-            .projeto-info {
-                grid-template-columns: 1fr;
-
-                gap: 40px;
-            }
-
-
-            .projeto-intro {
-                font-size: 17px;
-            }
-
 
             .mobile-showcase {
                 grid-template-columns: 1fr;
-
                 padding: 35px;
-
                 gap: 40px;
             }
 
-
             .mobile-imagem img {
                 max-width: 260px;
+            }
+
+            .stack-projeto {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .case-cta {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                padding: 40px;
+            }
+
+            .experiencia {
+                padding: 80px 6%;
+            }
+
+            .direcao-atual {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+
+            .contato {
+                padding: 80px 6%;
+            }
+
+            .contato-container {
+                grid-template-columns: 1fr;
+                gap: 45px;
             }
 
         }
@@ -1215,45 +1317,72 @@
                 display: none;
             }
 
-
             .hero {
                 padding-left: 6%;
-
                 padding-right: 6%;
             }
-
 
             h1 {
                 font-size: 52px;
             }
 
-
             .descricao {
                 font-size: 17px;
             }
 
-
             .processo {
                 margin: 70px 0;
-
                 padding: 60px 0;
             }
 
-
             .processo-item {
                 grid-template-columns: 50px 1fr;
-
                 gap: 15px;
             }
-
 
             .processo-conteudo h4 {
                 font-size: 21px;
             }
 
-
             .impacto-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .papel-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .papel-card {
+                min-height: auto;
+            }
+
+
+            /* TIMELINE MOBILE */
+
+            .timeline-item {
+                grid-template-columns: 24px 1fr;
+                gap: 0 18px;
+                padding-bottom: 38px;
+            }
+
+            .timeline-data {
+                grid-column: 2;
+                grid-row: 1;
+                margin-bottom: 12px;
+            }
+
+            .timeline-marcador {
+                grid-column: 1;
+                grid-row: 1 / span 2;
+            }
+
+            .timeline-card {
+                grid-column: 2;
+                grid-row: 2;
+            }
+
+            .timeline-marcador::after {
+                bottom: -38px;
             }
 
         }
@@ -1274,306 +1403,20 @@
                 grid-template-columns: 1fr;
             }
 
+            .case-cta {
+                padding: 30px 22px;
+            }
+
+            .timeline-card {
+                padding: 24px;
+            }
+
+            .direcao-atual {
+                padding: 30px 24px;
+            }
+
         }
 
-        /* ================================
-   MEU PAPEL NO PROJETO
-================================= */
-
-.papel-projeto {
-    margin: 110px 0 70px;
-    padding-top: 80px;
-    border-top: 1px solid #20364d;
-}
-
-
-.papel-cabecalho {
-    max-width: 820px;
-    margin-bottom: 55px;
-}
-
-
-.papel-cabecalho h3 {
-    color: white;
-
-    font-size: clamp(36px, 5vw, 58px);
-
-    line-height: 1.1;
-
-    margin-bottom: 22px;
-}
-
-
-.papel-cabecalho h3 span {
-    color: #4da3ff;
-}
-
-
-.papel-cabecalho > p:last-child {
-    color: #aebed0;
-
-    font-size: 18px;
-
-    line-height: 1.8;
-}
-
-
-.papel-grid {
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 18px;
-}
-
-
-.papel-card {
-    background: #0b1726;
-
-    border: 1px solid #27435f;
-
-    border-radius: 15px;
-
-    padding: 30px;
-
-    min-height: 290px;
-
-    transition: 0.3s;
-}
-
-
-.papel-card:hover {
-    transform: translateY(-5px);
-
-    border-color: #4da3ff;
-}
-
-
-.papel-numero {
-    display: block;
-
-    color: #4da3ff;
-
-    font-size: 12px;
-
-    font-weight: bold;
-
-    margin-bottom: 25px;
-}
-
-
-.papel-etapa {
-    color: #4da3ff !important;
-
-    font-size: 10px !important;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
-
-    margin-bottom: 10px;
-}
-
-
-.papel-card h4 {
-    color: white;
-
-    font-size: 21px;
-
-    margin-bottom: 14px;
-}
-
-
-.papel-card > p:last-child {
-    color: #aebed0;
-
-    font-size: 15px;
-
-    line-height: 1.7;
-}
-
-
-.stack-projeto {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 60px;
-
-    margin-top: 55px;
-
-    padding-top: 45px;
-
-    border-top: 1px solid #20364d;
-}
-
-
-/* RESPONSIVO */
-
-@media (max-width: 900px) {
-
-    .papel-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-@media (max-width: 700px) {
-
-    .papel-grid {
-        grid-template-columns: 1fr;
-    }
-
-
-    .stack-projeto {
-        grid-template-columns: 1fr;
-
-        gap: 35px;
-    }
-
-
-    .papel-card {
-        min-height: auto;
-    }
-
-}
-
-/* ================================
-   CTA FINAL DO CASE
-================================= */
-
-.case-cta {
-    margin-top: 100px;
-
-    padding: 60px;
-
-    display: grid;
-
-    grid-template-columns: 1.3fr 0.7fr;
-
-    gap: 70px;
-
-    align-items: center;
-
-    background:
-        radial-gradient(
-            circle at 90% 20%,
-            rgba(77, 163, 255, 0.18),
-            transparent 40%
-        ),
-        #0b1726;
-
-    border: 1px solid #27435f;
-
-    border-radius: 20px;
-}
-
-
-.case-cta-conteudo h3 {
-    color: white;
-
-    font-size: clamp(32px, 4vw, 50px);
-
-    line-height: 1.1;
-
-    margin-bottom: 20px;
-}
-
-
-.case-cta-conteudo h3 span {
-    color: #4da3ff;
-}
-
-
-.case-cta-conteudo > p:last-child {
-    color: #aebed0;
-
-    font-size: 17px;
-
-    line-height: 1.8;
-
-    max-width: 650px;
-}
-
-
-.case-cta-acao {
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    gap: 14px;
-}
-
-
-.botao-case {
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 30px;
-
-    width: 100%;
-
-    padding: 20px 24px;
-
-    background: #4da3ff;
-
-    color: #07111f;
-
-    text-decoration: none;
-
-    font-weight: bold;
-
-    border-radius: 10px;
-
-    transition: 0.3s;
-}
-
-
-.botao-case:hover {
-    transform: translateY(-4px);
-}
-
-
-.botao-case span {
-    font-size: 20px;
-}
-
-
-.case-cta-acao p {
-    color: #71869d;
-
-    font-size: 12px;
-}
-
-
-/* RESPONSIVO */
-
-@media (max-width: 800px) {
-
-    .case-cta {
-        grid-template-columns: 1fr;
-
-        gap: 40px;
-
-        padding: 40px;
-    }
-
-}
-
-
-@media (max-width: 500px) {
-
-    .case-cta {
-        padding: 30px 22px;
-    }
-
-}        
     </style>
 
 </head>
@@ -1582,16 +1425,15 @@
 <body>
 
 
-    <!-- ================================
+    <!-- ==========================================
          MENU
-    ================================= -->
+    =========================================== -->
 
     <nav>
 
         <div class="logo">
             LR<span>.</span>
         </div>
-
 
         <ul>
 
@@ -1625,17 +1467,16 @@
 
 
 
-    <!-- ================================
+    <!-- ==========================================
          CAPA
-    ================================= -->
+    =========================================== -->
 
     <section class="hero">
 
         <div class="hero-content">
 
-
             <p class="tagline">
-                RH • BENEFÍCIOS • DADOS • AUTOMAÇÃO • TECNOLOGIA
+                REMUNERAÇÃO & BENEFÍCIOS • PEOPLE ANALYTICS • DADOS • AUTOMAÇÃO
             </p>
 
 
@@ -1652,9 +1493,9 @@
 
             <p class="descricao">
 
-                Desenvolvo soluções digitais para transformar processos
-                de RH em experiências mais simples, acessíveis e eficientes
-                para as pessoas.
+                Conecto RH, dados e tecnologia para transformar informações,
+                processos e desafios de negócio em soluções mais simples,
+                inteligentes e orientadas à tomada de decisão.
 
             </p>
 
@@ -1668,12 +1509,11 @@
                     Ver meus projetos
                 </a>
 
-
                 <a
                     href="#sobre"
                     class="botao secundario"
                 >
-                    Sobre mim
+                    Conheça minha trajetória
                 </a>
 
             </div>
@@ -1687,14 +1527,15 @@
 
                 <span>Power BI</span>
 
+                <span>Análise de Dados</span>
+
                 <span>Automação</span>
 
                 <span>IA aplicada ao RH</span>
 
-                <span>Desenvolvimento Web</span>
+                <span>Soluções Digitais</span>
 
             </div>
-
 
         </div>
 
@@ -1702,9 +1543,9 @@
 
 
 
-    <!-- ================================
+    <!-- ==========================================
          SOBRE MIM
-    ================================= -->
+    =========================================== -->
 
     <section
         id="sobre"
@@ -1720,7 +1561,6 @@
                     SOBRE MIM
                 </p>
 
-
                 <h2>
 
                     RH, dados e tecnologia
@@ -1734,36 +1574,45 @@
             </div>
 
 
-
             <div class="sobre-conteudo">
 
 
                 <p>
 
-                    Atuo na conexão entre Recursos Humanos, dados e tecnologia,
-                    transformando informações e processos em soluções que apoiam
-                    decisões mais estratégicas.
+                    Sou profissional de Recursos Humanos com mais de 15 anos de
+                    experiência, com uma trajetória construída entre Departamento
+                    Pessoal, folha de pagamento, benefícios, Remuneração & Benefícios
+                    e People Analytics.
 
                 </p>
 
 
                 <p>
 
-                    Minha atuação está concentrada em People Analytics,
-                    Remuneração & Benefícios, estruturação de indicadores,
-                    dashboards, automações e aplicação de inteligência artificial
-                    aos processos de RH.
+                    Ao longo dessa jornada, desenvolvi uma afinidade cada vez maior
+                    com dados, indicadores, automação e tecnologia. Percebi que os
+                    projetos que mais me motivam são aqueles em que consigo transformar
+                    informações em análises, simplificar processos e apoiar decisões.
 
                 </p>
 
 
                 <p>
 
-                    Gosto de transformar atividades complexas ou manuais em
-                    soluções mais simples, organizadas e orientadas por dados.
+                    Hoje, além da atuação em Remuneração & Benefícios, aprofundo meus
+                    conhecimentos em Data Analytics, Power BI, PostgreSQL, automações
+                    e Inteligência Artificial, conectando conhecimento de RH com uma
+                    abordagem cada vez mais orientada por dados.
 
                 </p>
 
+
+                <p>
+
+                    Meu objetivo é transformar problemas reais de negócio em soluções
+                    mais simples, inteligentes e úteis para as pessoas.
+
+                </p>
 
 
                 <div class="sobre-numeros">
@@ -1772,11 +1621,11 @@
                     <div class="numero">
 
                         <strong>
-                            People
+                            15+ anos
                         </strong>
 
                         <span>
-                            Analytics
+                            de experiência em Recursos Humanos
                         </span>
 
                     </div>
@@ -1789,7 +1638,7 @@
                         </strong>
 
                         <span>
-                            Remuneração & Benefícios
+                            Remuneração, Benefícios e Cargos & Salários
                         </span>
 
                     </div>
@@ -1798,11 +1647,11 @@
                     <div class="numero">
 
                         <strong>
-                            Data
+                            Analytics
                         </strong>
 
                         <span>
-                            BI & Indicadores
+                            People Analytics, BI e Indicadores
                         </span>
 
                     </div>
@@ -1815,7 +1664,7 @@
                         </strong>
 
                         <span>
-                            IA & Automação
+                            Automação, IA e Soluções Digitais
                         </span>
 
                     </div>
@@ -1832,9 +1681,9 @@
 
 
 
-    <!-- ================================
+    <!-- ==========================================
          PROJETO EM DESTAQUE
-    ================================= -->
+    =========================================== -->
 
     <section
         id="projetos"
@@ -1844,10 +1693,7 @@
         <div class="projetos-container">
 
 
-            <!-- CABEÇALHO -->
-
             <div class="projeto-cabecalho">
-
 
                 <p class="section-label">
                     PROJETO EM DESTAQUE
@@ -1872,7 +1718,6 @@
                     dos colaboradores mais simples, acessível e intuitiva.
 
                 </p>
-
 
             </div>
 
@@ -1902,11 +1747,9 @@
                         DESAFIO
                     </p>
 
-
                     <h3>
                         Informações descentralizadas
                     </h3>
-
 
                     <p>
 
@@ -1919,18 +1762,15 @@
                 </div>
 
 
-
                 <div class="projeto-bloco">
 
                     <p class="projeto-label">
                         SOLUÇÃO
                     </p>
 
-
                     <h3>
                         Tudo em um só lugar
                     </h3>
-
 
                     <p>
 
@@ -1951,16 +1791,13 @@
 
             <div class="funcionalidades">
 
-
                 <p class="projeto-label">
                     PRINCIPAIS ENTREGAS
                 </p>
 
-
                 <h3 class="funcionalidades-titulo">
                     Mais do que uma página de benefícios.
                 </h3>
-
 
                 <p class="funcionalidades-intro">
 
@@ -1969,7 +1806,6 @@
                     documentos, mensagens e canais.
 
                 </p>
-
 
 
                 <div class="funcionalidades-grid">
@@ -1986,14 +1822,11 @@
                         </h4>
 
                         <p>
-
                             O colaborador pode pesquisar diretamente pelo
                             benefício ou necessidade que procura.
-
                         </p>
 
                     </div>
-
 
 
                     <div class="funcionalidade-card">
@@ -2007,14 +1840,11 @@
                         </h4>
 
                         <p>
-
                             Os benefícios foram organizados em categorias para
                             tornar a navegação mais simples e intuitiva.
-
                         </p>
 
                     </div>
-
 
 
                     <div class="funcionalidade-card">
@@ -2028,14 +1858,11 @@
                         </h4>
 
                         <p>
-
                             A pessoa pode partir de situações reais, como cuidar
                             da saúde, estudar ou entender seus benefícios.
-
                         </p>
 
                     </div>
-
 
 
                     <div class="funcionalidade-card">
@@ -2049,14 +1876,11 @@
                         </h4>
 
                         <p>
-
                             A solução inclui recursos que ampliam a facilidade
                             de acesso e compreensão das informações.
-
                         </p>
 
                     </div>
-
 
 
                     <div class="funcionalidade-card">
@@ -2070,14 +1894,11 @@
                         </h4>
 
                         <p>
-
                             Quando a informação disponível não é suficiente,
                             existe um direcionamento claro para atendimento.
-
                         </p>
 
                     </div>
-
 
 
                     <div class="funcionalidade-card">
@@ -2091,10 +1912,8 @@
                         </h4>
 
                         <p>
-
                             Informações sobre diferentes benefícios passam a
                             estar disponíveis em uma única experiência digital.
-
                         </p>
 
                     </div>
@@ -2112,7 +1931,6 @@
 
 
                 <div class="processo-cabecalho">
-
 
                     <p class="projeto-label">
                         COMO DESENVOLVI A SOLUÇÃO
@@ -2140,9 +1958,7 @@
 
                     </p>
 
-
                 </div>
-
 
 
                 <div class="processo-lista">
@@ -2165,17 +1981,14 @@
                             </h4>
 
                             <p>
-
                                 O primeiro passo foi entender as principais dificuldades
                                 enfrentadas pelos colaboradores para localizar informações
                                 sobre benefícios, regras, acessos e canais de atendimento.
-
                             </p>
 
                         </div>
 
                     </div>
-
 
 
                     <div class="processo-item">
@@ -2195,17 +2008,14 @@
                             </h4>
 
                             <p>
-
                                 Organizei os conteúdos de forma mais simples,
                                 agrupando os benefícios por categorias e pensando
                                 em como as pessoas realmente procuram essas informações.
-
                             </p>
 
                         </div>
 
                     </div>
-
 
 
                     <div class="processo-item">
@@ -2225,17 +2035,14 @@
                             </h4>
 
                             <p>
-
                                 A navegação foi pensada para permitir tanto a busca
                                 direta por um benefício quanto a descoberta da solução
                                 a partir de uma necessidade real do colaborador.
-
                             </p>
 
                         </div>
 
                     </div>
-
 
 
                     <div class="processo-item">
@@ -2255,17 +2062,14 @@
                             </h4>
 
                             <p>
-
                                 Utilizei o Lovable e inteligência artificial como
                                 ferramentas de desenvolvimento, transformando a estrutura
                                 planejada em uma aplicação web funcional e responsiva.
-
                             </p>
 
                         </div>
 
                     </div>
-
 
 
                     <div class="processo-item">
@@ -2285,17 +2089,14 @@
                             </h4>
 
                             <p>
-
                                 A solução foi sendo revisada e aprimorada a partir
                                 da navegação, organização visual, clareza das informações
                                 e facilidade de acesso aos principais recursos.
-
                             </p>
 
                         </div>
 
                     </div>
-
 
 
                     <div class="processo-item">
@@ -2315,11 +2116,9 @@
                             </h4>
 
                             <p>
-
                                 Após a estruturação e validação, a solução foi publicada
                                 como uma central digital de benefícios, permitindo acesso
                                 às informações por meio de uma única experiência.
-
                             </p>
 
                         </div>
@@ -2340,7 +2139,6 @@
 
                 <div class="impacto-cabecalho">
 
-
                     <p class="projeto-label">
                         IMPACTO DA SOLUÇÃO
                     </p>
@@ -2358,16 +2156,12 @@
 
 
                     <p>
-
                         A Central de Benefícios transforma informações que antes
                         estavam distribuídas em uma experiência única, acessível
                         e orientada às necessidades dos colaboradores.
-
                     </p>
 
-
                 </div>
-
 
 
                 <div class="impacto-grid">
@@ -2375,85 +2169,66 @@
 
                     <div class="impacto-card">
 
-                        <span>
-                            01
-                        </span>
+                        <span>01</span>
 
                         <h4>
                             Mais autonomia
                         </h4>
 
                         <p>
-
                             O colaborador consegue consultar informações sobre
                             seus benefícios sem depender exclusivamente de um
                             atendimento do RH ou DP.
-
                         </p>
 
                     </div>
 
 
-
                     <div class="impacto-card">
 
-                        <span>
-                            02
-                        </span>
+                        <span>02</span>
 
                         <h4>
                             Informação centralizada
                         </h4>
 
                         <p>
-
                             Regras, acessos, orientações e canais ficam reunidos
                             em uma única experiência digital.
-
                         </p>
 
                     </div>
 
 
-
                     <div class="impacto-card">
 
-                        <span>
-                            03
-                        </span>
+                        <span>03</span>
 
                         <h4>
                             Melhor experiência
                         </h4>
 
                         <p>
-
                             A organização das informações foi pensada a partir
                             da jornada e das necessidades de quem utiliza
                             os benefícios.
-
                         </p>
 
                     </div>
 
 
-
                     <div class="impacto-card">
 
-                        <span>
-                            04
-                        </span>
+                        <span>04</span>
 
                         <h4>
                             RH mais digital
                         </h4>
 
                         <p>
-
                             O projeto demonstra como IA e ferramentas de
                             desenvolvimento podem ser aplicadas para solucionar
                             desafios reais da área de Recursos Humanos.
-
                         </p>
 
                     </div>
@@ -2472,7 +2247,6 @@
 
                 <div class="galeria-cabecalho">
 
-
                     <p class="projeto-label">
                         A SOLUÇÃO NA PRÁTICA
                     </p>
@@ -2490,37 +2264,27 @@
 
 
                     <p>
-
                         A interface foi estruturada para tornar as informações
                         mais fáceis de encontrar, compreender e acessar em
                         diferentes momentos da jornada do colaborador.
-
                     </p>
 
-
                 </div>
-
 
 
                 <div class="galeria-grid">
 
 
-                    <!-- TELA PRINCIPAL -->
-
                     <div class="galeria-item galeria-grande">
-
 
                         <img
                             src="assets/beneficios-home.png"
                             alt="Tela inicial da Central de Benefícios"
                         >
 
-
                         <div class="galeria-legenda">
 
-                            <span>
-                                01
-                            </span>
+                            <span>01</span>
 
                             <div>
 
@@ -2536,27 +2300,19 @@
 
                         </div>
 
-
                     </div>
 
 
-
-                    <!-- CATEGORIAS -->
-
                     <div class="galeria-item">
-
 
                         <img
                             src="assets/beneficios-categorias.png"
                             alt="Benefícios organizados por categorias"
                         >
 
-
                         <div class="galeria-legenda">
 
-                            <span>
-                                02
-                            </span>
+                            <span>02</span>
 
                             <div>
 
@@ -2572,27 +2328,19 @@
 
                         </div>
 
-
                     </div>
 
 
-
-                    <!-- JORNADA -->
-
                     <div class="galeria-item">
-
 
                         <img
                             src="assets/beneficios-jornada.png"
                             alt="Jornada de benefícios"
                         >
 
-
                         <div class="galeria-legenda">
 
-                            <span>
-                                03
-                            </span>
+                            <span>03</span>
 
                             <div>
 
@@ -2608,7 +2356,6 @@
 
                         </div>
 
-
                     </div>
 
 
@@ -2623,19 +2370,15 @@
 
                     <div class="mobile-imagem">
 
-
                         <img
                             src="assets/beneficios-mobile.png"
                             alt="Central de Benefícios em dispositivo móvel"
                         >
 
-
                     </div>
 
 
-
                     <div class="mobile-conteudo">
-
 
                         <p class="projeto-label">
                             EXPERIÊNCIA MOBILE
@@ -2654,29 +2397,683 @@
 
 
                         <p>
-
                             A Central de Benefícios foi estruturada para funcionar
                             também em dispositivos móveis, permitindo que o colaborador
                             consulte seus benefícios de forma simples em diferentes
                             momentos e contextos.
-
                         </p>
-
 
 
                         <div class="mobile-tags">
 
-                            <span>
-                                Design Responsivo
-                            </span>
+                            <span>Design Responsivo</span>
 
-                            <span>
-                                Experiência Mobile
-                            </span>
+                            <span>Experiência Mobile</span>
 
-                            <span>
-                                Experiência do Colaborador
-                            </span>
+                            <span>Experiência do Colaborador</span>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- MEU PAPEL NO PROJETO -->
+
+            <div class="papel-projeto">
+
+
+                <div class="papel-cabecalho">
+
+                    <p class="projeto-label">
+                        MEU PAPEL NO PROJETO
+                    </p>
+
+
+                    <h3>
+
+                        Transformando uma necessidade de RH em
+
+                        <span>
+                            produto digital.
+                        </span>
+
+                    </h3>
+
+
+                    <p>
+                        Fui responsável pela concepção e estruturação da solução,
+                        conectando conhecimento de benefícios, experiência do colaborador
+                        e inteligência artificial para transformar uma necessidade
+                        interna em uma experiência digital funcional.
+                    </p>
+
+                </div>
+
+
+                <div class="papel-grid">
+
+
+                    <div class="papel-card">
+
+                        <span class="papel-numero">
+                            01
+                        </span>
+
+                        <p class="papel-etapa">
+                            DESCOBERTA
+                        </p>
+
+                        <h4>
+                            Identificação do problema
+                        </h4>
+
+                        <p>
+                            Identifiquei a necessidade de facilitar o acesso dos
+                            colaboradores às informações sobre benefícios, reduzindo
+                            a dependência de diferentes documentos e canais.
+                        </p>
+
+                    </div>
+
+
+                    <div class="papel-card">
+
+                        <span class="papel-numero">
+                            02
+                        </span>
+
+                        <p class="papel-etapa">
+                            ESTRATÉGIA
+                        </p>
+
+                        <h4>
+                            Arquitetura da informação
+                        </h4>
+
+                        <p>
+                            Estruturei categorias, conteúdos, jornadas e formas de
+                            acesso para que as informações fossem encontradas de
+                            maneira mais simples e intuitiva.
+                        </p>
+
+                    </div>
+
+
+                    <div class="papel-card">
+
+                        <span class="papel-numero">
+                            03
+                        </span>
+
+                        <p class="papel-etapa">
+                            EXPERIÊNCIA
+                        </p>
+
+                        <h4>
+                            Jornada do colaborador
+                        </h4>
+
+                        <p>
+                            Pensei a navegação a partir das necessidades reais das
+                            pessoas, priorizando linguagem simples, autonomia e
+                            facilidade de consulta.
+                        </p>
+
+                    </div>
+
+
+                    <div class="papel-card">
+
+                        <span class="papel-numero">
+                            04
+                        </span>
+
+                        <p class="papel-etapa">
+                            CONSTRUÇÃO
+                        </p>
+
+                        <h4>
+                            Desenvolvimento com IA
+                        </h4>
+
+                        <p>
+                            Utilizei inteligência artificial e Lovable para transformar
+                            a estrutura planejada em uma aplicação web funcional,
+                            responsiva e preparada para evoluir.
+                        </p>
+
+                    </div>
+
+
+                    <div class="papel-card">
+
+                        <span class="papel-numero">
+                            05
+                        </span>
+
+                        <p class="papel-etapa">
+                            VALIDAÇÃO
+                        </p>
+
+                        <h4>
+                            Testes e refinamentos
+                        </h4>
+
+                        <p>
+                            Revisei navegação, conteúdo, organização visual e
+                            responsividade, realizando ajustes para melhorar a
+                            experiência de utilização.
+                        </p>
+
+                    </div>
+
+
+                    <div class="papel-card">
+
+                        <span class="papel-numero">
+                            06
+                        </span>
+
+                        <p class="papel-etapa">
+                            ENTREGA
+                        </p>
+
+                        <h4>
+                            Publicação da solução
+                        </h4>
+
+                        <p>
+                            Estruturei a versão final e disponibilizei a Central de
+                            Benefícios online, criando uma solução que pode receber
+                            novos conteúdos e funcionalidades.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="stack-projeto">
+
+
+                    <div>
+
+                        <p class="projeto-label">
+                            FERRAMENTAS
+                        </p>
+
+                        <div class="projeto-tags">
+
+                            <span>Lovable</span>
+
+                            <span>Inteligência Artificial</span>
+
+                            <span>Desenvolvimento Web</span>
+
+                            <span>Design Responsivo</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+
+                        <p class="projeto-label">
+                            CONCEITOS APLICADOS
+                        </p>
+
+                        <div class="projeto-tags">
+
+                            <span>UX</span>
+
+                            <span>UI</span>
+
+                            <span>Arquitetura da Informação</span>
+
+                            <span>Experiência do Colaborador</span>
+
+                            <span>RH Tech</span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ENCERRAMENTO DO CASE -->
+
+            <div class="case-cta">
+
+
+                <div class="case-cta-conteudo">
+
+                    <p class="projeto-label">
+                        PROJETO AO VIVO
+                    </p>
+
+
+                    <h3>
+
+                        Quer conhecer a experiência
+
+                        <span>
+                            funcionando na prática?
+                        </span>
+
+                    </h3>
+
+
+                    <p>
+                        Explore a Central de Benefícios e veja como a solução
+                        organiza informações, facilita a navegação e amplia
+                        a autonomia dos colaboradores.
+                    </p>
+
+                </div>
+
+
+                <div class="case-cta-acao">
+
+                    <a
+                        href="https://beneficioscordeiro.lovable.app"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="botao-case"
+                    >
+
+                        Acessar projeto ao vivo
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+                    <p>
+                        beneficioscordeiro.lovable.app
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==========================================
+         EXPERIÊNCIA PROFISSIONAL
+    =========================================== -->
+
+    <section
+        id="experiencia"
+        class="experiencia"
+    >
+
+        <div class="experiencia-container">
+
+
+            <div class="experiencia-cabecalho">
+
+                <p class="section-label">
+                    EXPERIÊNCIA PROFISSIONAL
+                </p>
+
+
+                <h2>
+
+                    Uma trajetória de RH que evoluiu com
+
+                    <span>
+                        dados e tecnologia.
+                    </span>
+
+                </h2>
+
+
+                <p class="experiencia-intro">
+
+                    Minha carreira foi construída a partir de uma base sólida
+                    em Departamento Pessoal e evoluiu para benefícios,
+                    remuneração, People Analytics e soluções orientadas por
+                    dados. Mais do que mudar de área, fui ampliando a forma
+                    como resolvo problemas de negócio.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="timeline">
+
+
+                <!-- GRUPO CORDEIRO -->
+
+                <div class="timeline-item">
+
+
+                    <div class="timeline-data">
+
+                        <strong>
+                            2024 → Atual
+                        </strong>
+
+                        <span>
+                            Fortaleza, CE
+                        </span>
+
+                    </div>
+
+
+                    <div class="timeline-marcador">
+
+                        <div class="timeline-ponto"></div>
+
+                    </div>
+
+
+                    <div class="timeline-card">
+
+
+                        <p class="timeline-etapa">
+                            R&B • PEOPLE ANALYTICS • DADOS
+                        </p>
+
+
+                        <h3>
+                            Grupo Cordeiro
+                        </h3>
+
+
+                        <p class="timeline-cargo">
+                            Analista de Remuneração e Benefícios
+                        </p>
+
+
+                        <p>
+
+                            Atuação em Plano de Cargos e Salários, remuneração
+                            fixa e variável, premiações, benefícios e estudos
+                            salariais. Nesse momento da carreira, dados,
+                            indicadores, automação e Inteligência Artificial
+                            passaram a ocupar um papel ainda mais central na
+                            forma como estruturo análises e soluções para RH.
+
+                        </p>
+
+
+                        <div class="timeline-tags">
+
+                            <span>Remuneração</span>
+
+                            <span>Benefícios</span>
+
+                            <span>Cargos & Salários</span>
+
+                            <span>People Analytics</span>
+
+                            <span>Indicadores</span>
+
+                            <span>Automação</span>
+
+                            <span>IA</span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- BRISANET -->
+
+                <div class="timeline-item">
+
+
+                    <div class="timeline-data">
+
+                        <strong>
+                            2022 → 2024
+                        </strong>
+
+                        <span>
+                            Grupo Brisanet
+                        </span>
+
+                    </div>
+
+
+                    <div class="timeline-marcador">
+
+                        <div class="timeline-ponto"></div>
+
+                    </div>
+
+
+                    <div class="timeline-card">
+
+
+                        <p class="timeline-etapa">
+                            FOLHA • BENEFÍCIOS • ANALYTICS
+                        </p>
+
+
+                        <h3>
+                            Grupo Brisanet Telecomunicações
+                        </h3>
+
+
+                        <p class="timeline-cargo">
+                            Analista de Folha de Pagamento Sênior
+                        </p>
+
+
+                        <p>
+
+                            Atuei na implantação e estruturação do setor de
+                            Benefícios, revisão de políticas, benchmarking,
+                            folha de pagamento e controles. Foi também uma fase
+                            importante de expansão do uso de People Analytics,
+                            indicadores, padronização e automação de processos.
+
+                        </p>
+
+
+                        <div class="timeline-tags">
+
+                            <span>Folha</span>
+
+                            <span>Benefícios</span>
+
+                            <span>People Analytics</span>
+
+                            <span>Indicadores</span>
+
+                            <span>Automação</span>
+
+                            <span>Processos</span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- PAGUE MENOS -->
+
+                <div class="timeline-item">
+
+
+                    <div class="timeline-data">
+
+                        <strong>
+                            2021 → 2022
+                        </strong>
+
+                        <span>
+                            Fortaleza, CE
+                        </span>
+
+                    </div>
+
+
+                    <div class="timeline-marcador">
+
+                        <div class="timeline-ponto"></div>
+
+                    </div>
+
+
+                    <div class="timeline-card">
+
+
+                        <p class="timeline-etapa">
+                            BENEFÍCIOS • CUSTOS • INFORMAÇÃO
+                        </p>
+
+
+                        <h3>
+                            Farmácia Pague Menos
+                        </h3>
+
+
+                        <p class="timeline-cargo">
+                            Analista de Benefícios
+                        </p>
+
+
+                        <p>
+
+                            Experiência focada na gestão operacional e financeira
+                            de benefícios, faturas, rateios, movimentações e
+                            custos. A construção de controles, relatórios
+                            gerenciais e apresentações executivas fortaleceu
+                            minha proximidade com análise de informações para
+                            apoiar decisões.
+
+                        </p>
+
+
+                        <div class="timeline-tags">
+
+                            <span>Benefícios</span>
+
+                            <span>Custos</span>
+
+                            <span>Relatórios</span>
+
+                            <span>Controles</span>
+
+                            <span>Análise</span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- BASE EM DP -->
+
+                <div class="timeline-item">
+
+
+                    <div class="timeline-data">
+
+                        <strong>
+                            2013 → 2022
+                        </strong>
+
+                        <span>
+                            Base profissional
+                        </span>
+
+                    </div>
+
+
+                    <div class="timeline-marcador">
+
+                        <div class="timeline-ponto"></div>
+
+                    </div>
+
+
+                    <div class="timeline-card">
+
+
+                        <p class="timeline-etapa">
+                            DEPARTAMENTO PESSOAL • RH
+                        </p>
+
+
+                        <h3>
+                            Minha base em Departamento Pessoal
+                        </h3>
+
+
+                        <p class="timeline-cargo">
+                            Diferentes empresas e níveis de responsabilidade
+                        </p>
+
+
+                        <p>
+
+                            Construí minha base profissional atuando diretamente
+                            com folha de pagamento, ponto, admissões,
+                            desligamentos, benefícios, encargos, auditorias,
+                            conformidade trabalhista e rotinas administrativas.
+                            Essa experiência operacional foi fundamental para
+                            entender processos de pessoas de ponta a ponta e,
+                            mais tarde, analisá-los com uma visão mais estratégica.
+
+                        </p>
+
+
+                        <div class="timeline-tags">
+
+                            <span>Departamento Pessoal</span>
+
+                            <span>Folha</span>
+
+                            <span>Ponto</span>
+
+                            <span>Admissões</span>
+
+                            <span>Rescisões</span>
+
+                            <span>Legislação</span>
+
+                            <span>Processos</span>
 
                         </div>
 
@@ -2691,249 +3088,173 @@
 
 
 
-            <!-- MINHA ATUAÇÃO E TECNOLOGIAS -->
+            <!-- DIREÇÃO ATUAL -->
 
-            <!-- MEU PAPEL NO PROJETO -->
-
-<div class="papel-projeto">
-
-    <div class="papel-cabecalho">
-
-        <p class="projeto-label">
-            MEU PAPEL NO PROJETO
-        </p>
-
-        <h3>
-            Transformando uma necessidade de RH em
-            <span>produto digital.</span>
-        </h3>
-
-        <p>
-            Fui responsável pela concepção e estruturação da solução,
-            conectando conhecimento de benefícios, experiência do colaborador
-            e inteligência artificial para transformar uma necessidade
-            interna em uma experiência digital funcional.
-        </p>
-
-    </div>
+            <div class="direcao-atual">
 
 
-    <div class="papel-grid">
+                <div>
 
-        <div class="papel-card">
-
-            <span class="papel-numero">01</span>
-
-            <p class="papel-etapa">
-                DESCOBERTA
-            </p>
-
-            <h4>
-                Identificação do problema
-            </h4>
-
-            <p>
-                Identifiquei a necessidade de facilitar o acesso dos
-                colaboradores às informações sobre benefícios, reduzindo
-                a dependência de diferentes documentos e canais.
-            </p>
-
-        </div>
+                    <p class="section-label">
+                        EVOLUÇÃO ATUAL
+                    </p>
 
 
-        <div class="papel-card">
+                    <h3>
 
-            <span class="papel-numero">02</span>
+                        Conhecimento de negócio com uma camada cada vez mais
 
-            <p class="papel-etapa">
-                ESTRATÉGIA
-            </p>
+                        <span>
+                            forte de dados.
+                        </span>
 
-            <h4>
-                Arquitetura da informação
-            </h4>
+                    </h3>
 
-            <p>
-                Estruturei categorias, conteúdos, jornadas e formas de
-                acesso para que as informações fossem encontradas de
-                maneira mais simples e intuitiva.
-            </p>
-
-        </div>
+                </div>
 
 
-        <div class="papel-card">
-
-            <span class="papel-numero">03</span>
-
-            <p class="papel-etapa">
-                EXPERIÊNCIA
-            </p>
-
-            <h4>
-                Jornada do colaborador
-            </h4>
-
-            <p>
-                Pensei a navegação a partir das necessidades reais das
-                pessoas, priorizando linguagem simples, autonomia e
-                facilidade de consulta.
-            </p>
-
-        </div>
+                <div class="direcao-atual-texto">
 
 
-        <div class="papel-card">
+                    <p>
 
-            <span class="papel-numero">04</span>
+                        Hoje sigo aprofundando minha formação em Data Analytics
+                        e ampliando conhecimentos em ferramentas que me permitem
+                        analisar dados, construir soluções e automatizar
+                        processos. Meu foco é conectar essa capacidade técnica
+                        à experiência de negócio construída ao longo da carreira.
 
-            <p class="papel-etapa">
-                CONSTRUÇÃO
-            </p>
-
-            <h4>
-                Desenvolvimento com IA
-            </h4>
-
-            <p>
-                Utilizei inteligência artificial e Lovable para transformar
-                a estrutura planejada em uma aplicação web funcional,
-                responsiva e preparada para evoluir.
-            </p>
-
-        </div>
+                    </p>
 
 
-        <div class="papel-card">
+                    <div class="direcao-tags">
 
-            <span class="papel-numero">05</span>
+                        <span>Data Analytics</span>
 
-            <p class="papel-etapa">
-                VALIDAÇÃO
-            </p>
+                        <span>Power BI</span>
 
-            <h4>
-                Testes e refinamentos
-            </h4>
+                        <span>PostgreSQL</span>
 
-            <p>
-                Revisei navegação, conteúdo, organização visual e
-                responsividade, realizando ajustes para melhorar a
-                experiência de utilização.
-            </p>
+                        <span>DbSchema</span>
 
-        </div>
+                        <span>Automação</span>
+
+                        <span>Inteligência Artificial</span>
+
+                        <span>People Analytics</span>
+
+                    </div>
 
 
-        <div class="papel-card">
+                </div>
 
-            <span class="papel-numero">06</span>
-
-            <p class="papel-etapa">
-                ENTREGA
-            </p>
-
-            <h4>
-                Publicação da solução
-            </h4>
-
-            <p>
-                Estruturei a versão final e disponibilizei a Central de
-                Benefícios online, criando uma solução que pode receber
-                novos conteúdos e funcionalidades.
-            </p>
-
-        </div>
-
-    </div>
-
-
-    <div class="stack-projeto">
-
-        <div>
-
-            <p class="projeto-label">
-                FERRAMENTAS
-            </p>
-
-            <div class="projeto-tags">
-
-                <span>Lovable</span>
-                <span>Inteligência Artificial</span>
-                <span>Desenvolvimento Web</span>
-                <span>Design Responsivo</span>
 
             </div>
 
+
         </div>
 
+    </section>
 
-        <div>
 
-            <p class="projeto-label">
-                CONCEITOS APLICADOS
-            </p>
 
-            <div class="projeto-tags">
+    <!-- ==========================================
+         CONTATO
+    =========================================== -->
 
-                <span>UX</span>
-                <span>UI</span>
-                <span>Arquitetura da Informação</span>
-                <span>Experiência do Colaborador</span>
-                <span>RH Tech</span>
+    <section
+        id="contato"
+        class="contato"
+    >
+
+        <div class="contato-container">
+
+
+            <div>
+
+
+                <p class="section-label">
+                    CONTATO
+                </p>
+
+
+                <h2>
+
+                    Vamos transformar dados em
+
+                    <span>
+                        decisões melhores.
+                    </span>
+
+                </h2>
+
+
+                <p class="contato-texto">
+
+                    Tenho interesse em desafios que conectem pessoas,
+                    dados, tecnologia, analytics e transformação de
+                    processos. Se quiser conversar sobre projetos,
+                    oportunidades ou trocar experiências, entre em contato.
+
+                </p>
+
 
             </div>
 
+
+            <div class="contato-links">
+
+
+                <a
+                    href="mailto:lrs.roseno@gmail.com"
+                    class="contato-link"
+                >
+
+                    E-mail
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="https://linkedin.com/in/leonardoroseno"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contato-link"
+                >
+
+                    LinkedIn
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="https://beneficioscordeiro.lovable.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contato-link"
+                >
+
+                    Projeto em destaque
+
+                    <span>
+                        ↗
+                    </span>
+
+                </a>
+
+
+            </div>
+
+
         </div>
-
-    </div>
-
-</div>
-
-
-
-           <!-- ENCERRAMENTO DO CASE -->
-
-<div class="case-cta">
-
-    <div class="case-cta-conteudo">
-
-        <p class="projeto-label">
-            PROJETO AO VIVO
-        </p>
-
-        <h3>
-            Quer conhecer a experiência
-            <span>funcionando na prática?</span>
-        </h3>
-
-        <p>
-            Explore a Central de Benefícios e veja como a solução
-            organiza informações, facilita a navegação e amplia
-            a autonomia dos colaboradores.
-        </p>
-
-    </div>
-
-    <div class="case-cta-acao">
-
-        <a
-            href="https://beneficioscordeiro.lovable.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="botao-case"
-        >
-            Acessar projeto ao vivo
-            <span>↗</span>
-        </a>
-
-        <p>
-            beneficioscordeiro.lovable.app
-        </p>
-
-    </div>
-
-</div>
 
     </section>
 
