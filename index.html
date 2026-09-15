@@ -475,6 +475,118 @@
     }
 
 }
+        /* PROCESSO DE DESENVOLVIMENTO */
+
+.processo {
+    margin: 100px 0;
+    padding: 80px 0;
+    border-top: 1px solid #20364d;
+    border-bottom: 1px solid #20364d;
+}
+
+.processo-cabecalho {
+    max-width: 760px;
+    margin-bottom: 60px;
+}
+
+.processo-cabecalho h3 {
+    color: white;
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.1;
+    margin-bottom: 22px;
+}
+
+.processo-cabecalho h3 span {
+    color: #4da3ff;
+}
+
+.processo-cabecalho > p:last-child {
+    color: #aebed0;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+.processo-lista {
+    max-width: 950px;
+}
+
+
+.processo-item {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 30px;
+    padding: 35px 0;
+    border-top: 1px solid #20364d;
+}
+
+
+.processo-item:last-child {
+    border-bottom: 1px solid #20364d;
+}
+
+
+.processo-numero {
+    color: #4da3ff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-top: 3px;
+}
+
+
+.processo-conteudo span {
+    display: block;
+    color: #4da3ff;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+
+.processo-conteudo h4 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+
+.processo-conteudo p {
+    color: #aebed0;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 720px;
+}
+
+
+.processo-item {
+    transition: 0.3s;
+}
+
+
+.processo-item:hover {
+    padding-left: 15px;
+}
+
+
+@media (max-width: 700px) {
+
+    .processo {
+        margin: 70px 0;
+        padding: 60px 0;
+    }
+
+    .processo-item {
+        grid-template-columns: 50px 1fr;
+        gap: 15px;
+    }
+
+    .processo-conteudo h4 {
+        font-size: 21px;
+    }
+
+}
     </style>
 
 </head>
@@ -755,7 +867,184 @@
 
 </div>
 
+<div class="processo">
 
+    <div class="processo-cabecalho">
+
+        <p class="projeto-label">
+            COMO DESENVOLVI A SOLUÇÃO
+        </p>
+
+        <h3>
+            Do problema de RH à
+            <span>experiência digital.</span>
+        </h3>
+
+        <p>
+            O desenvolvimento partiu de uma necessidade real:
+            facilitar o acesso dos colaboradores às informações
+            sobre benefícios. A partir disso, estruturei a solução
+            em etapas, combinando conhecimento de RH, experiência
+            do usuário e tecnologia.
+        </p>
+
+    </div>
+
+
+    <div class="processo-lista">
+
+        <div class="processo-item">
+
+            <div class="processo-numero">
+                01
+            </div>
+
+            <div class="processo-conteudo">
+
+                <span>ENTENDIMENTO DO PROBLEMA</span>
+
+                <h4>
+                    Identificação da necessidade
+                </h4>
+
+                <p>
+                    O primeiro passo foi entender as principais dificuldades
+                    enfrentadas pelos colaboradores para localizar informações
+                    sobre benefícios, regras, acessos e canais de atendimento.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="processo-item">
+
+            <div class="processo-numero">
+                02
+            </div>
+
+            <div class="processo-conteudo">
+
+                <span>ORGANIZAÇÃO DA INFORMAÇÃO</span>
+
+                <h4>
+                    Estruturação dos benefícios
+                </h4>
+
+                <p>
+                    Organizei os conteúdos de forma mais simples,
+                    agrupando os benefícios por categorias e pensando
+                    em como as pessoas realmente procuram essas informações.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="processo-item">
+
+            <div class="processo-numero">
+                03
+            </div>
+
+            <div class="processo-conteudo">
+
+                <span>EXPERIÊNCIA DO COLABORADOR</span>
+
+                <h4>
+                    Desenho da jornada
+                </h4>
+
+                <p>
+                    A navegação foi pensada para permitir tanto a busca
+                    direta por um benefício quanto a descoberta da solução
+                    a partir de uma necessidade real do colaborador.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="processo-item">
+
+            <div class="processo-numero">
+                04
+            </div>
+
+            <div class="processo-conteudo">
+
+                <span>DESENVOLVIMENTO COM IA</span>
+
+                <h4>
+                    Construção no Lovable
+                </h4>
+
+                <p>
+                    Utilizei o Lovable e inteligência artificial como
+                    ferramentas de desenvolvimento, transformando a estrutura
+                    planejada em uma aplicação web funcional e responsiva.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="processo-item">
+
+            <div class="processo-numero">
+                05
+            </div>
+
+            <div class="processo-conteudo">
+
+                <span>VALIDAÇÃO E MELHORIAS</span>
+
+                <h4>
+                    Evolução da experiência
+                </h4>
+
+                <p>
+                    A solução foi sendo revisada e aprimorada a partir
+                    da navegação, organização visual, clareza das informações
+                    e facilidade de acesso aos principais recursos.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="processo-item">
+
+            <div class="processo-numero">
+                06
+            </div>
+
+            <div class="processo-conteudo">
+
+                <span>PUBLICAÇÃO</span>
+
+                <h4>
+                    Solução disponível online
+                </h4>
+
+                <p>
+                    Após a estruturação e validação, a solução foi publicada
+                    como uma central digital de benefícios, permitindo acesso
+                    às informações por meio de uma única experiência.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
         <div class="projeto-info">
 
             <div>
