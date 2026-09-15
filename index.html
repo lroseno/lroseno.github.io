@@ -2,12 +2,25 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Leonardo Roseno | People Analytics & RH Tech</title>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Leonardo Roseno | People Analytics & RH Tech
+    </title>
+
 
     <style>
+
+
+        /* ================================
+           CONFIGURAÇÕES GERAIS
+        ================================= */
 
         * {
             margin: 0;
@@ -15,140 +28,1186 @@
             box-sizing: border-box;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
 
+
         body {
             font-family: Arial, Helvetica, sans-serif;
+
             background: #07111f;
+
             color: white;
         }
 
+
+
+        /* ================================
+           MENU
+        ================================= */
+
         nav {
             width: 100%;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
+
             padding: 28px 8%;
+
             position: absolute;
             top: 0;
+
+            z-index: 10;
         }
+
 
         .logo {
             font-size: 24px;
             font-weight: bold;
         }
 
+
         .logo span {
             color: #4da3ff;
         }
 
+
         nav ul {
             list-style: none;
+
             display: flex;
+
             gap: 30px;
         }
 
+
         nav a {
             color: #dbe7f5;
+
             text-decoration: none;
+
             font-size: 15px;
+
+            transition: 0.3s;
         }
+
 
         nav a:hover {
             color: #4da3ff;
         }
 
+
+
+        /* ================================
+           CAPA
+        ================================= */
+
         .hero {
             min-height: 100vh;
+
             display: flex;
             align-items: center;
+
             padding: 120px 8% 60px;
+
             background:
-                radial-gradient(circle at 80% 30%, #143a66 0%, transparent 35%),
+
+                radial-gradient(
+                    circle at 80% 30%,
+                    #143a66 0%,
+                    transparent 35%
+                ),
+
                 #07111f;
         }
+
 
         .hero-content {
             max-width: 850px;
         }
 
+
         .tagline {
             color: #4da3ff;
+
             font-size: 14px;
+
             letter-spacing: 3px;
+
             font-weight: bold;
+
             margin-bottom: 25px;
         }
 
+
         h1 {
             font-size: clamp(50px, 8vw, 100px);
+
             line-height: 0.95;
+
             margin-bottom: 28px;
         }
+
 
         h1 span {
             color: #4da3ff;
         }
 
+
         .descricao {
             max-width: 700px;
+
             font-size: 20px;
+
             line-height: 1.7;
+
             color: #aebed0;
+
             margin-bottom: 35px;
         }
 
+
         .botoes {
             display: flex;
+
             gap: 15px;
+
             flex-wrap: wrap;
+
             margin-bottom: 45px;
         }
 
+
         .botao {
             display: inline-block;
+
             padding: 15px 25px;
+
             border-radius: 8px;
+
             text-decoration: none;
+
             font-weight: bold;
+
             transition: 0.3s;
         }
 
+
         .principal {
             background: #4da3ff;
+
             color: #07111f;
         }
+
 
         .principal:hover {
             transform: translateY(-3px);
         }
 
+
         .secundario {
             border: 1px solid #3d5874;
+
             color: white;
         }
 
+
         .secundario:hover {
             border-color: #4da3ff;
+
             color: #4da3ff;
         }
 
+
         .skills {
             display: flex;
+
             flex-wrap: wrap;
+
             gap: 10px;
         }
 
+
         .skills span {
             border: 1px solid #27435f;
+
             padding: 9px 14px;
+
             border-radius: 50px;
+
             font-size: 13px;
+
             color: #b9cbe0;
-            background: rgba(255,255,255,0.03);
+
+            background: rgba(255, 255, 255, 0.03);
         }
+
+
+
+        /* ================================
+           SOBRE MIM
+        ================================= */
+
+        .sobre {
+            background: #0b1726;
+
+            padding: 120px 8%;
+
+            border-top: 1px solid #162b42;
+        }
+
+
+        .sobre-container {
+            max-width: 1250px;
+
+            margin: 0 auto;
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 100px;
+        }
+
+
+        .section-label {
+            color: #4da3ff;
+
+            font-size: 13px;
+
+            font-weight: bold;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 25px;
+        }
+
+
+        .sobre h2 {
+            font-size: clamp(38px, 5vw, 65px);
+
+            line-height: 1.05;
+
+            color: white;
+        }
+
+
+        .sobre h2 span {
+            color: #4da3ff;
+        }
+
+
+        .sobre-conteudo p {
+            color: #aebed0;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+
+            margin-bottom: 22px;
+        }
+
+
+        .sobre-numeros {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 15px;
+
+            margin-top: 45px;
+        }
+
+
+        .numero {
+            border: 1px solid #27435f;
+
+            background: rgba(255, 255, 255, 0.02);
+
+            padding: 22px;
+
+            border-radius: 12px;
+        }
+
+
+        .numero strong {
+            display: block;
+
+            color: #4da3ff;
+
+            font-size: 23px;
+
+            margin-bottom: 5px;
+        }
+
+
+        .numero span {
+            color: #aebed0;
+
+            font-size: 13px;
+        }
+
+
+
+        /* ================================
+           PROJETOS
+        ================================= */
+
+        .projetos {
+            background: #07111f;
+
+            padding: 120px 8%;
+
+            border-top: 1px solid #162b42;
+        }
+
+
+        .projetos-container {
+            max-width: 1250px;
+
+            margin: 0 auto;
+        }
+
+
+        .projeto-cabecalho {
+            max-width: 850px;
+
+            margin-bottom: 60px;
+        }
+
+
+        .projeto-cabecalho h2 {
+            font-size: clamp(42px, 6vw, 75px);
+
+            line-height: 1.05;
+
+            color: white;
+
+            margin-bottom: 25px;
+        }
+
+
+        .projeto-cabecalho h2 span {
+            color: #4da3ff;
+        }
+
+
+        .projeto-intro {
+            color: #aebed0;
+
+            font-size: 20px;
+
+            line-height: 1.7;
+
+            max-width: 750px;
+        }
+
+
+
+        /* ================================
+           IMAGEM PRINCIPAL DO PROJETO
+        ================================= */
+
+        .projeto-imagem {
+            width: 100%;
+
+            overflow: hidden;
+
+            border-radius: 18px;
+
+            border: 1px solid #27435f;
+
+            margin-bottom: 70px;
+
+            background: #0b1726;
+        }
+
+
+        .projeto-imagem img {
+            display: block;
+
+            width: 100%;
+
+            height: auto;
+        }
+
+
+
+        /* ================================
+           DESAFIO E SOLUÇÃO
+        ================================= */
+
+        .projeto-detalhes {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 70px;
+
+            margin-bottom: 70px;
+        }
+
+
+        .projeto-label {
+            color: #4da3ff;
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .projeto-bloco h3 {
+            color: white;
+
+            font-size: 28px;
+
+            margin-bottom: 15px;
+        }
+
+
+        .projeto-bloco p {
+            color: #aebed0;
+
+            line-height: 1.8;
+
+            font-size: 17px;
+        }
+
+
+
+        /* ================================
+           PRINCIPAIS ENTREGAS
+        ================================= */
+
+        .funcionalidades {
+            margin: 80px 0;
+
+            padding: 70px 0;
+
+            border-top: 1px solid #20364d;
+
+            border-bottom: 1px solid #20364d;
+        }
+
+
+        .funcionalidades-titulo {
+            color: white;
+
+            font-size: clamp(32px, 4vw, 48px);
+
+            margin-bottom: 18px;
+        }
+
+
+        .funcionalidades-intro {
+            max-width: 720px;
+
+            color: #aebed0;
+
+            font-size: 18px;
+
+            line-height: 1.7;
+
+            margin-bottom: 45px;
+        }
+
+
+        .funcionalidades-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 18px;
+        }
+
+
+        .funcionalidade-card {
+            background: #0b1726;
+
+            border: 1px solid #27435f;
+
+            border-radius: 14px;
+
+            padding: 28px;
+
+            transition: 0.3s;
+        }
+
+
+        .funcionalidade-card:hover {
+            transform: translateY(-5px);
+
+            border-color: #4da3ff;
+        }
+
+
+        .funcionalidade-numero {
+            display: block;
+
+            color: #4da3ff;
+
+            font-size: 12px;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 25px;
+        }
+
+
+        .funcionalidade-card h4 {
+            color: white;
+
+            font-size: 20px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .funcionalidade-card p {
+            color: #aebed0;
+
+            font-size: 15px;
+
+            line-height: 1.7;
+        }
+
+
+
+        /* ================================
+           PROCESSO DE DESENVOLVIMENTO
+        ================================= */
+
+        .processo {
+            margin: 100px 0;
+
+            padding: 80px 0;
+
+            border-top: 1px solid #20364d;
+
+            border-bottom: 1px solid #20364d;
+        }
+
+
+        .processo-cabecalho {
+            max-width: 760px;
+
+            margin-bottom: 60px;
+        }
+
+
+        .processo-cabecalho h3 {
+            color: white;
+
+            font-size: clamp(36px, 5vw, 58px);
+
+            line-height: 1.1;
+
+            margin-bottom: 22px;
+        }
+
+
+        .processo-cabecalho h3 span {
+            color: #4da3ff;
+        }
+
+
+        .processo-cabecalho > p:last-child {
+            color: #aebed0;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+        }
+
+
+        .processo-lista {
+            max-width: 950px;
+        }
+
+
+        .processo-item {
+            display: grid;
+
+            grid-template-columns: 90px 1fr;
+
+            gap: 30px;
+
+            padding: 35px 0;
+
+            border-top: 1px solid #20364d;
+
+            transition: 0.3s;
+        }
+
+
+        .processo-item:last-child {
+            border-bottom: 1px solid #20364d;
+        }
+
+
+        .processo-item:hover {
+            padding-left: 15px;
+        }
+
+
+        .processo-numero {
+            color: #4da3ff;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+
+            padding-top: 3px;
+        }
+
+
+        .processo-conteudo span {
+            display: block;
+
+            color: #4da3ff;
+
+            font-size: 11px;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .processo-conteudo h4 {
+            color: white;
+
+            font-size: 25px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .processo-conteudo p {
+            color: #aebed0;
+
+            font-size: 16px;
+
+            line-height: 1.8;
+
+            max-width: 720px;
+        }
+
+
+
+        /* ================================
+           IMPACTO
+        ================================= */
+
+        .impacto {
+            margin: 100px 0;
+        }
+
+
+        .impacto-cabecalho {
+            max-width: 800px;
+
+            margin-bottom: 50px;
+        }
+
+
+        .impacto-cabecalho h3 {
+            color: white;
+
+            font-size: clamp(36px, 5vw, 58px);
+
+            line-height: 1.1;
+
+            margin-bottom: 22px;
+        }
+
+
+        .impacto-cabecalho h3 span {
+            color: #4da3ff;
+        }
+
+
+        .impacto-cabecalho > p:last-child {
+            color: #aebed0;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+        }
+
+
+        .impacto-grid {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 18px;
+        }
+
+
+        .impacto-card {
+            background: linear-gradient(
+                145deg,
+                #0b1726,
+                #0d1d30
+            );
+
+            border: 1px solid #27435f;
+
+            border-radius: 16px;
+
+            padding: 35px;
+
+            min-height: 230px;
+
+            transition: 0.3s;
+        }
+
+
+        .impacto-card:hover {
+            transform: translateY(-5px);
+
+            border-color: #4da3ff;
+        }
+
+
+        .impacto-card > span {
+            display: block;
+
+            color: #4da3ff;
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 35px;
+        }
+
+
+        .impacto-card h4 {
+            color: white;
+
+            font-size: 25px;
+
+            margin-bottom: 14px;
+        }
+
+
+        .impacto-card p {
+            color: #aebed0;
+
+            font-size: 16px;
+
+            line-height: 1.7;
+        }
+
+
+
+        /* ================================
+           GALERIA
+        ================================= */
+
+        .galeria-projeto {
+            margin: 110px 0;
+
+            padding-top: 80px;
+
+            border-top: 1px solid #20364d;
+        }
+
+
+        .galeria-cabecalho {
+            max-width: 800px;
+
+            margin-bottom: 50px;
+        }
+
+
+        .galeria-cabecalho h3 {
+            color: white;
+
+            font-size: clamp(36px, 5vw, 58px);
+
+            line-height: 1.1;
+
+            margin-bottom: 22px;
+        }
+
+
+        .galeria-cabecalho h3 span {
+            color: #4da3ff;
+        }
+
+
+        .galeria-cabecalho > p:last-child {
+            color: #aebed0;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+        }
+
+
+        .galeria-grid {
+            display: grid;
+
+            grid-template-columns: 1.4fr 1fr;
+
+            gap: 20px;
+        }
+
+
+        .galeria-grande {
+            grid-row: span 2;
+        }
+
+
+        .galeria-item {
+            position: relative;
+
+            overflow: hidden;
+
+            border-radius: 16px;
+
+            border: 1px solid #27435f;
+
+            background: #0b1726;
+        }
+
+
+        .galeria-item img {
+            width: 100%;
+
+            height: 100%;
+
+            min-height: 280px;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: 0.4s;
+        }
+
+
+        .galeria-grande img {
+            min-height: 580px;
+        }
+
+
+        .galeria-item:hover img {
+            transform: scale(1.02);
+        }
+
+
+        .galeria-legenda {
+            position: absolute;
+
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            display: flex;
+
+            gap: 18px;
+
+            align-items: flex-start;
+
+            padding: 25px;
+
+            background: linear-gradient(
+                transparent,
+                rgba(7, 17, 31, 0.95)
+            );
+        }
+
+
+        .galeria-legenda > span {
+            color: #4da3ff;
+
+            font-size: 12px;
+
+            font-weight: bold;
+        }
+
+
+        .galeria-legenda strong {
+            display: block;
+
+            color: white;
+
+            font-size: 18px;
+
+            margin-bottom: 4px;
+        }
+
+
+        .galeria-legenda p {
+            color: #aebed0;
+
+            font-size: 13px;
+        }
+
+
+
+        /* ================================
+           EXPERIÊNCIA MOBILE
+        ================================= */
+
+        .mobile-showcase {
+            margin-top: 25px;
+
+            display: grid;
+
+            grid-template-columns: 0.8fr 1.2fr;
+
+            align-items: center;
+
+            gap: 70px;
+
+            background: #0b1726;
+
+            border: 1px solid #27435f;
+
+            border-radius: 18px;
+
+            padding: 60px;
+
+            overflow: hidden;
+        }
+
+
+        .mobile-imagem {
+            display: flex;
+
+            justify-content: center;
+        }
+
+
+        .mobile-imagem img {
+            width: 100%;
+
+            max-width: 320px;
+
+            height: auto;
+
+            border-radius: 22px;
+
+            box-shadow:
+                0 25px 70px rgba(0, 0, 0, 0.35);
+        }
+
+
+        .mobile-conteudo h3 {
+            color: white;
+
+            font-size: clamp(32px, 4vw, 48px);
+
+            line-height: 1.1;
+
+            margin-bottom: 20px;
+        }
+
+
+        .mobile-conteudo h3 span {
+            color: #4da3ff;
+        }
+
+
+        .mobile-conteudo > p {
+            color: #aebed0;
+
+            font-size: 17px;
+
+            line-height: 1.8;
+
+            max-width: 600px;
+        }
+
+
+        .mobile-tags {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin-top: 30px;
+        }
+
+
+        .mobile-tags span {
+            border: 1px solid #27435f;
+
+            padding: 9px 14px;
+
+            border-radius: 50px;
+
+            color: #b9cbe0;
+
+            font-size: 13px;
+
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+
+
+        /* ================================
+           MINHA ATUAÇÃO / TECNOLOGIAS
+        ================================= */
+
+        .projeto-info {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 70px;
+
+            padding-top: 45px;
+
+            border-top: 1px solid #20364d;
+
+            margin-top: 80px;
+        }
+
+
+        .projeto-tags {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+        }
+
+
+        .projeto-tags span {
+            border: 1px solid #27435f;
+
+            padding: 9px 14px;
+
+            border-radius: 50px;
+
+            font-size: 13px;
+
+            color: #b9cbe0;
+
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+
+        .projeto-acao {
+            margin-top: 50px;
+        }
+
+
+
+        /* ================================
+           RESPONSIVIDADE
+        ================================= */
+
+        @media (max-width: 900px) {
+
+            .funcionalidades-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 850px) {
+
+            .galeria-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .galeria-grande {
+                grid-row: auto;
+            }
+
+
+            .galeria-grande img,
+            .galeria-item img {
+                min-height: auto;
+
+                height: auto;
+            }
+
+        }
+
+
+        @media (max-width: 800px) {
+
+            .sobre {
+                padding: 80px 6%;
+            }
+
+
+            .sobre-container {
+                grid-template-columns: 1fr;
+
+                gap: 45px;
+            }
+
+
+            .sobre-numeros {
+                grid-template-columns: 1fr 1fr;
+            }
+
+
+            .projetos {
+                padding: 80px 6%;
+            }
+
+
+            .projeto-detalhes {
+                grid-template-columns: 1fr;
+
+                gap: 40px;
+            }
+
+
+            .projeto-info {
+                grid-template-columns: 1fr;
+
+                gap: 40px;
+            }
+
+
+            .projeto-intro {
+                font-size: 17px;
+            }
+
+
+            .mobile-showcase {
+                grid-template-columns: 1fr;
+
+                padding: 35px;
+
+                gap: 40px;
+            }
+
+
+            .mobile-imagem img {
+                max-width: 260px;
+            }
+
+        }
+
 
         @media (max-width: 700px) {
 
@@ -156,738 +1215,79 @@
                 display: none;
             }
 
+
             .hero {
                 padding-left: 6%;
+
                 padding-right: 6%;
             }
+
 
             h1 {
                 font-size: 52px;
             }
 
+
             .descricao {
                 font-size: 17px;
             }
+
+
+            .processo {
+                margin: 70px 0;
+
+                padding: 60px 0;
+            }
+
+
+            .processo-item {
+                grid-template-columns: 50px 1fr;
+
+                gap: 15px;
+            }
+
+
+            .processo-conteudo h4 {
+                font-size: 21px;
+            }
+
+
+            .impacto-grid {
+                grid-template-columns: 1fr;
+            }
+
         }
-/* SOBRE MIM */
 
-.sobre {
-    background: #0b1726;
-    padding: 120px 8%;
-    border-top: 1px solid #162b42;
-}
 
-.sobre-container {
-    max-width: 1250px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 100px;
-}
+        @media (max-width: 600px) {
 
-.section-label {
-    color: #4da3ff;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 25px;
-}
+            .funcionalidades-grid {
+                grid-template-columns: 1fr;
+            }
 
-.sobre h2 {
-    font-size: clamp(38px, 5vw, 65px);
-    line-height: 1.05;
-    color: white;
-}
+        }
 
-.sobre h2 span {
-    color: #4da3ff;
-}
 
-.sobre-conteudo p {
-    color: #aebed0;
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 22px;
-}
+        @media (max-width: 500px) {
 
-.sobre-numeros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 45px;
-}
+            .sobre-numeros {
+                grid-template-columns: 1fr;
+            }
 
-.numero {
-    border: 1px solid #27435f;
-    background: rgba(255,255,255,0.02);
-    padding: 22px;
-    border-radius: 12px;
-}
+        }
 
-.numero strong {
-    display: block;
-    color: #4da3ff;
-    font-size: 23px;
-    margin-bottom: 5px;
-}
 
-.numero span {
-    color: #aebed0;
-    font-size: 13px;
-}
-
-@media (max-width: 800px) {
-
-    .sobre {
-        padding: 80px 6%;
-    }
-
-    .sobre-container {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    .sobre-numeros {
-        grid-template-columns: 1fr 1fr;
-    }
-
-}
-
-@media (max-width: 500px) {
-
-    .sobre-numeros {
-        grid-template-columns: 1fr;
-    }
-
-}
-        /* PROJETOS */
-
-.projetos {
-    background: #07111f;
-    padding: 120px 8%;
-    border-top: 1px solid #162b42;
-}
-
-.projetos-container {
-    max-width: 1250px;
-    margin: 0 auto;
-}
-
-.projeto-cabecalho {
-    max-width: 850px;
-    margin-bottom: 60px;
-}
-
-.projeto-cabecalho h2 {
-    font-size: clamp(42px, 6vw, 75px);
-    line-height: 1.05;
-    color: white;
-    margin-bottom: 25px;
-}
-
-.projeto-cabecalho h2 span {
-    color: #4da3ff;
-}
-
-.projeto-intro {
-    color: #aebed0;
-    font-size: 20px;
-    line-height: 1.7;
-    max-width: 750px;
-}
-
-
-/* IMAGEM DO PROJETO */
-
-.projeto-imagem {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 18px;
-    border: 1px solid #27435f;
-    margin-bottom: 70px;
-    background: #0b1726;
-}
-
-.projeto-imagem img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-
-/* DESAFIO E SOLUÇÃO */
-
-.projeto-detalhes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 70px;
-    margin-bottom: 70px;
-}
-
-.projeto-label {
-    color: #4da3ff;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-}
-
-.projeto-bloco h3 {
-    color: white;
-    font-size: 28px;
-    margin-bottom: 15px;
-}
-
-.projeto-bloco p {
-    color: #aebed0;
-    line-height: 1.8;
-    font-size: 17px;
-}
-
-
-/* INFORMAÇÕES */
-
-.projeto-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 70px;
-    padding-top: 45px;
-    border-top: 1px solid #20364d;
-}
-
-.projeto-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.projeto-tags span {
-    border: 1px solid #27435f;
-    padding: 9px 14px;
-    border-radius: 50px;
-    font-size: 13px;
-    color: #b9cbe0;
-    background: rgba(255,255,255,0.03);
-}
-
-.projeto-acao {
-    margin-top: 50px;
-}
-
-
-/* RESPONSIVO */
-
-@media (max-width: 800px) {
-
-    .projetos {
-        padding: 80px 6%;
-    }
-
-    .projeto-detalhes {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .projeto-info {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .projeto-intro {
-        font-size: 17px;
-    }
-
-}
-        /* FUNCIONALIDADES DO PROJETO */
-
-.funcionalidades {
-    margin: 80px 0;
-    padding: 70px 0;
-    border-top: 1px solid #20364d;
-    border-bottom: 1px solid #20364d;
-}
-
-.funcionalidades-titulo {
-    color: white;
-    font-size: clamp(32px, 4vw, 48px);
-    margin-bottom: 18px;
-}
-
-.funcionalidades-intro {
-    max-width: 720px;
-    color: #aebed0;
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 45px;
-}
-
-.funcionalidades-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
-}
-
-.funcionalidade-card {
-    background: #0b1726;
-    border: 1px solid #27435f;
-    border-radius: 14px;
-    padding: 28px;
-    transition: 0.3s;
-}
-
-.funcionalidade-card:hover {
-    transform: translateY(-5px);
-    border-color: #4da3ff;
-}
-
-.funcionalidade-numero {
-    display: block;
-    color: #4da3ff;
-    font-size: 12px;
-    letter-spacing: 2px;
-    margin-bottom: 25px;
-}
-
-.funcionalidade-card h4 {
-    color: white;
-    font-size: 20px;
-    margin-bottom: 12px;
-}
-
-.funcionalidade-card p {
-    color: #aebed0;
-    font-size: 15px;
-    line-height: 1.7;
-}
-
-@media (max-width: 900px) {
-
-    .funcionalidades-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-}
-
-@media (max-width: 600px) {
-
-    .funcionalidades-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-        /* PROCESSO DE DESENVOLVIMENTO */
-
-.processo {
-    margin: 100px 0;
-    padding: 80px 0;
-    border-top: 1px solid #20364d;
-    border-bottom: 1px solid #20364d;
-}
-
-.processo-cabecalho {
-    max-width: 760px;
-    margin-bottom: 60px;
-}
-
-.processo-cabecalho h3 {
-    color: white;
-    font-size: clamp(36px, 5vw, 58px);
-    line-height: 1.1;
-    margin-bottom: 22px;
-}
-
-.processo-cabecalho h3 span {
-    color: #4da3ff;
-}
-
-.processo-cabecalho > p:last-child {
-    color: #aebed0;
-    font-size: 18px;
-    line-height: 1.8;
-}
-
-
-.processo-lista {
-    max-width: 950px;
-}
-
-
-.processo-item {
-    display: grid;
-    grid-template-columns: 90px 1fr;
-    gap: 30px;
-    padding: 35px 0;
-    border-top: 1px solid #20364d;
-}
-
-
-.processo-item:last-child {
-    border-bottom: 1px solid #20364d;
-}
-
-
-.processo-numero {
-    color: #4da3ff;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding-top: 3px;
-}
-
-
-.processo-conteudo span {
-    display: block;
-    color: #4da3ff;
-    font-size: 11px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-
-.processo-conteudo h4 {
-    color: white;
-    font-size: 25px;
-    margin-bottom: 12px;
-}
-
-
-.processo-conteudo p {
-    color: #aebed0;
-    font-size: 16px;
-    line-height: 1.8;
-    max-width: 720px;
-}
-
-
-.processo-item {
-    transition: 0.3s;
-}
-
-
-.processo-item:hover {
-    padding-left: 15px;
-}
-
-
-@media (max-width: 700px) {
-
-    .processo {
-        margin: 70px 0;
-        padding: 60px 0;
-    }
-
-    .processo-item {
-        grid-template-columns: 50px 1fr;
-        gap: 15px;
-    }
-
-    .processo-conteudo h4 {
-        font-size: 21px;
-    }
-
-}
-        /* IMPACTO DO PROJETO */
-
-.impacto {
-    margin: 100px 0;
-}
-
-.impacto-cabecalho {
-    max-width: 800px;
-    margin-bottom: 50px;
-}
-
-.impacto-cabecalho h3 {
-    color: white;
-    font-size: clamp(36px, 5vw, 58px);
-    line-height: 1.1;
-    margin-bottom: 22px;
-}
-
-.impacto-cabecalho h3 span {
-    color: #4da3ff;
-}
-
-.impacto-cabecalho > p:last-child {
-    color: #aebed0;
-    font-size: 18px;
-    line-height: 1.8;
-}
-
-.impacto-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px;
-}
-
-.impacto-card {
-    background: linear-gradient(
-        145deg,
-        #0b1726,
-        #0d1d30
-    );
-
-    border: 1px solid #27435f;
-    border-radius: 16px;
-    padding: 35px;
-    min-height: 230px;
-}
-
-.impacto-card > span {
-    display: block;
-    color: #4da3ff;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    margin-bottom: 35px;
-}
-
-.impacto-card h4 {
-    color: white;
-    font-size: 25px;
-    margin-bottom: 14px;
-}
-
-.impacto-card p {
-    color: #aebed0;
-    font-size: 16px;
-    line-height: 1.7;
-}
-
-.impacto-card {
-    transition: 0.3s;
-}
-
-.impacto-card:hover {
-    transform: translateY(-5px);
-    border-color: #4da3ff;
-}
-
-@media (max-width: 700px) {
-
-    .impacto-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-        /* GALERIA DO PROJETO */
-
-.galeria-projeto {
-    margin: 110px 0;
-    padding-top: 80px;
-    border-top: 1px solid #20364d;
-}
-
-.galeria-cabecalho {
-    max-width: 800px;
-    margin-bottom: 50px;
-}
-
-.galeria-cabecalho h3 {
-    color: white;
-    font-size: clamp(36px, 5vw, 58px);
-    line-height: 1.1;
-    margin-bottom: 22px;
-}
-
-.galeria-cabecalho h3 span {
-    color: #4da3ff;
-}
-
-.galeria-cabecalho > p:last-child {
-    color: #aebed0;
-    font-size: 18px;
-    line-height: 1.8;
-}
-
-
-/* GRID */
-
-.galeria-grid {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 20px;
-}
-
-.galeria-grande {
-    grid-row: span 2;
-}
-
-.galeria-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 16px;
-    border: 1px solid #27435f;
-    background: #0b1726;
-}
-
-.galeria-item img {
-    width: 100%;
-    height: 100%;
-    min-height: 280px;
-    object-fit: cover;
-    display: block;
-    transition: 0.4s;
-}
-
-.galeria-grande img {
-    min-height: 580px;
-}
-
-.galeria-item:hover img {
-    transform: scale(1.02);
-}
-
-
-/* LEGENDA */
-
-.galeria-legenda {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    display: flex;
-    gap: 18px;
-    align-items: flex-start;
-
-    padding: 25px;
-
-    background: linear-gradient(
-        transparent,
-        rgba(7, 17, 31, 0.95)
-    );
-}
-
-.galeria-legenda > span {
-    color: #4da3ff;
-    font-size: 12px;
-    font-weight: bold;
-}
-
-.galeria-legenda strong {
-    display: block;
-    color: white;
-    font-size: 18px;
-    margin-bottom: 4px;
-}
-
-.galeria-legenda p {
-    color: #aebed0;
-    font-size: 13px;
-}
-
-
-/* RESPONSIVO */
-
-@media (max-width: 850px) {
-
-    .galeria-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .galeria-grande {
-        grid-row: auto;
-    }
-
-    .galeria-grande img,
-    .galeria-item img {
-        min-height: auto;
-        height: auto;
-    }
-
-}
-        /* EXPERIÊNCIA MOBILE */
-
-.mobile-showcase {
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    align-items: center;
-    gap: 70px;
-
-    background: #0b1726;
-    border: 1px solid #27435f;
-    border-radius: 18px;
-
-    padding: 60px;
-    overflow: hidden;
-}
-
-.mobile-imagem {
-    display: flex;
-    justify-content: center;
-}
-
-.mobile-imagem img {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-
-    border-radius: 22px;
-
-    box-shadow:
-        0 25px 70px rgba(0,0,0,0.35);
-}
-
-.mobile-conteudo h3 {
-    color: white;
-    font-size: clamp(32px, 4vw, 48px);
-    line-height: 1.1;
-    margin-bottom: 20px;
-}
-
-.mobile-conteudo h3 span {
-    color: #4da3ff;
-}
-
-.mobile-conteudo > p {
-    color: #aebed0;
-    font-size: 17px;
-    line-height: 1.8;
-    max-width: 600px;
-}
-
-.mobile-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 30px;
-}
-
-.mobile-tags span {
-    border: 1px solid #27435f;
-    padding: 9px 14px;
-    border-radius: 50px;
-
-    color: #b9cbe0;
-    font-size: 13px;
-
-    background: rgba(255,255,255,0.03);
-}
-
-
-/* RESPONSIVO */
-
-@media (max-width: 800px) {
-
-    .mobile-showcase {
-        grid-template-columns: 1fr;
-        padding: 35px;
-        gap: 40px;
-    }
-
-    .mobile-imagem img {
-        max-width: 260px;
-    }
-
-}
     </style>
 
 </head>
 
+
 <body>
+
+
+    <!-- ================================
+         MENU
+    ================================= -->
 
     <nav>
 
@@ -895,723 +1295,1214 @@
             LR<span>.</span>
         </div>
 
+
         <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#experiencia">Experiência</a></li>
-            <li><a href="#contato">Contato</a></li>
+
+            <li>
+                <a href="#sobre">
+                    Sobre
+                </a>
+            </li>
+
+            <li>
+                <a href="#projetos">
+                    Projetos
+                </a>
+            </li>
+
+            <li>
+                <a href="#experiencia">
+                    Experiência
+                </a>
+            </li>
+
+            <li>
+                <a href="#contato">
+                    Contato
+                </a>
+            </li>
+
         </ul>
 
     </nav>
 
 
+
+    <!-- ================================
+         CAPA
+    ================================= -->
+
     <section class="hero">
 
         <div class="hero-content">
 
+
             <p class="tagline">
-    RH • BENEFÍCIOS • DADOS • AUTOMAÇÃO • TECNOLOGIA
-</p>
+                RH • BENEFÍCIOS • DADOS • AUTOMAÇÃO • TECNOLOGIA
+            </p>
 
-<h1>
-    Leonardo<br>
-    <span>Roseno.</span>
-</h1>
 
-<p class="descricao">
-    Desenvolvo soluções digitais para transformar processos de RH
-    em experiências mais simples, acessíveis e eficientes para as pessoas.
-</p>
+            <h1>
 
-<div class="botoes">
+                Leonardo<br>
 
-    <a href="#projetos" class="botao principal">
-        Ver meus projetos
-    </a>
+                <span>
+                    Roseno.
+                </span>
 
-    <a href="#sobre" class="botao secundario">
-        Sobre mim
-    </a>
+            </h1>
 
-</div>
 
-<div class="skills">
+            <p class="descricao">
 
-    <span>Remuneração & Benefícios</span>
-    <span>People Analytics</span>
-    <span>Power BI</span>
-    <span>Automação</span>
-    <span>IA aplicada ao RH</span>
-    <span>Desenvolvimento Web</span>
+                Desenvolvo soluções digitais para transformar processos
+                de RH em experiências mais simples, acessíveis e eficientes
+                para as pessoas.
 
-</div>
+            </p>
+
+
+            <div class="botoes">
+
+                <a
+                    href="#projetos"
+                    class="botao principal"
+                >
+                    Ver meus projetos
+                </a>
+
+
+                <a
+                    href="#sobre"
+                    class="botao secundario"
+                >
+                    Sobre mim
+                </a>
+
+            </div>
+
+
+            <div class="skills">
+
+                <span>Remuneração & Benefícios</span>
+
+                <span>People Analytics</span>
+
+                <span>Power BI</span>
+
+                <span>Automação</span>
+
+                <span>IA aplicada ao RH</span>
+
+                <span>Desenvolvimento Web</span>
+
+            </div>
+
 
         </div>
 
     </section>
-<section id="sobre" class="sobre">
 
-    <div class="sobre-container">
 
-        <div class="sobre-titulo">
-            <p class="section-label">SOBRE MIM</p>
 
-            <h2>
-                RH, dados e tecnologia
-                <span>trabalhando juntos.</span>
-            </h2>
-        </div>
+    <!-- ================================
+         SOBRE MIM
+    ================================= -->
 
-        <div class="sobre-conteudo">
+    <section
+        id="sobre"
+        class="sobre"
+    >
 
-            <p>
-                Atuo na conexão entre Recursos Humanos, dados e tecnologia,
-                transformando informações e processos em soluções que apoiam
-                decisões mais estratégicas.
-            </p>
+        <div class="sobre-container">
 
-            <p>
-                Minha atuação está concentrada em People Analytics,
-                Remuneração & Benefícios, estruturação de indicadores,
-                dashboards, automações e aplicação de inteligência artificial
-                aos processos de RH.
-            </p>
 
-            <p>
-                Gosto de transformar atividades complexas ou manuais em
-                soluções mais simples, organizadas e orientadas por dados.
-            </p>
+            <div class="sobre-titulo">
 
-            <div class="sobre-numeros">
-
-                <div class="numero">
-                    <strong>People</strong>
-                    <span>Analytics</span>
-                </div>
-
-                <div class="numero">
-                    <strong>R&B</strong>
-                    <span>Remuneração & Benefícios</span>
-                </div>
-
-                <div class="numero">
-                    <strong>Data</strong>
-                    <span>BI & Indicadores</span>
-                </div>
-
-                <div class="numero">
-                    <strong>Tech</strong>
-                    <span>IA & Automação</span>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-    <section id="projetos" class="projetos">
-
-    <div class="projetos-container">
-
-        <div class="projeto-cabecalho">
-
-            <p class="section-label">
-                PROJETO EM DESTAQUE
-            </p>
-
-            <h2>
-                Landing Page de
-                <span>Benefícios.</span>
-            </h2>
-
-            <p class="projeto-intro">
-                Uma solução digital desenvolvida para centralizar
-                informações sobre benefícios e tornar a experiência
-                dos colaboradores mais simples, acessível e intuitiva.
-            </p>
-
-        </div>
-
-
-        <div class="projeto-imagem">
-
-            <img
-                src="assets/landing-beneficios.png"
-                alt="Landing Page de Benefícios desenvolvida por Leonardo Roseno"
-            >
-
-        </div>
-
-
-        <div class="projeto-detalhes">
-
-    <div class="projeto-bloco">
-
-        <p class="projeto-label">
-            DESAFIO
-        </p>
-
-        <h3>
-            Informações descentralizadas
-        </h3>
-
-        <p>
-            O acesso às informações de benefícios dependia de
-            diferentes canais, comunicações e documentos,
-            dificultando a consulta rápida pelos colaboradores.
-        </p>
-
-    </div>
-
-
-    <div class="projeto-bloco">
-
-        <p class="projeto-label">
-            SOLUÇÃO
-        </p>
-
-        <h3>
-            Tudo em um só lugar
-        </h3>
-
-        <p>
-            Desenvolvi uma landing page para organizar benefícios,
-            orientações, acessos e informações relevantes em uma
-            experiência digital centralizada e de fácil utilização.
-        </p>
-
-    </div>
-
-</div>
-
-
-<div class="funcionalidades">
-
-    <p class="projeto-label">
-        PRINCIPAIS ENTREGAS
-    </p>
-
-    <h3 class="funcionalidades-titulo">
-        Mais do que uma página de benefícios.
-    </h3>
-
-    <p class="funcionalidades-intro">
-        A solução foi pensada para facilitar a jornada do colaborador,
-        reduzindo a necessidade de procurar informações em diferentes
-        documentos, mensagens e canais.
-    </p>
-
-    <div class="funcionalidades-grid">
-
-        <div class="funcionalidade-card">
-            <span class="funcionalidade-numero">01</span>
-            <h4>Busca inteligente</h4>
-            <p>
-                O colaborador pode pesquisar diretamente pelo
-                benefício ou necessidade que procura.
-            </p>
-        </div>
-
-        <div class="funcionalidade-card">
-            <span class="funcionalidade-numero">02</span>
-            <h4>Benefícios por pilares</h4>
-            <p>
-                Os benefícios foram organizados em categorias para
-                tornar a navegação mais simples e intuitiva.
-            </p>
-        </div>
-
-        <div class="funcionalidade-card">
-            <span class="funcionalidade-numero">03</span>
-            <h4>Jornada por necessidade</h4>
-            <p>
-                A pessoa pode partir de situações reais, como cuidar
-                da saúde, estudar ou entender seus benefícios.
-            </p>
-        </div>
-
-        <div class="funcionalidade-card">
-            <span class="funcionalidade-numero">04</span>
-            <h4>Acessibilidade</h4>
-            <p>
-                A solução inclui recursos que ampliam a facilidade
-                de acesso e compreensão das informações.
-            </p>
-        </div>
-
-        <div class="funcionalidade-card">
-            <span class="funcionalidade-numero">05</span>
-            <h4>Canal com o DP</h4>
-            <p>
-                Quando a informação disponível não é suficiente,
-                existe um direcionamento claro para atendimento.
-            </p>
-        </div>
-
-        <div class="funcionalidade-card">
-            <span class="funcionalidade-numero">06</span>
-            <h4>Centralização</h4>
-            <p>
-                Informações sobre diferentes benefícios passam a
-                estar disponíveis em uma única experiência digital.
-            </p>
-        </div>
-
-    </div>
-
-</div>
-
-<div class="processo">
-
-    <div class="processo-cabecalho">
-
-        <p class="projeto-label">
-            COMO DESENVOLVI A SOLUÇÃO
-        </p>
-
-        <h3>
-            Do problema de RH à
-            <span>experiência digital.</span>
-        </h3>
-
-        <p>
-            O desenvolvimento partiu de uma necessidade real:
-            facilitar o acesso dos colaboradores às informações
-            sobre benefícios. A partir disso, estruturei a solução
-            em etapas, combinando conhecimento de RH, experiência
-            do usuário e tecnologia.
-        </p>
-
-    </div>
-
-
-    <div class="processo-lista">
-
-        <div class="processo-item">
-
-            <div class="processo-numero">
-                01
-            </div>
-
-            <div class="processo-conteudo">
-
-                <span>ENTENDIMENTO DO PROBLEMA</span>
-
-                <h4>
-                    Identificação da necessidade
-                </h4>
-
-                <p>
-                    O primeiro passo foi entender as principais dificuldades
-                    enfrentadas pelos colaboradores para localizar informações
-                    sobre benefícios, regras, acessos e canais de atendimento.
+                <p class="section-label">
+                    SOBRE MIM
                 </p>
 
+
+                <h2>
+
+                    RH, dados e tecnologia
+
+                    <span>
+                        trabalhando juntos.
+                    </span>
+
+                </h2>
+
             </div>
 
-        </div>
 
 
-        <div class="processo-item">
+            <div class="sobre-conteudo">
 
-            <div class="processo-numero">
-                02
-            </div>
-
-            <div class="processo-conteudo">
-
-                <span>ORGANIZAÇÃO DA INFORMAÇÃO</span>
-
-                <h4>
-                    Estruturação dos benefícios
-                </h4>
 
                 <p>
-                    Organizei os conteúdos de forma mais simples,
-                    agrupando os benefícios por categorias e pensando
-                    em como as pessoas realmente procuram essas informações.
+
+                    Atuo na conexão entre Recursos Humanos, dados e tecnologia,
+                    transformando informações e processos em soluções que apoiam
+                    decisões mais estratégicas.
+
                 </p>
 
-            </div>
-
-        </div>
-
-
-        <div class="processo-item">
-
-            <div class="processo-numero">
-                03
-            </div>
-
-            <div class="processo-conteudo">
-
-                <span>EXPERIÊNCIA DO COLABORADOR</span>
-
-                <h4>
-                    Desenho da jornada
-                </h4>
 
                 <p>
-                    A navegação foi pensada para permitir tanto a busca
-                    direta por um benefício quanto a descoberta da solução
-                    a partir de uma necessidade real do colaborador.
+
+                    Minha atuação está concentrada em People Analytics,
+                    Remuneração & Benefícios, estruturação de indicadores,
+                    dashboards, automações e aplicação de inteligência artificial
+                    aos processos de RH.
+
                 </p>
 
-            </div>
-
-        </div>
-
-
-        <div class="processo-item">
-
-            <div class="processo-numero">
-                04
-            </div>
-
-            <div class="processo-conteudo">
-
-                <span>DESENVOLVIMENTO COM IA</span>
-
-                <h4>
-                    Construção no Lovable
-                </h4>
 
                 <p>
-                    Utilizei o Lovable e inteligência artificial como
-                    ferramentas de desenvolvimento, transformando a estrutura
-                    planejada em uma aplicação web funcional e responsiva.
+
+                    Gosto de transformar atividades complexas ou manuais em
+                    soluções mais simples, organizadas e orientadas por dados.
+
                 </p>
 
-            </div>
 
-        </div>
 
+                <div class="sobre-numeros">
 
-        <div class="processo-item">
 
-            <div class="processo-numero">
-                05
-            </div>
+                    <div class="numero">
 
-            <div class="processo-conteudo">
+                        <strong>
+                            People
+                        </strong>
 
-                <span>VALIDAÇÃO E MELHORIAS</span>
+                        <span>
+                            Analytics
+                        </span>
 
-                <h4>
-                    Evolução da experiência
-                </h4>
+                    </div>
 
-                <p>
-                    A solução foi sendo revisada e aprimorada a partir
-                    da navegação, organização visual, clareza das informações
-                    e facilidade de acesso aos principais recursos.
-                </p>
 
-            </div>
+                    <div class="numero">
 
-        </div>
+                        <strong>
+                            R&B
+                        </strong>
 
+                        <span>
+                            Remuneração & Benefícios
+                        </span>
 
-        <div class="processo-item">
+                    </div>
 
-            <div class="processo-numero">
-                06
-            </div>
 
-            <div class="processo-conteudo">
+                    <div class="numero">
 
-                <span>PUBLICAÇÃO</span>
+                        <strong>
+                            Data
+                        </strong>
 
-                <h4>
-                    Solução disponível online
-                </h4>
+                        <span>
+                            BI & Indicadores
+                        </span>
 
-                <p>
-                    Após a estruturação e validação, a solução foi publicada
-                    como uma central digital de benefícios, permitindo acesso
-                    às informações por meio de uma única experiência.
-                </p>
+                    </div>
 
-            </div>
 
-        </div>
+                    <div class="numero">
 
-    </div>
+                        <strong>
+                            Tech
+                        </strong>
 
-</div
-    <div class="impacto">
+                        <span>
+                            IA & Automação
+                        </span>
 
-    <div class="impacto-cabecalho">
+                    </div>
 
-        <p class="projeto-label">
-            IMPACTO DA SOLUÇÃO
-        </p>
 
-        <h3>
-            Tecnologia aplicada a uma
-            <span>necessidade real de RH.</span>
-        </h3>
-
-        <p>
-            A Central de Benefícios transforma informações que antes
-            estavam distribuídas em uma experiência única, acessível
-            e orientada às necessidades dos colaboradores.
-        </p>
-
-    </div>
-
-
-    <div class="impacto-grid">
-
-        <div class="impacto-card">
-
-            <span>01</span>
-
-            <h4>
-                Mais autonomia
-            </h4>
-
-            <p>
-                O colaborador consegue consultar informações sobre
-                seus benefícios sem depender exclusivamente de um
-                atendimento do RH ou DP.
-            </p>
-
-        </div>
-
-
-        <div class="impacto-card">
-
-            <span>02</span>
-
-            <h4>
-                Informação centralizada
-            </h4>
-
-            <p>
-                Regras, acessos, orientações e canais ficam reunidos
-                em uma única experiência digital.
-            </p>
-
-        </div>
-
-
-        <div class="impacto-card">
-
-            <span>03</span>
-
-            <h4>
-                Melhor experiência
-            </h4>
-
-            <p>
-                A organização das informações foi pensada a partir
-                da jornada e das necessidades de quem utiliza
-                os benefícios.
-            </p>
-
-        </div>
-
-
-        <div class="impacto-card">
-
-            <span>04</span>
-
-            <h4>
-                RH mais digital
-            </h4>
-
-            <p>
-                O projeto demonstra como IA e ferramentas de
-                desenvolvimento podem ser aplicadas para solucionar
-                desafios reais da área de Recursos Humanos.
-            </p>
-
-        </div>
-
-    </div>
-
-</div>
-        <div class="galeria-projeto">
-
-    <div class="galeria-cabecalho">
-
-        <p class="projeto-label">
-            A SOLUÇÃO NA PRÁTICA
-        </p>
-
-        <h3>
-            Uma experiência pensada para
-            <span>facilitar o acesso.</span>
-        </h3>
-
-        <p>
-            A interface foi estruturada para tornar as informações
-            mais fáceis de encontrar, compreender e acessar em
-            diferentes momentos da jornada do colaborador.
-        </p>
-
-    </div>
-
-
-    <div class="galeria-grid">
-
-        <div class="galeria-item galeria-grande">
-
-            <img
-                src="assets/beneficios-home.png"
-                alt="Tela inicial da Central de Benefícios"
-            >
-
-            <div class="galeria-legenda">
-                <span>01</span>
-
-                <div>
-                    <strong>Central de Benefícios</strong>
-                    <p>Visão inicial da experiência.</p>
                 </div>
+
+
             </div>
-<div class="mobile-showcase">
-
-    <div class="mobile-imagem">
-
-        <img
-            src="assets/beneficios-mobile.png"
-            alt="Central de Benefícios em dispositivo móvel"
-        >
-
-    </div>
-
-
-    <div class="mobile-conteudo">
-
-        <p class="projeto-label">
-            EXPERIÊNCIA MOBILE
-        </p>
-
-        <h3>
-            A informação também
-            <span>na palma da mão.</span>
-        </h3>
-
-        <p>
-            A Central de Benefícios foi estruturada para funcionar
-            também em dispositivos móveis, permitindo que o colaborador
-            consulte seus benefícios de forma simples em diferentes
-            momentos e contextos.
-        </p>
-
-        <div class="mobile-tags">
-
-            <span>Design Responsivo</span>
-            <span>Mobile First</span>
-            <span>Experiência do Colaborador</span>
 
         </div>
 
-    </div>
-
-</div>
-        </div>
+    </section>
 
 
-        <div class="galeria-item">
 
-            <img
-                src="assets/beneficios-categorias.png"
-                alt="Benefícios organizados por categorias"
-            >
+    <!-- ================================
+         PROJETO EM DESTAQUE
+    ================================= -->
 
-            <div class="galeria-legenda">
-                <span>02</span>
+    <section
+        id="projetos"
+        class="projetos"
+    >
 
-                <div>
-                    <strong>Organização</strong>
-                    <p>Benefícios estruturados por categorias.</p>
+        <div class="projetos-container">
+
+
+            <!-- CABEÇALHO -->
+
+            <div class="projeto-cabecalho">
+
+
+                <p class="section-label">
+                    PROJETO EM DESTAQUE
+                </p>
+
+
+                <h2>
+
+                    Landing Page de
+
+                    <span>
+                        Benefícios.
+                    </span>
+
+                </h2>
+
+
+                <p class="projeto-intro">
+
+                    Uma solução digital desenvolvida para centralizar
+                    informações sobre benefícios e tornar a experiência
+                    dos colaboradores mais simples, acessível e intuitiva.
+
+                </p>
+
+
+            </div>
+
+
+
+            <!-- IMAGEM PRINCIPAL -->
+
+            <div class="projeto-imagem">
+
+                <img
+                    src="assets/landing-beneficios.png"
+                    alt="Landing Page de Benefícios desenvolvida por Leonardo Roseno"
+                >
+
+            </div>
+
+
+
+            <!-- DESAFIO E SOLUÇÃO -->
+
+            <div class="projeto-detalhes">
+
+
+                <div class="projeto-bloco">
+
+                    <p class="projeto-label">
+                        DESAFIO
+                    </p>
+
+
+                    <h3>
+                        Informações descentralizadas
+                    </h3>
+
+
+                    <p>
+
+                        O acesso às informações de benefícios dependia de
+                        diferentes canais, comunicações e documentos,
+                        dificultando a consulta rápida pelos colaboradores.
+
+                    </p>
+
                 </div>
-            </div>
-
-        </div>
 
 
-        <div class="galeria-item">
 
-            <img
-                src="assets/beneficios-jornada.png"
-                alt="Jornada de benefícios"
-            >
+                <div class="projeto-bloco">
 
-            <div class="galeria-legenda">
-                <span>03</span>
+                    <p class="projeto-label">
+                        SOLUÇÃO
+                    </p>
 
-                <div>
-                    <strong>Jornada</strong>
-                    <p>Navegação orientada às necessidades.</p>
+
+                    <h3>
+                        Tudo em um só lugar
+                    </h3>
+
+
+                    <p>
+
+                        Desenvolvi uma landing page para organizar benefícios,
+                        orientações, acessos e informações relevantes em uma
+                        experiência digital centralizada e de fácil utilização.
+
+                    </p>
+
                 </div>
+
+
             </div>
 
-        </div>
 
-    </div>
 
-</div>
-        <div class="projeto-info">
+            <!-- PRINCIPAIS ENTREGAS -->
 
-            <div>
+            <div class="funcionalidades">
+
 
                 <p class="projeto-label">
-                    MINHA ATUAÇÃO
+                    PRINCIPAIS ENTREGAS
                 </p>
 
-                <div class="projeto-tags">
-    <span>Concepção</span>
-    <span>Estrutura da Informação</span>
-    <span>Experiência do Colaborador</span>
-    <span>UX</span>
-    <span>Desenvolvimento com IA</span>
-    <span>Conteúdo</span>
-</div>
+
+                <h3 class="funcionalidades-titulo">
+                    Mais do que uma página de benefícios.
+                </h3>
+
+
+                <p class="funcionalidades-intro">
+
+                    A solução foi pensada para facilitar a jornada do colaborador,
+                    reduzindo a necessidade de procurar informações em diferentes
+                    documentos, mensagens e canais.
+
+                </p>
+
+
+
+                <div class="funcionalidades-grid">
+
+
+                    <div class="funcionalidade-card">
+
+                        <span class="funcionalidade-numero">
+                            01
+                        </span>
+
+                        <h4>
+                            Busca inteligente
+                        </h4>
+
+                        <p>
+
+                            O colaborador pode pesquisar diretamente pelo
+                            benefício ou necessidade que procura.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="funcionalidade-card">
+
+                        <span class="funcionalidade-numero">
+                            02
+                        </span>
+
+                        <h4>
+                            Benefícios por pilares
+                        </h4>
+
+                        <p>
+
+                            Os benefícios foram organizados em categorias para
+                            tornar a navegação mais simples e intuitiva.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="funcionalidade-card">
+
+                        <span class="funcionalidade-numero">
+                            03
+                        </span>
+
+                        <h4>
+                            Jornada por necessidade
+                        </h4>
+
+                        <p>
+
+                            A pessoa pode partir de situações reais, como cuidar
+                            da saúde, estudar ou entender seus benefícios.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="funcionalidade-card">
+
+                        <span class="funcionalidade-numero">
+                            04
+                        </span>
+
+                        <h4>
+                            Acessibilidade
+                        </h4>
+
+                        <p>
+
+                            A solução inclui recursos que ampliam a facilidade
+                            de acesso e compreensão das informações.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="funcionalidade-card">
+
+                        <span class="funcionalidade-numero">
+                            05
+                        </span>
+
+                        <h4>
+                            Canal com o DP
+                        </h4>
+
+                        <p>
+
+                            Quando a informação disponível não é suficiente,
+                            existe um direcionamento claro para atendimento.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="funcionalidade-card">
+
+                        <span class="funcionalidade-numero">
+                            06
+                        </span>
+
+                        <h4>
+                            Centralização
+                        </h4>
+
+                        <p>
+
+                            Informações sobre diferentes benefícios passam a
+                            estar disponíveis em uma única experiência digital.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
 
             </div>
 
 
-            <div>
 
-                <p class="projeto-label">
-                    TECNOLOGIAS
-                </p>
+            <!-- COMO DESENVOLVI -->
 
-               <div class="projeto-tags">
-    <span>Lovable</span>
-    <span>UX/UI</span>
-    <span>Landing Page</span>
-    <span>RH Tech</span>
-    <span>Benefícios</span>
-</div>
+            <div class="processo">
+
+
+                <div class="processo-cabecalho">
+
+
+                    <p class="projeto-label">
+                        COMO DESENVOLVI A SOLUÇÃO
+                    </p>
+
+
+                    <h3>
+
+                        Do problema de RH à
+
+                        <span>
+                            experiência digital.
+                        </span>
+
+                    </h3>
+
+
+                    <p>
+
+                        O desenvolvimento partiu de uma necessidade real:
+                        facilitar o acesso dos colaboradores às informações
+                        sobre benefícios. A partir disso, estruturei a solução
+                        em etapas, combinando conhecimento de RH, experiência
+                        do usuário e tecnologia.
+
+                    </p>
+
+
+                </div>
+
+
+
+                <div class="processo-lista">
+
+
+                    <div class="processo-item">
+
+                        <div class="processo-numero">
+                            01
+                        </div>
+
+                        <div class="processo-conteudo">
+
+                            <span>
+                                ENTENDIMENTO DO PROBLEMA
+                            </span>
+
+                            <h4>
+                                Identificação da necessidade
+                            </h4>
+
+                            <p>
+
+                                O primeiro passo foi entender as principais dificuldades
+                                enfrentadas pelos colaboradores para localizar informações
+                                sobre benefícios, regras, acessos e canais de atendimento.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="processo-item">
+
+                        <div class="processo-numero">
+                            02
+                        </div>
+
+                        <div class="processo-conteudo">
+
+                            <span>
+                                ORGANIZAÇÃO DA INFORMAÇÃO
+                            </span>
+
+                            <h4>
+                                Estruturação dos benefícios
+                            </h4>
+
+                            <p>
+
+                                Organizei os conteúdos de forma mais simples,
+                                agrupando os benefícios por categorias e pensando
+                                em como as pessoas realmente procuram essas informações.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="processo-item">
+
+                        <div class="processo-numero">
+                            03
+                        </div>
+
+                        <div class="processo-conteudo">
+
+                            <span>
+                                EXPERIÊNCIA DO COLABORADOR
+                            </span>
+
+                            <h4>
+                                Desenho da jornada
+                            </h4>
+
+                            <p>
+
+                                A navegação foi pensada para permitir tanto a busca
+                                direta por um benefício quanto a descoberta da solução
+                                a partir de uma necessidade real do colaborador.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="processo-item">
+
+                        <div class="processo-numero">
+                            04
+                        </div>
+
+                        <div class="processo-conteudo">
+
+                            <span>
+                                DESENVOLVIMENTO COM IA
+                            </span>
+
+                            <h4>
+                                Construção no Lovable
+                            </h4>
+
+                            <p>
+
+                                Utilizei o Lovable e inteligência artificial como
+                                ferramentas de desenvolvimento, transformando a estrutura
+                                planejada em uma aplicação web funcional e responsiva.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="processo-item">
+
+                        <div class="processo-numero">
+                            05
+                        </div>
+
+                        <div class="processo-conteudo">
+
+                            <span>
+                                VALIDAÇÃO E MELHORIAS
+                            </span>
+
+                            <h4>
+                                Evolução da experiência
+                            </h4>
+
+                            <p>
+
+                                A solução foi sendo revisada e aprimorada a partir
+                                da navegação, organização visual, clareza das informações
+                                e facilidade de acesso aos principais recursos.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="processo-item">
+
+                        <div class="processo-numero">
+                            06
+                        </div>
+
+                        <div class="processo-conteudo">
+
+                            <span>
+                                PUBLICAÇÃO
+                            </span>
+
+                            <h4>
+                                Solução disponível online
+                            </h4>
+
+                            <p>
+
+                                Após a estruturação e validação, a solução foi publicada
+                                como uma central digital de benefícios, permitindo acesso
+                                às informações por meio de uma única experiência.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
 
             </div>
 
+
+
+            <!-- IMPACTO -->
+
+            <div class="impacto">
+
+
+                <div class="impacto-cabecalho">
+
+
+                    <p class="projeto-label">
+                        IMPACTO DA SOLUÇÃO
+                    </p>
+
+
+                    <h3>
+
+                        Tecnologia aplicada a uma
+
+                        <span>
+                            necessidade real de RH.
+                        </span>
+
+                    </h3>
+
+
+                    <p>
+
+                        A Central de Benefícios transforma informações que antes
+                        estavam distribuídas em uma experiência única, acessível
+                        e orientada às necessidades dos colaboradores.
+
+                    </p>
+
+
+                </div>
+
+
+
+                <div class="impacto-grid">
+
+
+                    <div class="impacto-card">
+
+                        <span>
+                            01
+                        </span>
+
+                        <h4>
+                            Mais autonomia
+                        </h4>
+
+                        <p>
+
+                            O colaborador consegue consultar informações sobre
+                            seus benefícios sem depender exclusivamente de um
+                            atendimento do RH ou DP.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="impacto-card">
+
+                        <span>
+                            02
+                        </span>
+
+                        <h4>
+                            Informação centralizada
+                        </h4>
+
+                        <p>
+
+                            Regras, acessos, orientações e canais ficam reunidos
+                            em uma única experiência digital.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="impacto-card">
+
+                        <span>
+                            03
+                        </span>
+
+                        <h4>
+                            Melhor experiência
+                        </h4>
+
+                        <p>
+
+                            A organização das informações foi pensada a partir
+                            da jornada e das necessidades de quem utiliza
+                            os benefícios.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <div class="impacto-card">
+
+                        <span>
+                            04
+                        </span>
+
+                        <h4>
+                            RH mais digital
+                        </h4>
+
+                        <p>
+
+                            O projeto demonstra como IA e ferramentas de
+                            desenvolvimento podem ser aplicadas para solucionar
+                            desafios reais da área de Recursos Humanos.
+
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- GALERIA -->
+
+            <div class="galeria-projeto">
+
+
+                <div class="galeria-cabecalho">
+
+
+                    <p class="projeto-label">
+                        A SOLUÇÃO NA PRÁTICA
+                    </p>
+
+
+                    <h3>
+
+                        Uma experiência pensada para
+
+                        <span>
+                            facilitar o acesso.
+                        </span>
+
+                    </h3>
+
+
+                    <p>
+
+                        A interface foi estruturada para tornar as informações
+                        mais fáceis de encontrar, compreender e acessar em
+                        diferentes momentos da jornada do colaborador.
+
+                    </p>
+
+
+                </div>
+
+
+
+                <div class="galeria-grid">
+
+
+                    <!-- TELA PRINCIPAL -->
+
+                    <div class="galeria-item galeria-grande">
+
+
+                        <img
+                            src="assets/beneficios-home.png"
+                            alt="Tela inicial da Central de Benefícios"
+                        >
+
+
+                        <div class="galeria-legenda">
+
+                            <span>
+                                01
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Central de Benefícios
+                                </strong>
+
+                                <p>
+                                    Visão inicial da experiência.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- CATEGORIAS -->
+
+                    <div class="galeria-item">
+
+
+                        <img
+                            src="assets/beneficios-categorias.png"
+                            alt="Benefícios organizados por categorias"
+                        >
+
+
+                        <div class="galeria-legenda">
+
+                            <span>
+                                02
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Organização
+                                </strong>
+
+                                <p>
+                                    Benefícios estruturados por categorias.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- JORNADA -->
+
+                    <div class="galeria-item">
+
+
+                        <img
+                            src="assets/beneficios-jornada.png"
+                            alt="Jornada de benefícios"
+                        >
+
+
+                        <div class="galeria-legenda">
+
+                            <span>
+                                03
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Jornada
+                                </strong>
+
+                                <p>
+                                    Navegação orientada às necessidades.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- EXPERIÊNCIA MOBILE -->
+
+                <div class="mobile-showcase">
+
+
+                    <div class="mobile-imagem">
+
+
+                        <img
+                            src="assets/beneficios-mobile.png"
+                            alt="Central de Benefícios em dispositivo móvel"
+                        >
+
+
+                    </div>
+
+
+
+                    <div class="mobile-conteudo">
+
+
+                        <p class="projeto-label">
+                            EXPERIÊNCIA MOBILE
+                        </p>
+
+
+                        <h3>
+
+                            A informação também
+
+                            <span>
+                                na palma da mão.
+                            </span>
+
+                        </h3>
+
+
+                        <p>
+
+                            A Central de Benefícios foi estruturada para funcionar
+                            também em dispositivos móveis, permitindo que o colaborador
+                            consulte seus benefícios de forma simples em diferentes
+                            momentos e contextos.
+
+                        </p>
+
+
+
+                        <div class="mobile-tags">
+
+                            <span>
+                                Design Responsivo
+                            </span>
+
+                            <span>
+                                Experiência Mobile
+                            </span>
+
+                            <span>
+                                Experiência do Colaborador
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- MINHA ATUAÇÃO E TECNOLOGIAS -->
+
+            <div class="projeto-info">
+
+
+                <div>
+
+
+                    <p class="projeto-label">
+                        MINHA ATUAÇÃO
+                    </p>
+
+
+                    <div class="projeto-tags">
+
+                        <span>
+                            Concepção
+                        </span>
+
+                        <span>
+                            Estrutura da Informação
+                        </span>
+
+                        <span>
+                            Experiência do Colaborador
+                        </span>
+
+                        <span>
+                            UX
+                        </span>
+
+                        <span>
+                            Desenvolvimento com IA
+                        </span>
+
+                        <span>
+                            Conteúdo
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div>
+
+
+                    <p class="projeto-label">
+                        TECNOLOGIAS
+                    </p>
+
+
+                    <div class="projeto-tags">
+
+                        <span>
+                            Lovable
+                        </span>
+
+                        <span>
+                            UX/UI
+                        </span>
+
+                        <span>
+                            Landing Page
+                        </span>
+
+                        <span>
+                            RH Tech
+                        </span>
+
+                        <span>
+                            Benefícios
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- BOTÃO -->
+
+            <div class="projeto-acao">
+
+
+                <a
+                    href="https://beneficioscordeiro.lovable.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="botao principal"
+                >
+                    Acessar projeto ↗
+                </a>
+
+
+            </div>
+
+
         </div>
 
+    </section>
 
-        <div class="projeto-acao">
 
-            <<a
-    href="https://beneficioscordeiro.lovable.app"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="botao principal"
->
-    Acessar projeto ↗
-</a>
-
-        </div>
-
-    </div>
-
-</section>
 </body>
 
 </html>
