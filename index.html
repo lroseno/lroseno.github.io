@@ -398,6 +398,83 @@
     }
 
 }
+        /* FUNCIONALIDADES DO PROJETO */
+
+.funcionalidades {
+    margin: 80px 0;
+    padding: 70px 0;
+    border-top: 1px solid #20364d;
+    border-bottom: 1px solid #20364d;
+}
+
+.funcionalidades-titulo {
+    color: white;
+    font-size: clamp(32px, 4vw, 48px);
+    margin-bottom: 18px;
+}
+
+.funcionalidades-intro {
+    max-width: 720px;
+    color: #aebed0;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 45px;
+}
+
+.funcionalidades-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.funcionalidade-card {
+    background: #0b1726;
+    border: 1px solid #27435f;
+    border-radius: 14px;
+    padding: 28px;
+    transition: 0.3s;
+}
+
+.funcionalidade-card:hover {
+    transform: translateY(-5px);
+    border-color: #4da3ff;
+}
+
+.funcionalidade-numero {
+    display: block;
+    color: #4da3ff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.funcionalidade-card h4 {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.funcionalidade-card p {
+    color: #aebed0;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+
+    .funcionalidades-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .funcionalidades-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
     </style>
 
 </head>
@@ -579,7 +656,81 @@
                 </p>
 
             </div>
+<div class="funcionalidades">
 
+    <p class="projeto-label">
+        PRINCIPAIS ENTREGAS
+    </p>
+
+    <h3 class="funcionalidades-titulo">
+        Mais do que uma página de benefícios.
+    </h3>
+
+    <p class="funcionalidades-intro">
+        A solução foi pensada para facilitar a jornada do colaborador,
+        reduzindo a necessidade de procurar informações em diferentes
+        documentos, mensagens e canais.
+    </p>
+
+    <div class="funcionalidades-grid">
+
+        <div class="funcionalidade-card">
+            <span class="funcionalidade-numero">01</span>
+            <h4>Busca inteligente</h4>
+            <p>
+                O colaborador pode pesquisar diretamente pelo benefício
+                ou necessidade que procura.
+            </p>
+        </div>
+
+        <div class="funcionalidade-card">
+            <span class="funcionalidade-numero">02</span>
+            <h4>Benefícios por pilares</h4>
+            <p>
+                Os benefícios foram organizados em categorias para tornar
+                a navegação mais simples e intuitiva.
+            </p>
+        </div>
+
+        <div class="funcionalidade-card">
+            <span class="funcionalidade-numero">03</span>
+            <h4>Jornada por necessidade</h4>
+            <p>
+                A pessoa pode partir de situações reais, como cuidar da
+                saúde, estudar ou entender seus benefícios.
+            </p>
+        </div>
+
+        <div class="funcionalidade-card">
+            <span class="funcionalidade-numero">04</span>
+            <h4>Acessibilidade</h4>
+            <p>
+                A solução inclui recursos que ampliam a facilidade de
+                acesso e compreensão das informações.
+            </p>
+        </div>
+
+        <div class="funcionalidade-card">
+            <span class="funcionalidade-numero">05</span>
+            <h4>Canal com o DP</h4>
+            <p>
+                Quando a informação disponível não é suficiente, o
+                colaborador encontra um direcionamento claro para atendimento.
+            </p>
+        </div>
+
+        <div class="funcionalidade-card">
+            <span class="funcionalidade-numero">06</span>
+            <h4>Centralização</h4>
+            <p>
+                Informações de diferentes benefícios passam a estar
+                disponíveis em uma única experiência digital.
+            </p>
+        </div>
+
+    </div>
+
+</div>
 
             <div class="projeto-bloco">
 
