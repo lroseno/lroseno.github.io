@@ -429,6 +429,155 @@
     .automation-small{display:grid;gap:14px}
     .proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}
 
+
+
+    /* PREMIUM MOTION + DATA TICKER */
+    .scroll-progress{
+      position:fixed;top:0;left:0;right:0;height:3px;z-index:300;
+      background:transparent;pointer-events:none
+    }
+    .scroll-progress span{
+      display:block;height:100%;width:0;background:linear-gradient(90deg,var(--blue),var(--cyan));
+      box-shadow:0 0 18px rgba(23,105,255,.35)
+    }
+    .hero::before{
+      content:"";position:absolute;width:440px;height:440px;border-radius:50%;
+      left:-210px;bottom:-150px;
+      background:radial-gradient(circle,rgba(137,216,255,.22),rgba(137,216,255,0) 68%);
+      pointer-events:none;animation:orbDrift 10s ease-in-out infinite alternate
+    }
+    .portrait-card{animation:portraitFloat 7s ease-in-out infinite}
+    .data-card{animation:dataPulse 5s ease-in-out infinite}
+    @keyframes portraitFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    @keyframes dataPulse{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
+    @keyframes orbDrift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(70px,-40px,0) scale(1.12)}}
+
+    .data-ticker{
+      overflow:hidden;background:var(--ink);color:white;border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark)
+    }
+    .ticker-track{
+      display:flex;gap:42px;width:max-content;padding:15px 0;
+      animation:tickerMove 34s linear infinite
+    }
+    .ticker-track span{
+      display:flex;align-items:center;gap:42px;
+      font-family:"IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.14em;font-size:.68rem;color:#bed0df
+    }
+    .ticker-track span::after{content:"•";color:var(--blue-2)}
+    @keyframes tickerMove{to{transform:translateX(-50%)}}
+
+    /* PROJECT SLIDERS */
+    .project-slider{margin-top:38px;position:relative}
+    .slider-shell{
+      position:relative;border:1px solid var(--line);border-radius:24px;overflow:hidden;
+      background:#e9edf2;box-shadow:0 30px 85px rgba(9,21,34,.12)
+    }
+    .project-slider.dark .slider-shell{background:var(--ink);border-color:var(--line-dark);box-shadow:0 30px 85px rgba(9,21,34,.20)}
+    .slider-topbar{
+      display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;
+      min-height:52px;padding:0 18px;background:rgba(255,255,255,.76);border-bottom:1px solid var(--line)
+    }
+    .project-slider.dark .slider-topbar{background:#0f2031;border-color:var(--line-dark);color:white}
+    .window-dots{display:flex;gap:6px}
+    .window-dots i{width:8px;height:8px;border-radius:50%;background:#c4ccd4}
+    .window-dots i:nth-child(1){background:#ff7a72}.window-dots i:nth-child(2){background:#ffc764}.window-dots i:nth-child(3){background:#61c982}
+    .slider-label{text-align:center;color:#607080;font-size:.61rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .project-slider.dark .slider-label{color:#9fb3c6}
+    .slider-count{font-family:"IBM Plex Mono",monospace;font-size:.66rem;color:var(--blue);font-weight:600}
+    .slider-viewport{position:relative;overflow:hidden}
+    .slider-track{display:flex;transition:transform .72s cubic-bezier(.22,.8,.22,1);will-change:transform}
+    .project-slide{min-width:100%;margin:0;background:#eef1f4}
+    .project-slider.dark .project-slide{background:#0b1826}
+    .slide-media{
+      position:relative;height:clamp(380px,55vw,670px);display:grid;place-items:center;padding:34px;overflow:hidden;
+      background:
+        linear-gradient(rgba(9,21,34,.035) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(9,21,34,.035) 1px,transparent 1px),
+        linear-gradient(135deg,#f4f5f5,#e7ebef);
+      background-size:28px 28px,28px 28px,auto
+    }
+    .project-slider.dark .slide-media{
+      background:
+        linear-gradient(rgba(137,216,255,.045) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(137,216,255,.045) 1px,transparent 1px),
+        radial-gradient(circle at 80% 20%,rgba(23,105,255,.16),transparent 34%),
+        #091522;
+      background-size:28px 28px,28px 28px,auto,auto
+    }
+    .slide-media img{
+      width:100%;height:100%;object-fit:contain;border-radius:14px;
+      filter:drop-shadow(0 20px 32px rgba(9,21,34,.13));transition:transform .55s ease
+    }
+    .project-slider.dark .slide-media img{filter:drop-shadow(0 20px 38px rgba(0,0,0,.24))}
+    .project-slide.is-mobile .slide-media img{width:auto;max-width:390px}
+    .project-slide:hover .slide-media img{transform:scale(1.012)}
+    .zoom-btn{
+      position:absolute;right:18px;bottom:18px;border:1px solid rgba(9,21,34,.16);background:rgba(255,255,255,.9);
+      color:var(--ink);backdrop-filter:blur(10px);border-radius:999px;padding:9px 12px;font-weight:800;font-size:.72rem;cursor:pointer
+    }
+    .project-slider.dark .zoom-btn{background:rgba(9,21,34,.82);color:white;border-color:rgba(255,255,255,.18)}
+    .slide-caption{
+      display:flex;justify-content:space-between;gap:34px;align-items:flex-start;padding:20px 24px;background:white;border-top:1px solid var(--line)
+    }
+    .project-slider.dark .slide-caption{background:#0f2031;border-color:var(--line-dark)}
+    .slide-caption strong{display:block;font-size:.95rem;letter-spacing:-.02em}
+    .slide-caption p{max-width:720px;color:var(--muted);font-size:.82rem}
+    .project-slider.dark .slide-caption strong{color:white}.project-slider.dark .slide-caption p{color:#9fb3c6}
+    .slide-index{font-family:"IBM Plex Mono",monospace;color:var(--blue);font-size:.68rem;white-space:nowrap}
+    .slider-arrow{
+      position:absolute;top:50%;transform:translateY(-50%);z-index:4;width:46px;height:46px;border-radius:50%;
+      border:1px solid rgba(9,21,34,.13);background:rgba(255,255,255,.9);color:var(--ink);font-size:1.25rem;cursor:pointer;
+      display:grid;place-items:center;backdrop-filter:blur(12px);box-shadow:0 12px 28px rgba(9,21,34,.10);transition:.25s ease
+    }
+    .slider-arrow:hover{background:var(--blue);border-color:var(--blue);color:white;transform:translateY(-50%) scale(1.06)}
+    .project-slider.dark .slider-arrow{background:rgba(9,21,34,.84);color:white;border-color:rgba(255,255,255,.14)}
+    .slider-prev{left:16px}.slider-next{right:16px}
+    .slider-thumbs{
+      display:grid;grid-template-columns:repeat(var(--slides),minmax(0,1fr));gap:8px;margin-top:12px
+    }
+    .slider-thumb{
+      appearance:none;border:1px solid var(--line);background:rgba(255,255,255,.55);border-radius:12px;padding:8px;text-align:left;cursor:pointer;
+      transition:.25s ease;min-width:0
+    }
+    .slider-thumb:hover{transform:translateY(-2px);border-color:#a8bdd1}
+    .slider-thumb.active{border-color:var(--blue);box-shadow:0 0 0 2px rgba(23,105,255,.12);background:white}
+    .slider-thumb img{width:100%;height:62px;object-fit:cover;border-radius:7px;background:#eef1f4;margin-bottom:7px}
+    .slider-thumb span{display:block;font-family:"IBM Plex Mono",monospace;font-size:.56rem;color:#607080;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .slider-progress{height:3px;background:#dce3e9;overflow:hidden;margin-top:12px;border-radius:99px}
+    .slider-progress span{display:block;height:100%;width:0;background:var(--blue)}
+    .project-slider.is-playing .slider-progress span{animation:sliderProgress var(--delay,6s) linear forwards}
+    @keyframes sliderProgress{from{width:0}to{width:100%}}
+
+    /* LIGHTBOX */
+    .lightbox{
+      position:fixed;inset:0;z-index:500;background:rgba(3,9,15,.93);display:none;place-items:center;padding:32px;backdrop-filter:blur(14px)
+    }
+    .lightbox.open{display:grid;animation:lightboxIn .25s ease}
+    .lightbox img{max-width:min(1500px,95vw);max-height:88vh;object-fit:contain;border-radius:14px;box-shadow:0 35px 100px rgba(0,0,0,.45)}
+    .lightbox-close{
+      position:absolute;top:20px;right:22px;width:44px;height:44px;border-radius:50%;border:1px solid rgba(255,255,255,.2);
+      color:white;background:rgba(255,255,255,.08);font-size:1.25rem;cursor:pointer
+    }
+    .lightbox-caption{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);color:#c7d4df;font-size:.78rem;text-align:center;max-width:80vw}
+    @keyframes lightboxIn{from{opacity:0}to{opacity:1}}
+
+    @media(max-width:900px){
+      .slider-thumbs{grid-template-columns:repeat(4,minmax(110px,1fr));overflow-x:auto;padding-bottom:4px}
+      .slider-thumb{min-width:120px}
+    }
+    @media(max-width:760px){
+      .slide-media{height:clamp(310px,72vw,500px);padding:18px}
+      .project-slide.is-mobile .slide-media img{max-width:290px}
+      .slide-caption{display:block;padding:16px 18px}.slide-caption p{margin-top:7px}
+      .slider-arrow{width:40px;height:40px}.slider-prev{left:9px}.slider-next{right:9px}
+      .slider-topbar{grid-template-columns:auto 1fr auto;padding:0 12px;gap:10px}
+      .slider-thumbs{grid-template-columns:repeat(4,112px)}
+      .data-ticker{margin-top:-1px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+    }
+
     /* STACK */
     .stack{background:var(--paper)}
     .stack-grid{
@@ -528,6 +677,7 @@
 </head>
 
 <body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
 
   <header class="site-nav">
     <div class="nav-inner">
@@ -599,6 +749,13 @@
         </div>
       </div>
     </section>
+
+    <div class="data-ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>People Analytics</span><span>Remuneração & Benefícios</span><span>Power BI</span><span>Data Analytics</span><span>Automação</span><span>Inteligência Artificial</span><span>PostgreSQL</span><span>RH Tech</span>
+        <span>People Analytics</span><span>Remuneração & Benefícios</span><span>Power BI</span><span>Data Analytics</span><span>Automação</span><span>Inteligência Artificial</span><span>PostgreSQL</span><span>RH Tech</span>
+      </div>
+    </div>
 
     <!-- SOBRE -->
     <section id="sobre" class="section profile">
@@ -829,25 +986,61 @@
             </div>
           </div>
 
-          <div class="media-frame reveal">
-            <img src="assets/landing-beneficios.png" alt="Visão geral da Central de Benefícios">
-          </div>
+          <div class="project-slider reveal" data-slider data-autoplay="6200" style="--slides:4">
+            <div class="slider-shell">
+              <div class="slider-topbar">
+                <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <div class="slider-label mono">Central de Benefícios · produto digital</div>
+                <div class="slider-count">01 / 04</div>
+              </div>
 
-          <div class="project-gallery reveal">
-            <div class="media-frame">
-              <img src="assets/beneficios-home.png" alt="Tela inicial da Central de Benefícios">
-              <div class="caption">01 / VISÃO INICIAL</div>
-            </div>
-            <div class="gallery-stack">
-              <div class="media-frame">
-                <img src="assets/beneficios-categorias.png" alt="Benefícios organizados por categorias">
-                <div class="caption">02 / ORGANIZAÇÃO</div>
+              <div class="slider-viewport">
+                <div class="slider-track">
+                  <figure class="project-slide">
+                    <div class="slide-media">
+                      <img src="assets/landing-beneficios.png" alt="Visão geral da Central de Benefícios">
+                      <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
+                    </div>
+                    <figcaption class="slide-caption"><div><strong>Visão geral da solução</strong><p>Centralização dos benefícios em uma experiência única e organizada.</p></div><span class="slide-index">01 / 04</span></figcaption>
+                  </figure>
+
+                  <figure class="project-slide">
+                    <div class="slide-media">
+                      <img src="assets/beneficios-home.png" alt="Tela inicial da Central de Benefícios">
+                      <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
+                    </div>
+                    <figcaption class="slide-caption"><div><strong>Entrada simples e orientada</strong><p>Busca, pilares e caminhos de navegação pensados pela necessidade do colaborador.</p></div><span class="slide-index">02 / 04</span></figcaption>
+                  </figure>
+
+                  <figure class="project-slide">
+                    <div class="slide-media">
+                      <img src="assets/beneficios-categorias.png" alt="Benefícios organizados por categorias">
+                      <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
+                    </div>
+                    <figcaption class="slide-caption"><div><strong>Arquitetura da informação</strong><p>Benefícios organizados em categorias para reduzir esforço de busca e dúvidas recorrentes.</p></div><span class="slide-index">03 / 04</span></figcaption>
+                  </figure>
+
+                  <figure class="project-slide is-mobile">
+                    <div class="slide-media">
+                      <img src="assets/beneficios-mobile.png" alt="Central de Benefícios em dispositivo móvel">
+                      <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
+                    </div>
+                    <figcaption class="slide-caption"><div><strong>Experiência mobile</strong><p>Acesso responsivo para consulta rápida no celular, em diferentes contextos da jornada.</p></div><span class="slide-index">04 / 04</span></figcaption>
+                  </figure>
+                </div>
+
+                <button class="slider-arrow slider-prev" type="button" aria-label="Imagem anterior">←</button>
+                <button class="slider-arrow slider-next" type="button" aria-label="Próxima imagem">→</button>
               </div>
-              <div class="media-frame">
-                <img src="assets/beneficios-mobile.png" alt="Central de Benefícios em dispositivo móvel">
-                <div class="caption">03 / EXPERIÊNCIA MOBILE</div>
-              </div>
             </div>
+
+            <div class="slider-thumbs" aria-label="Navegação das imagens">
+              <button class="slider-thumb active" type="button" data-slide-to="0"><img src="assets/landing-beneficios.png" alt=""><span>01 · visão geral</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="1"><img src="assets/beneficios-home.png" alt=""><span>02 · início</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="2"><img src="assets/beneficios-categorias.png" alt=""><span>03 · categorias</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="3"><img src="assets/beneficios-mobile.png" alt=""><span>04 · mobile</span></button>
+            </div>
+            <div class="slider-progress" aria-hidden="true"><span></span></div>
           </div>
         </article>
 
@@ -918,37 +1111,67 @@
             </div>
           </div>
 
-          <div class="automation-grid reveal">
-            <div class="media-frame">
-              <img src="assets/automacao-fluxo.png" alt="Fluxo completo no Power Automate">
-              <div class="caption">01 / ARQUITETURA DO FLUXO</div>
-            </div>
-            <div class="automation-small">
-              <div class="media-frame">
-                <img src="assets/automacao-base-excel.png" alt="Leitura da base Excel no Power Automate">
-                <div class="caption">02 / FONTE DE DADOS</div>
+          <div class="project-slider dark reveal" data-slider data-autoplay="6800" style="--slides:7">
+            <div class="slider-shell">
+              <div class="slider-topbar">
+                <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+                <div class="slider-label mono">Power Automate · automação em produção</div>
+                <div class="slider-count">01 / 07</div>
               </div>
-              <div class="media-frame">
-                <img src="assets/automacao-email.png" alt="Configuração do e-mail dinâmico no Power Automate">
-                <div class="caption">03 / COMUNICAÇÃO DINÂMICA</div>
+
+              <div class="slider-viewport">
+                <div class="slider-track">
+                  <figure class="project-slide">
+                    <div class="slide-media"><img src="assets/automacao-fluxo.png" alt="Fluxo completo no Power Automate"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
+                    <figcaption class="slide-caption"><div><strong>Arquitetura do fluxo</strong><p>Recorrência, leitura da base, condição de negócio, envio do e-mail e atualização do registro.</p></div><span class="slide-index">01 / 07</span></figcaption>
+                  </figure>
+
+                  <figure class="project-slide">
+                    <div class="slide-media"><img src="assets/automacao-recorrencia.png" alt="Configuração da recorrência diária no Power Automate"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
+                    <figcaption class="slide-caption"><div><strong>Execução diária programada</strong><p>O fluxo roda todos os dias para verificar quais registros precisam de comunicação.</p></div><span class="slide-index">02 / 07</span></figcaption>
+                  </figure>
+
+                  <figure class="project-slide">
+                    <div class="slide-media"><img src="assets/automacao-base-excel.png" alt="Leitura da base Excel no Power Automate"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
+                    <figcaption class="slide-caption"><div><strong>Fonte de dados estruturada</strong><p>A automação consulta uma tabela Excel hospedada no ecossistema Microsoft 365.</p></div><span class="slide-index">03 / 07</span></figcaption>
+                  </figure>
+
+                  <figure class="project-slide">
+                    <div class="slide-media"><img src="assets/automacao-email.png" alt="Configuração do e-mail dinâmico no Power Automate"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
+                    <figcaption class="slide-caption"><div><strong>Comunicação dinâmica</strong><p>Destinatário, assunto, competência, premiação, área e prazo são alimentados pela base.</p></div><span class="slide-index">04 / 07</span></figcaption>
+                  </figure>
+
+                  <figure class="project-slide">
+                    <div class="slide-media"><img src="assets/automacao-execucao.png" alt="Execução bem-sucedida da automação"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
+                    <figcaption class="slide-caption"><div><strong>Execução real</strong><p>Detalhamento de uma execução concluída, com as etapas processadas pelo fluxo.</p></div><span class="slide-index">05 / 07</span></figcaption>
+                  </figure>
+
+                  <figure class="project-slide">
+                    <div class="slide-media"><img src="assets/automacao-historico.png" alt="Histórico de execuções bem-sucedidas"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
+                    <figcaption class="slide-caption"><div><strong>Histórico de produção</strong><p>Execuções recorrentes bem-sucedidas evidenciam que a automação faz parte da rotina real.</p></div><span class="slide-index">06 / 07</span></figcaption>
+                  </figure>
+
+                  <figure class="project-slide">
+                    <div class="slide-media"><img src="assets/automacao-resultado.png" alt="E-mails enviados automaticamente pelo fluxo"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
+                    <figcaption class="slide-caption"><div><strong>Resultado final</strong><p>Comunicações entregues aos responsáveis sem preparação manual a cada ciclo.</p></div><span class="slide-index">07 / 07</span></figcaption>
+                  </figure>
+                </div>
+
+                <button class="slider-arrow slider-prev" type="button" aria-label="Imagem anterior">←</button>
+                <button class="slider-arrow slider-next" type="button" aria-label="Próxima imagem">→</button>
               </div>
             </div>
-          </div>
 
-          <div class="proof-grid reveal">
-            <div class="media-frame">
-              <img src="assets/automacao-execucao.png" alt="Execução bem-sucedida da automação">
-              <div class="caption">04 / EXECUÇÃO REAL</div>
+            <div class="slider-thumbs" aria-label="Navegação das imagens">
+              <button class="slider-thumb active" type="button" data-slide-to="0"><img src="assets/automacao-fluxo.png" alt=""><span>01 · fluxo</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="1"><img src="assets/automacao-recorrencia.png" alt=""><span>02 · recorrência</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="2"><img src="assets/automacao-base-excel.png" alt=""><span>03 · base</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="3"><img src="assets/automacao-email.png" alt=""><span>04 · e-mail</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="4"><img src="assets/automacao-execucao.png" alt=""><span>05 · execução</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="5"><img src="assets/automacao-historico.png" alt=""><span>06 · histórico</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="6"><img src="assets/automacao-resultado.png" alt=""><span>07 · resultado</span></button>
             </div>
-            <div class="media-frame">
-              <img src="assets/automacao-historico.png" alt="Histórico de execuções bem-sucedidas">
-              <div class="caption">05 / HISTÓRICO DE PRODUÇÃO</div>
-            </div>
-          </div>
-
-          <div class="media-frame reveal" style="margin-top:14px">
-            <img src="assets/automacao-resultado.png" alt="E-mails enviados automaticamente pelo fluxo">
-            <div class="caption">06 / RESULTADO FINAL · COMUNICAÇÕES ENVIADAS</div>
+            <div class="slider-progress" aria-hidden="true"><span></span></div>
           </div>
         </article>
       </div>
@@ -1017,6 +1240,12 @@
     </div>
   </footer>
 
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Visualização ampliada">
+    <button class="lightbox-close" type="button" aria-label="Fechar">×</button>
+    <img src="" alt="">
+    <div class="lightbox-caption"></div>
+  </div>
+
   <script>
     const menuBtn = document.querySelector('.menu-btn');
     const navLinks = document.querySelector('.nav-links');
@@ -1029,6 +1258,17 @@
       link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
 
+    // Scroll progress
+    const progressBar = document.querySelector('.scroll-progress span');
+    const updateScrollProgress = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = max > 0 ? (window.scrollY / max) * 100 : 0;
+      if (progressBar) progressBar.style.width = `${progress}%`;
+    };
+    window.addEventListener('scroll', updateScrollProgress, { passive: true });
+    updateScrollProgress();
+
+    // Reveal on scroll
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -1037,8 +1277,107 @@
         }
       });
     }, { threshold: 0.08 });
-
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Project sliders
+    document.querySelectorAll('[data-slider]').forEach(slider => {
+      const track = slider.querySelector('.slider-track');
+      const slides = [...slider.querySelectorAll('.project-slide')];
+      const thumbs = [...slider.querySelectorAll('.slider-thumb')];
+      const prev = slider.querySelector('.slider-prev');
+      const next = slider.querySelector('.slider-next');
+      const count = slider.querySelector('.slider-count');
+      const progress = slider.querySelector('.slider-progress span');
+      const delay = Number(slider.dataset.autoplay || 6500);
+      let index = 0;
+      let timer = null;
+      let touchStart = 0;
+
+      slider.style.setProperty('--delay', `${delay}ms`);
+
+      const restartProgress = () => {
+        slider.classList.remove('is-playing');
+        if (progress) {
+          progress.style.animation = 'none';
+          void progress.offsetWidth;
+          progress.style.animation = '';
+        }
+        requestAnimationFrame(() => slider.classList.add('is-playing'));
+      };
+
+      const goTo = (newIndex, restart = true) => {
+        index = (newIndex + slides.length) % slides.length;
+        track.style.transform = `translateX(-${index * 100}%)`;
+        slides.forEach((slide, i) => slide.setAttribute('aria-hidden', i === index ? 'false' : 'true'));
+        thumbs.forEach((thumb, i) => thumb.classList.toggle('active', i === index));
+        if (count) count.textContent = `${String(index + 1).padStart(2,'0')} / ${String(slides.length).padStart(2,'0')}`;
+        if (restart) restartAutoplay();
+      };
+
+      const startAutoplay = () => {
+        clearInterval(timer);
+        restartProgress();
+        timer = setInterval(() => { goTo(index + 1, false); restartProgress(); }, delay);
+      };
+
+      const restartAutoplay = () => startAutoplay();
+      const stopAutoplay = () => {
+        clearInterval(timer);
+        slider.classList.remove('is-playing');
+      };
+
+      prev?.addEventListener('click', () => goTo(index - 1));
+      next?.addEventListener('click', () => goTo(index + 1));
+      thumbs.forEach((thumb, i) => thumb.addEventListener('click', () => goTo(i)));
+
+      slider.addEventListener('mouseenter', stopAutoplay);
+      slider.addEventListener('mouseleave', startAutoplay);
+      slider.addEventListener('focusin', stopAutoplay);
+      slider.addEventListener('focusout', startAutoplay);
+
+      slider.addEventListener('keydown', e => {
+        if (e.key === 'ArrowLeft') goTo(index - 1);
+        if (e.key === 'ArrowRight') goTo(index + 1);
+      });
+
+      slider.addEventListener('touchstart', e => { touchStart = e.changedTouches[0].clientX; }, { passive: true });
+      slider.addEventListener('touchend', e => {
+        const delta = e.changedTouches[0].clientX - touchStart;
+        if (Math.abs(delta) > 45) goTo(index + (delta < 0 ? 1 : -1));
+      }, { passive: true });
+
+      goTo(0, false);
+      startAutoplay();
+    });
+
+    // Lightbox for project images
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = lightbox?.querySelector('img');
+    const lightboxCaption = lightbox?.querySelector('.lightbox-caption');
+    const closeLightbox = () => {
+      lightbox?.classList.remove('open');
+      lightbox?.setAttribute('aria-hidden','true');
+      document.body.style.overflow = '';
+    };
+
+    document.querySelectorAll('[data-zoom]').forEach(button => {
+      button.addEventListener('click', () => {
+        const slide = button.closest('.project-slide');
+        const image = slide?.querySelector('img');
+        const title = slide?.querySelector('.slide-caption strong')?.textContent || '';
+        if (!image || !lightbox || !lightboxImage) return;
+        lightboxImage.src = image.src;
+        lightboxImage.alt = image.alt;
+        if (lightboxCaption) lightboxCaption.textContent = title;
+        lightbox.classList.add('open');
+        lightbox.setAttribute('aria-hidden','false');
+        document.body.style.overflow = 'hidden';
+      });
+    });
+
+    lightbox?.querySelector('.lightbox-close')?.addEventListener('click', closeLightbox);
+    lightbox?.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
   </script>
 
 </body>
