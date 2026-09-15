@@ -260,6 +260,144 @@
     }
 
 }
+        /* PROJETOS */
+
+.projetos {
+    background: #07111f;
+    padding: 120px 8%;
+    border-top: 1px solid #162b42;
+}
+
+.projetos-container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.projeto-cabecalho {
+    max-width: 850px;
+    margin-bottom: 60px;
+}
+
+.projeto-cabecalho h2 {
+    font-size: clamp(42px, 6vw, 75px);
+    line-height: 1.05;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.projeto-cabecalho h2 span {
+    color: #4da3ff;
+}
+
+.projeto-intro {
+    color: #aebed0;
+    font-size: 20px;
+    line-height: 1.7;
+    max-width: 750px;
+}
+
+
+/* IMAGEM DO PROJETO */
+
+.projeto-imagem {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid #27435f;
+    margin-bottom: 70px;
+    background: #0b1726;
+}
+
+.projeto-imagem img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* DESAFIO E SOLUÇÃO */
+
+.projeto-detalhes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    margin-bottom: 70px;
+}
+
+.projeto-label {
+    color: #4da3ff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.projeto-bloco h3 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.projeto-bloco p {
+    color: #aebed0;
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+
+/* INFORMAÇÕES */
+
+.projeto-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    padding-top: 45px;
+    border-top: 1px solid #20364d;
+}
+
+.projeto-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.projeto-tags span {
+    border: 1px solid #27435f;
+    padding: 9px 14px;
+    border-radius: 50px;
+    font-size: 13px;
+    color: #b9cbe0;
+    background: rgba(255,255,255,0.03);
+}
+
+.projeto-acao {
+    margin-top: 50px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+    .projetos {
+        padding: 80px 6%;
+    }
+
+    .projeto-detalhes {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .projeto-info {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .projeto-intro {
+        font-size: 17px;
+    }
+
+}
     </style>
 
 </head>
@@ -382,6 +520,133 @@
                 </div>
 
             </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <section id="projetos" class="projetos">
+
+    <div class="projetos-container">
+
+        <div class="projeto-cabecalho">
+
+            <p class="section-label">
+                PROJETO EM DESTAQUE
+            </p>
+
+            <h2>
+                Landing Page de
+                <span>Benefícios.</span>
+            </h2>
+
+            <p class="projeto-intro">
+                Uma solução digital desenvolvida para centralizar
+                informações sobre benefícios e tornar a experiência
+                dos colaboradores mais simples, acessível e intuitiva.
+            </p>
+
+        </div>
+
+
+        <div class="projeto-imagem">
+
+            <img
+                src="assets/landing-beneficios.png"
+                alt="Landing Page de Benefícios desenvolvida por Leonardo Roseno"
+            >
+
+        </div>
+
+
+        <div class="projeto-detalhes">
+
+            <div class="projeto-bloco">
+
+                <p class="projeto-label">
+                    DESAFIO
+                </p>
+
+                <h3>
+                    Informações descentralizadas
+                </h3>
+
+                <p>
+                    O acesso às informações de benefícios dependia de
+                    diferentes canais, comunicações e documentos,
+                    dificultando a consulta rápida pelos colaboradores.
+                </p>
+
+            </div>
+
+
+            <div class="projeto-bloco">
+
+                <p class="projeto-label">
+                    SOLUÇÃO
+                </p>
+
+                <h3>
+                    Tudo em um só lugar
+                </h3>
+
+                <p>
+                    Desenvolvi uma landing page para organizar benefícios,
+                    orientações, acessos e informações relevantes em uma
+                    experiência digital centralizada e de fácil utilização.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="projeto-info">
+
+            <div>
+
+                <p class="projeto-label">
+                    MINHA ATUAÇÃO
+                </p>
+
+                <div class="projeto-tags">
+                    <span>Concepção</span>
+                    <span>Estrutura da Informação</span>
+                    <span>UX</span>
+                    <span>Desenvolvimento</span>
+                    <span>Conteúdo</span>
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <p class="projeto-label">
+                    TECNOLOGIAS
+                </p>
+
+                <div class="projeto-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="projeto-acao">
+
+            <a
+                href="#"
+                target="_blank"
+                class="botao principal"
+            >
+                Acessar projeto ↗
+            </a>
 
         </div>
 
