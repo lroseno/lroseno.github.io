@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Leonardo Roseno | People Analytics & RH Tech</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #07111f;
+            color: white;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 28px 8%;
+            position: absolute;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #4da3ff;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #dbe7f5;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #4da3ff;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 8% 60px;
+            background:
+                radial-gradient(circle at 80% 30%, #143a66 0%, transparent 35%),
+                #07111f;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .tagline {
+            color: #4da3ff;
+            font-size: 14px;
+            letter-spacing: 3px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: clamp(50px, 8vw, 100px);
+            line-height: 0.95;
+            margin-bottom: 28px;
+        }
+
+        h1 span {
+            color: #4da3ff;
+        }
+
+        .descricao {
+            max-width: 700px;
+            font-size: 20px;
+            line-height: 1.7;
+            color: #aebed0;
+            margin-bottom: 35px;
+        }
+
+        .botoes {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-bottom: 45px;
+        }
+
+        .botao {
+            display: inline-block;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .principal {
+            background: #4da3ff;
+            color: #07111f;
+        }
+
+        .principal:hover {
+            transform: translateY(-3px);
+        }
+
+        .secundario {
+            border: 1px solid #3d5874;
+            color: white;
+        }
+
+        .secundario:hover {
+            border-color: #4da3ff;
+            color: #4da3ff;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills span {
+            border: 1px solid #27435f;
+            padding: 9px 14px;
+            border-radius: 50px;
+            font-size: 13px;
+            color: #b9cbe0;
+            background: rgba(255,255,255,0.03);
+        }
+
+        @media (max-width: 700px) {
+
+            nav ul {
+                display: none;
+            }
+
+            .hero {
+                padding-left: 6%;
+                padding-right: 6%;
+            }
+
+            h1 {
+                font-size: 52px;
+            }
+
+            .descricao {
+                font-size: 17px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            LR<span>.</span>
+        </div>
+
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+
+    </nav>
+
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="tagline">
+                PEOPLE ANALYTICS • R&B • RH TECH • DADOS
+            </p>
+
+            <h1>
+                Leonardo<br>
+                <span>Roseno.</span>
+            </h1>
+
+            <p class="descricao">
+                Transformo dados, processos e tecnologia em soluções para
+                tornar o RH mais estratégico, eficiente e orientado à tomada
+                de decisão.
+            </p>
+
+            <div class="botoes">
+
+                <a href="#projetos" class="botao principal">
+                    Conheça meus projetos
+                </a>
+
+                <a href="#" class="botao secundario">
+                    LinkedIn
+                </a>
+
+            </div>
+
+            <div class="skills">
+
+                <span>People Analytics</span>
+                <span>Power BI</span>
+                <span>Remuneração</span>
+                <span>Benefícios</span>
+                <span>Automação</span>
+                <span>Inteligência Artificial</span>
+                <span>RH Tech</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
