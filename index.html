@@ -1276,6 +1276,168 @@
 
         }
 
+        /* ================================
+   MEU PAPEL NO PROJETO
+================================= */
+
+.papel-projeto {
+    margin: 110px 0 70px;
+    padding-top: 80px;
+    border-top: 1px solid #20364d;
+}
+
+
+.papel-cabecalho {
+    max-width: 820px;
+    margin-bottom: 55px;
+}
+
+
+.papel-cabecalho h3 {
+    color: white;
+
+    font-size: clamp(36px, 5vw, 58px);
+
+    line-height: 1.1;
+
+    margin-bottom: 22px;
+}
+
+
+.papel-cabecalho h3 span {
+    color: #4da3ff;
+}
+
+
+.papel-cabecalho > p:last-child {
+    color: #aebed0;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+.papel-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+
+.papel-card {
+    background: #0b1726;
+
+    border: 1px solid #27435f;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    min-height: 290px;
+
+    transition: 0.3s;
+}
+
+
+.papel-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #4da3ff;
+}
+
+
+.papel-numero {
+    display: block;
+
+    color: #4da3ff;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+
+.papel-etapa {
+    color: #4da3ff !important;
+
+    font-size: 10px !important;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.papel-card h4 {
+    color: white;
+
+    font-size: 21px;
+
+    margin-bottom: 14px;
+}
+
+
+.papel-card > p:last-child {
+    color: #aebed0;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+.stack-projeto {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    margin-top: 55px;
+
+    padding-top: 45px;
+
+    border-top: 1px solid #20364d;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+
+    .papel-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .papel-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .stack-projeto {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .papel-card {
+        min-height: auto;
+    }
+
+}
 
     </style>
 
@@ -2396,87 +2558,202 @@
 
             <!-- MINHA ATUAÇÃO E TECNOLOGIAS -->
 
-            <div class="projeto-info">
+            <!-- MEU PAPEL NO PROJETO -->
+
+<div class="papel-projeto">
+
+    <div class="papel-cabecalho">
+
+        <p class="projeto-label">
+            MEU PAPEL NO PROJETO
+        </p>
+
+        <h3>
+            Transformando uma necessidade de RH em
+            <span>produto digital.</span>
+        </h3>
+
+        <p>
+            Fui responsável pela concepção e estruturação da solução,
+            conectando conhecimento de benefícios, experiência do colaborador
+            e inteligência artificial para transformar uma necessidade
+            interna em uma experiência digital funcional.
+        </p>
+
+    </div>
 
 
-                <div>
+    <div class="papel-grid">
+
+        <div class="papel-card">
+
+            <span class="papel-numero">01</span>
+
+            <p class="papel-etapa">
+                DESCOBERTA
+            </p>
+
+            <h4>
+                Identificação do problema
+            </h4>
+
+            <p>
+                Identifiquei a necessidade de facilitar o acesso dos
+                colaboradores às informações sobre benefícios, reduzindo
+                a dependência de diferentes documentos e canais.
+            </p>
+
+        </div>
 
 
-                    <p class="projeto-label">
-                        MINHA ATUAÇÃO
-                    </p>
+        <div class="papel-card">
+
+            <span class="papel-numero">02</span>
+
+            <p class="papel-etapa">
+                ESTRATÉGIA
+            </p>
+
+            <h4>
+                Arquitetura da informação
+            </h4>
+
+            <p>
+                Estruturei categorias, conteúdos, jornadas e formas de
+                acesso para que as informações fossem encontradas de
+                maneira mais simples e intuitiva.
+            </p>
+
+        </div>
 
 
-                    <div class="projeto-tags">
+        <div class="papel-card">
 
-                        <span>
-                            Concepção
-                        </span>
+            <span class="papel-numero">03</span>
 
-                        <span>
-                            Estrutura da Informação
-                        </span>
+            <p class="papel-etapa">
+                EXPERIÊNCIA
+            </p>
 
-                        <span>
-                            Experiência do Colaborador
-                        </span>
+            <h4>
+                Jornada do colaborador
+            </h4>
 
-                        <span>
-                            UX
-                        </span>
+            <p>
+                Pensei a navegação a partir das necessidades reais das
+                pessoas, priorizando linguagem simples, autonomia e
+                facilidade de consulta.
+            </p>
 
-                        <span>
-                            Desenvolvimento com IA
-                        </span>
-
-                        <span>
-                            Conteúdo
-                        </span>
-
-                    </div>
+        </div>
 
 
-                </div>
+        <div class="papel-card">
+
+            <span class="papel-numero">04</span>
+
+            <p class="papel-etapa">
+                CONSTRUÇÃO
+            </p>
+
+            <h4>
+                Desenvolvimento com IA
+            </h4>
+
+            <p>
+                Utilizei inteligência artificial e Lovable para transformar
+                a estrutura planejada em uma aplicação web funcional,
+                responsiva e preparada para evoluir.
+            </p>
+
+        </div>
 
 
+        <div class="papel-card">
 
-                <div>
+            <span class="papel-numero">05</span>
 
+            <p class="papel-etapa">
+                VALIDAÇÃO
+            </p>
 
-                    <p class="projeto-label">
-                        TECNOLOGIAS
-                    </p>
+            <h4>
+                Testes e refinamentos
+            </h4>
 
+            <p>
+                Revisei navegação, conteúdo, organização visual e
+                responsividade, realizando ajustes para melhorar a
+                experiência de utilização.
+            </p>
 
-                    <div class="projeto-tags">
-
-                        <span>
-                            Lovable
-                        </span>
-
-                        <span>
-                            UX/UI
-                        </span>
-
-                        <span>
-                            Landing Page
-                        </span>
-
-                        <span>
-                            RH Tech
-                        </span>
-
-                        <span>
-                            Benefícios
-                        </span>
-
-                    </div>
+        </div>
 
 
-                </div>
+        <div class="papel-card">
 
+            <span class="papel-numero">06</span>
+
+            <p class="papel-etapa">
+                ENTREGA
+            </p>
+
+            <h4>
+                Publicação da solução
+            </h4>
+
+            <p>
+                Estruturei a versão final e disponibilizei a Central de
+                Benefícios online, criando uma solução que pode receber
+                novos conteúdos e funcionalidades.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="stack-projeto">
+
+        <div>
+
+            <p class="projeto-label">
+                FERRAMENTAS
+            </p>
+
+            <div class="projeto-tags">
+
+                <span>Lovable</span>
+                <span>Inteligência Artificial</span>
+                <span>Desenvolvimento Web</span>
+                <span>Design Responsivo</span>
 
             </div>
+
+        </div>
+
+
+        <div>
+
+            <p class="projeto-label">
+                CONCEITOS APLICADOS
+            </p>
+
+            <div class="projeto-tags">
+
+                <span>UX</span>
+                <span>UI</span>
+                <span>Arquitetura da Informação</span>
+                <span>Experiência do Colaborador</span>
+                <span>RH Tech</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 
 
