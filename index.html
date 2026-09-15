@@ -169,7 +169,97 @@
                 font-size: 17px;
             }
         }
+/* SOBRE MIM */
 
+.sobre {
+    background: #0b1726;
+    padding: 120px 8%;
+    border-top: 1px solid #162b42;
+}
+
+.sobre-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+.section-label {
+    color: #4da3ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.sobre h2 {
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.05;
+    color: white;
+}
+
+.sobre h2 span {
+    color: #4da3ff;
+}
+
+.sobre-conteudo p {
+    color: #aebed0;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.sobre-numeros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 45px;
+}
+
+.numero {
+    border: 1px solid #27435f;
+    background: rgba(255,255,255,0.02);
+    padding: 22px;
+    border-radius: 12px;
+}
+
+.numero strong {
+    display: block;
+    color: #4da3ff;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.numero span {
+    color: #aebed0;
+    font-size: 13px;
+}
+
+@media (max-width: 800px) {
+
+    .sobre {
+        padding: 80px 6%;
+    }
+
+    .sobre-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .sobre-numeros {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .sobre-numeros {
+        grid-template-columns: 1fr;
+    }
+
+}
     </style>
 
 </head>
@@ -238,7 +328,68 @@
         </div>
 
     </section>
+<section id="sobre" class="sobre">
 
+    <div class="sobre-container">
+
+        <div class="sobre-titulo">
+            <p class="section-label">SOBRE MIM</p>
+
+            <h2>
+                RH, dados e tecnologia
+                <span>trabalhando juntos.</span>
+            </h2>
+        </div>
+
+        <div class="sobre-conteudo">
+
+            <p>
+                Atuo na conexão entre Recursos Humanos, dados e tecnologia,
+                transformando informações e processos em soluções que apoiam
+                decisões mais estratégicas.
+            </p>
+
+            <p>
+                Minha atuação está concentrada em People Analytics,
+                Remuneração & Benefícios, estruturação de indicadores,
+                dashboards, automações e aplicação de inteligência artificial
+                aos processos de RH.
+            </p>
+
+            <p>
+                Gosto de transformar atividades complexas ou manuais em
+                soluções mais simples, organizadas e orientadas por dados.
+            </p>
+
+            <div class="sobre-numeros">
+
+                <div class="numero">
+                    <strong>People</strong>
+                    <span>Analytics</span>
+                </div>
+
+                <div class="numero">
+                    <strong>R&B</strong>
+                    <span>Remuneração & Benefícios</span>
+                </div>
+
+                <div class="numero">
+                    <strong>Data</strong>
+                    <span>BI & Indicadores</span>
+                </div>
+
+                <div class="numero">
+                    <strong>Tech</strong>
+                    <span>IA & Automação</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 </body>
 
 </html>
