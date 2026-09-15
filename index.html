@@ -671,6 +671,218 @@
     }
 
 }
+        /* GALERIA DO PROJETO */
+
+.galeria-projeto {
+    margin: 110px 0;
+    padding-top: 80px;
+    border-top: 1px solid #20364d;
+}
+
+.galeria-cabecalho {
+    max-width: 800px;
+    margin-bottom: 50px;
+}
+
+.galeria-cabecalho h3 {
+    color: white;
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.1;
+    margin-bottom: 22px;
+}
+
+.galeria-cabecalho h3 span {
+    color: #4da3ff;
+}
+
+.galeria-cabecalho > p:last-child {
+    color: #aebed0;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* GRID */
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 20px;
+}
+
+.galeria-grande {
+    grid-row: span 2;
+}
+
+.galeria-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid #27435f;
+    background: #0b1726;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    min-height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: 0.4s;
+}
+
+.galeria-grande img {
+    min-height: 580px;
+}
+
+.galeria-item:hover img {
+    transform: scale(1.02);
+}
+
+
+/* LEGENDA */
+
+.galeria-legenda {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+
+    padding: 25px;
+
+    background: linear-gradient(
+        transparent,
+        rgba(7, 17, 31, 0.95)
+    );
+}
+
+.galeria-legenda > span {
+    color: #4da3ff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.galeria-legenda strong {
+    display: block;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+.galeria-legenda p {
+    color: #aebed0;
+    font-size: 13px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 850px) {
+
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria-grande {
+        grid-row: auto;
+    }
+
+    .galeria-grande img,
+    .galeria-item img {
+        min-height: auto;
+        height: auto;
+    }
+
+}
+        /* EXPERIÊNCIA MOBILE */
+
+.mobile-showcase {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    align-items: center;
+    gap: 70px;
+
+    background: #0b1726;
+    border: 1px solid #27435f;
+    border-radius: 18px;
+
+    padding: 60px;
+    overflow: hidden;
+}
+
+.mobile-imagem {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile-imagem img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.35);
+}
+
+.mobile-conteudo h3 {
+    color: white;
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.mobile-conteudo h3 span {
+    color: #4da3ff;
+}
+
+.mobile-conteudo > p {
+    color: #aebed0;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+.mobile-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.mobile-tags span {
+    border: 1px solid #27435f;
+    padding: 9px 14px;
+    border-radius: 50px;
+
+    color: #b9cbe0;
+    font-size: 13px;
+
+    background: rgba(255,255,255,0.03);
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+    .mobile-showcase {
+        grid-template-columns: 1fr;
+        padding: 35px;
+        gap: 40px;
+    }
+
+    .mobile-imagem img {
+        max-width: 260px;
+    }
+
+}
     </style>
 
 </head>
@@ -1216,6 +1428,129 @@
                 desenvolvimento podem ser aplicadas para solucionar
                 desafios reais da área de Recursos Humanos.
             </p>
+
+        </div>
+
+    </div>
+
+</div>
+        <div class="galeria-projeto">
+
+    <div class="galeria-cabecalho">
+
+        <p class="projeto-label">
+            A SOLUÇÃO NA PRÁTICA
+        </p>
+
+        <h3>
+            Uma experiência pensada para
+            <span>facilitar o acesso.</span>
+        </h3>
+
+        <p>
+            A interface foi estruturada para tornar as informações
+            mais fáceis de encontrar, compreender e acessar em
+            diferentes momentos da jornada do colaborador.
+        </p>
+
+    </div>
+
+
+    <div class="galeria-grid">
+
+        <div class="galeria-item galeria-grande">
+
+            <img
+                src="assets/beneficios-home.png"
+                alt="Tela inicial da Central de Benefícios"
+            >
+
+            <div class="galeria-legenda">
+                <span>01</span>
+
+                <div>
+                    <strong>Central de Benefícios</strong>
+                    <p>Visão inicial da experiência.</p>
+                </div>
+            </div>
+<div class="mobile-showcase">
+
+    <div class="mobile-imagem">
+
+        <img
+            src="assets/beneficios-mobile.png"
+            alt="Central de Benefícios em dispositivo móvel"
+        >
+
+    </div>
+
+
+    <div class="mobile-conteudo">
+
+        <p class="projeto-label">
+            EXPERIÊNCIA MOBILE
+        </p>
+
+        <h3>
+            A informação também
+            <span>na palma da mão.</span>
+        </h3>
+
+        <p>
+            A Central de Benefícios foi estruturada para funcionar
+            também em dispositivos móveis, permitindo que o colaborador
+            consulte seus benefícios de forma simples em diferentes
+            momentos e contextos.
+        </p>
+
+        <div class="mobile-tags">
+
+            <span>Design Responsivo</span>
+            <span>Mobile First</span>
+            <span>Experiência do Colaborador</span>
+
+        </div>
+
+    </div>
+
+</div>
+        </div>
+
+
+        <div class="galeria-item">
+
+            <img
+                src="assets/beneficios-categorias.png"
+                alt="Benefícios organizados por categorias"
+            >
+
+            <div class="galeria-legenda">
+                <span>02</span>
+
+                <div>
+                    <strong>Organização</strong>
+                    <p>Benefícios estruturados por categorias.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="galeria-item">
+
+            <img
+                src="assets/beneficios-jornada.png"
+                alt="Jornada de benefícios"
+            >
+
+            <div class="galeria-legenda">
+                <span>03</span>
+
+                <div>
+                    <strong>Jornada</strong>
+                    <p>Navegação orientada às necessidades.</p>
+                </div>
+            </div>
 
         </div>
 
