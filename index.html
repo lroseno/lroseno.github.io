@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Leonardo Roseno: Remuneração & Benefícios, People Analytics, Dados, Automação e IA aplicada ao negócio.">
-  <title>Leonardo Roseno | RH, Dados & Automação</title>
+  <meta name="description" content="Portfólio de Leonardo Roseno: RH, Direito, Remuneração & Benefícios, People Analytics, Dados, Automação e Transformação Digital.">
+  <title>Leonardo Roseno | RH, Direito, Dados & Tecnologia</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -248,6 +248,55 @@
     .metric{background:white;padding:26px}
     .metric strong{display:block;font-size:2rem;letter-spacing:-.05em}
     .metric span{display:block;color:var(--muted);font-size:.82rem;margin-top:5px}
+
+
+    /* EDUCATION / FORMAÇÃO */
+    .education{
+      background:
+        radial-gradient(circle at 82% 18%,rgba(23,105,255,.10),transparent 28%),
+        var(--paper);
+      border-bottom:1px solid var(--line);
+    }
+    .education-intro{
+      display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:end;
+    }
+    .education-intro .section-copy{margin:0}
+    .education-manifesto{
+      margin-top:54px;display:grid;grid-template-columns:repeat(4,1fr);
+      border:1px solid var(--line);border-radius:20px;overflow:hidden;background:white;box-shadow:var(--shadow);
+    }
+    .edu-pillar{padding:28px;min-height:190px;border-right:1px solid var(--line);position:relative;overflow:hidden}
+    .edu-pillar:last-child{border-right:0}
+    .edu-pillar::after{content:"";position:absolute;width:100px;height:100px;border-radius:50%;right:-46px;bottom:-52px;background:rgba(23,105,255,.07)}
+    .edu-pillar .mono{color:var(--blue);font-size:.6rem}
+    .edu-pillar strong{display:block;margin-top:14px;font-size:1.2rem;letter-spacing:-.03em}
+    .edu-pillar p{margin-top:9px;color:var(--muted);font-size:.83rem}
+    .education-timeline{margin-top:68px;position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .education-timeline::before{content:"";position:absolute;top:19px;left:8%;right:8%;height:1px;background:linear-gradient(90deg,var(--blue),#92b8ff,var(--blue));opacity:.55}
+    .education-item{position:relative;padding-top:50px}
+    .education-dot{position:absolute;top:12px;left:22px;width:14px;height:14px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 7px rgba(23,105,255,.10);z-index:2}
+    .education-card{height:100%;background:rgba(255,255,255,.72);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:18px;padding:24px;transition:.3s ease}
+    .education-card:hover{transform:translateY(-6px);border-color:#a9c3f4;box-shadow:0 20px 55px rgba(9,21,34,.08)}
+    .education-year{color:var(--blue);margin-bottom:12px;display:block}
+    .education-card h3{font-size:1.18rem;line-height:1.25;letter-spacing:-.03em;margin-bottom:9px}
+    .education-card .edu-type{color:#3c5266;font-weight:700;font-size:.82rem;margin-bottom:12px}
+    .education-card p{color:var(--muted);font-size:.82rem}
+    .education-card.current{background:var(--ink);color:white;border-color:var(--line-dark)}
+    .education-card.current h3{color:white}.education-card.current .edu-type{color:var(--cyan)}.education-card.current p{color:#9fb2c4}.education-card.current .education-year{color:var(--cyan)}
+    .education-quote{margin-top:32px;background:var(--blue);color:white;border-radius:18px;padding:30px 34px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center}
+    .education-quote .quote-mark{font-family:"IBM Plex Mono",monospace;font-size:3rem;line-height:1;color:#bfe7ff}
+    .education-quote p{font-size:clamp(1.05rem,1.7vw,1.35rem);font-weight:700;line-height:1.5}
+    .digital-dna{margin-top:56px;border-top:1px solid var(--line);padding-top:50px}
+    .digital-dna-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start;margin-bottom:28px}
+    .digital-dna-head h3{font-size:clamp(1.9rem,3.2vw,3.2rem);line-height:1.05;letter-spacing:-.05em}
+    .digital-dna-head h3 span{color:var(--blue)}
+    .digital-dna-head p{color:var(--muted);font-size:1rem}
+    .digital-dna-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .digital-card{border:1px solid var(--line);background:rgba(255,255,255,.55);border-radius:16px;padding:22px;min-height:190px;transition:.3s ease}
+    .digital-card:hover{transform:translateY(-5px);border-color:#a9c3f4;background:white}
+    .digital-card .mono{color:var(--blue);font-size:.58rem}
+    .digital-card h4{margin:14px 0 8px;font-size:1.02rem}
+    .digital-card p{color:var(--muted);font-size:.8rem}
 
     /* EXPERIENCE */
     .experience{background:var(--ink);color:white}
@@ -581,7 +630,7 @@
     /* STACK */
     .stack{background:var(--paper)}
     .stack-grid{
-      display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:56px
+      display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:56px
     }
     .stack-card{
       border:1px solid var(--line);border-radius:18px;padding:28px;background:rgba(255,255,255,.45)
@@ -620,7 +669,7 @@
 
     /* responsive */
     @media(max-width:1000px){
-      .hero-grid,.profile-grid,.projects-intro,.project-head,.contact-grid{grid-template-columns:1fr}
+      .hero-grid,.profile-grid,.projects-intro,.project-head,.contact-grid,.education-intro{grid-template-columns:1fr}
       .hero-grid{gap:55px}
       .portrait-wrap{max-width:560px}
       .profile-index{position:static}
@@ -632,6 +681,13 @@
       .timeline::before{left:126px}
       .timeline-item{grid-template-columns:105px 34px 1fr}
       .journey-note{grid-template-columns:1fr}
+      .education-manifesto{grid-template-columns:1fr 1fr}
+      .education-timeline{grid-template-columns:1fr 1fr}
+      .education-timeline::before{display:none}
+      .education-item{padding-top:24px}
+      .education-dot{top:0}
+      .digital-dna-head{grid-template-columns:1fr}
+      .digital-dna-grid{grid-template-columns:1fr 1fr}
     }
     @media(max-width:760px){
       .container{width:min(var(--max),calc(100% - 30px))}
@@ -663,6 +719,11 @@
       .architecture{grid-template-columns:1fr}
       .contact-grid{gap:45px}
       .footer-inner{flex-direction:column}
+      .education-manifesto,.education-timeline,.digital-dna-grid{grid-template-columns:1fr}
+      .edu-pillar{border-right:0;border-bottom:1px solid var(--line)}
+      .edu-pillar:last-child{border-bottom:0}
+      .education-quote{grid-template-columns:1fr}
+      .digital-dna-head{gap:18px}
     }
     @media(max-width:480px){
       .hero-actions{display:grid}
@@ -690,6 +751,7 @@
 
       <nav class="nav-links" aria-label="Navegação principal">
         <a href="#sobre">Sobre</a>
+        <a href="#formacao">Formação</a>
         <a href="#trajetoria">Trajetória</a>
         <a href="#projetos">Projetos</a>
         <a href="#stack">Stack</a>
@@ -705,15 +767,14 @@
         <div class="reveal">
           <div class="hero-eyebrow mono">
             <span class="live-dot"></span>
-            RH + Dados + Tecnologia
+            RH + Direito + Dados + Tecnologia
           </div>
 
           <h1>Leonardo <span>Roseno.</span></h1>
 
           <p class="hero-lead">
-            Conecto <strong>Remuneração & Benefícios, People Analytics e tecnologia</strong>
-            para transformar processos de RH em análises, automações e soluções digitais
-            que melhoram decisões e a experiência das pessoas.
+            Conecto <strong>Remuneração & Benefícios, People Analytics, visão jurídica e tecnologia</strong>
+            para transformar desafios de pessoas em decisões mais estruturadas, seguras e orientadas por dados.
           </p>
 
           <div class="hero-actions">
@@ -724,8 +785,10 @@
           <div class="hero-tags" aria-label="Áreas de atuação">
             <span class="tag">Remuneração & Benefícios</span>
             <span class="tag">People Analytics</span>
+            <span class="tag">Direito Trabalhista</span>
             <span class="tag">Power BI</span>
             <span class="tag">Automação</span>
+            <span class="tag">Transformação Digital</span>
             <span class="tag">IA aplicada ao RH</span>
             <span class="tag">Data Analytics</span>
           </div>
@@ -744,7 +807,7 @@
 
           <div class="portrait-label">
             <strong>Fortaleza, CE</strong>
-            <span>Brasil · RH, Analytics & Automação</span>
+            <span>Brasil · RH, Direito, Analytics & Tecnologia</span>
           </div>
         </div>
       </div>
@@ -752,8 +815,8 @@
 
     <div class="data-ticker" aria-hidden="true">
       <div class="ticker-track">
-        <span>People Analytics</span><span>Remuneração & Benefícios</span><span>Power BI</span><span>Data Analytics</span><span>Automação</span><span>Inteligência Artificial</span><span>PostgreSQL</span><span>RH Tech</span>
-        <span>People Analytics</span><span>Remuneração & Benefícios</span><span>Power BI</span><span>Data Analytics</span><span>Automação</span><span>Inteligência Artificial</span><span>PostgreSQL</span><span>RH Tech</span>
+        <span>People Analytics</span><span>Remuneração & Benefícios</span><span>Direito Trabalhista</span><span>Power BI</span><span>Data Analytics</span><span>Automação</span><span>Transformação Digital</span><span>Inteligência Artificial</span><span>PostgreSQL</span><span>RH Tech</span>
+        <span>People Analytics</span><span>Remuneração & Benefícios</span><span>Direito Trabalhista</span><span>Power BI</span><span>Data Analytics</span><span>Automação</span><span>Transformação Digital</span><span>Inteligência Artificial</span><span>PostgreSQL</span><span>RH Tech</span>
       </div>
     </div>
 
@@ -767,25 +830,34 @@
         </div>
 
         <div class="reveal">
-          <h2 class="section-title">RH, dados e tecnologia <span class="accent">trabalhando juntos.</span></h2>
+          <h2 class="section-title">Pessoas, legislação e dados <span class="accent">na mesma conversa.</span></h2>
 
           <div class="profile-text" style="margin-top:34px">
             <p>
-              Minha trajetória foi construída em <strong>Departamento Pessoal, folha, benefícios,
-              remuneração e People Analytics</strong>. Ao longo do caminho, percebi que os projetos
-              que mais me mobilizam são aqueles em que dados ajudam a explicar um problema,
-              automatizar uma rotina ou orientar uma decisão.
+              Minha trajetória começou nas rotinas de <strong>Departamento Pessoal</strong> e evoluiu por folha,
+              relações trabalhistas, benefícios, remuneração e People Analytics. Com o tempo, ficou cada vez mais
+              claro que eu gosto de ir além da execução: entender por que um processo existe, quais riscos envolve,
+              o que os dados revelam e como ele pode funcionar melhor.
             </p>
 
             <p>
-              Hoje amplio essa atuação com <strong>Data Analytics, Power BI, PostgreSQL,
-              automações e Inteligência Artificial</strong>. Não vejo isso como uma ruptura de carreira,
-              mas como uma evolução natural: somar capacidade técnica a uma base sólida de negócio.
+              Sou formado em <strong>Gestão de Recursos Humanos e Direito</strong>, com pós-graduação em
+              <strong>Direito Trabalhista e Previdenciário</strong>, e atualmente aprofundo minha formação em
+              <strong>Data Analytics</strong>. Essa combinação orienta a forma como penso: pessoas, legislação,
+              impacto financeiro e evidências precisam conversar antes de uma boa decisão.
             </p>
 
             <p>
-              Meu foco é transformar complexidade em algo útil: <strong>informação que vira decisão,
-              processo que vira automação e necessidade que vira solução.</strong>
+              Também sou genuinamente apaixonado por <strong>tecnologia e pelo universo digital</strong>.
+              Já atuei com câmera, fotografia e edição de vídeos, estudei Web Design e desenvolvi sites em WordPress,
+              incluindo projetos de e-commerce e site para pousada. Durante a pandemia, empreendi com produtos personalizados,
+              uma fase em que precisei me reinventar, aprender rápido e transformar criatividade em solução.
+            </p>
+
+            <p>
+              Hoje conecto esse repertório à minha atuação em RH: <strong>informação que vira decisão,
+              processo que vira automação e necessidade que vira solução.</strong> Fora do trabalho, gosto de viajar,
+              conhecer novos lugares e viver experiências que ampliem minha visão de mundo.
             </p>
           </div>
 
@@ -799,9 +871,55 @@
               <span>colaboradores no contexto Brisanet</span>
             </div>
             <div class="metric">
-              <strong>R&B → Data</strong>
-              <span>evolução orientada por negócio</span>
+              <strong>RH + Direito + Data</strong>
+              <span>visão multidisciplinar aplicada ao negócio</span>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMAÇÃO -->
+    <section id="formacao" class="section education">
+      <div class="container">
+        <div class="education-intro">
+          <div>
+            <div class="mono section-kicker reveal">02 / FORMAÇÃO</div>
+            <h2 class="section-title reveal">Três perspectivas. <span class="accent">Uma visão de negócio.</span></h2>
+          </div>
+          <p class="section-copy reveal">
+            Minha formação acompanha a evolução da minha carreira. Recursos Humanos construiu a base em pessoas e processos.
+            O Direito ampliou minha leitura sobre relações de trabalho, risco e governança. Data Analytics adiciona a camada
+            técnica para transformar informação em evidência e decisão.
+          </p>
+        </div>
+
+        <div class="education-manifesto reveal">
+          <div class="edu-pillar"><span class="mono">pessoas</span><strong>Recursos Humanos</strong><p>Gestão de pessoas, remuneração, benefícios, folha, relações de trabalho e experiência do colaborador.</p></div>
+          <div class="edu-pillar"><span class="mono">regras</span><strong>Direito</strong><p>Legislação, relações trabalhistas, previdência, risco, compliance e segurança das decisões.</p></div>
+          <div class="edu-pillar"><span class="mono">evidências</span><strong>Dados</strong><p>Analytics, indicadores, modelagem, visualização e leitura de cenários para apoiar decisões.</p></div>
+          <div class="edu-pillar"><span class="mono">conexão</span><strong>Estratégia</strong><p>O ponto em que pessoas, legislação, impacto financeiro e dados passam a sustentar a mesma decisão.</p></div>
+        </div>
+
+        <div class="education-timeline">
+          <article class="education-item reveal"><span class="education-dot"></span><div class="education-card"><span class="education-year mono">2013</span><h3>Gestão de Recursos Humanos</h3><div class="edu-type">Graduação · Estácio</div><p>Formação que consolidou minha base em gestão de pessoas, Departamento Pessoal, benefícios, remuneração e processos de RH.</p></div></article>
+          <article class="education-item reveal"><span class="education-dot"></span><div class="education-card"><span class="education-year mono">2024</span><h3>Direito</h3><div class="edu-type">Bacharelado · Estácio</div><p>Ampliação da visão sobre relações de trabalho, contratos, legislação, riscos, compliance e tomada de decisão organizacional.</p></div></article>
+          <article class="education-item reveal"><span class="education-dot"></span><div class="education-card"><span class="education-year mono">2026</span><h3>Direito Trabalhista e Previdenciário</h3><div class="edu-type">Pós-graduação · Anhanguera</div><p>Aprofundamento técnico em temas diretamente conectados às relações de trabalho, previdência e governança das práticas de pessoas.</p></div></article>
+          <article class="education-item reveal"><span class="education-dot"></span><div class="education-card current"><span class="education-year mono">em andamento</span><h3>Data Analytics</h3><div class="edu-type">Digital College</div><p>Formação em análise de dados, bancos de dados, visualização e ferramentas que ampliam minha capacidade de transformar informação em decisão.</p></div></article>
+        </div>
+
+        <div class="education-quote reveal"><div class="quote-mark">+</div><p>RH entende as pessoas. Direito ajuda a interpretar as regras. Dados mostram as evidências. Estratégia é a capacidade de conectar os três.</p></div>
+
+        <div class="digital-dna">
+          <div class="digital-dna-head">
+            <h3 class="reveal">Tecnologia não entrou agora. <span>Ela sempre esteve por perto.</span></h3>
+            <p class="reveal">Minha curiosidade pelo digital atravessa diferentes fases da minha história. Antes mesmo de aplicar automação, BI e IA ao RH, eu já explorava imagem, vídeo, web e empreendedorismo. Essa mistura de repertórios continua influenciando a forma como crio soluções hoje.</p>
+          </div>
+          <div class="digital-dna-grid">
+            <article class="digital-card reveal"><span class="mono">audiovisual</span><h4>Câmera, fotografia e edição</h4><p>Experiência com captação de imagens, fotografia e edição de vídeos, desenvolvendo olhar visual, narrativa e atenção aos detalhes.</p></article>
+            <article class="digital-card reveal"><span class="mono">web</span><h4>Web Design & WordPress</h4><p>Formação em Web Design e experiência na criação de sites em WordPress, incluindo projetos de e-commerce e site para pousada.</p></article>
+            <article class="digital-card reveal"><span class="mono">reinvenção</span><h4>Empreendedorismo na pandemia</h4><p>Criei e conduzi um negócio de personalizados em um período de reinvenção, conectando criatividade, atendimento e execução.</p></article>
+            <article class="digital-card reveal"><span class="mono">curiosidade</span><h4>Viagens, tecnologia e desafios</h4><p>Gosto de viajar, conhecer novos lugares, experimentar ferramentas e entrar em projetos que me desafiem a aprender algo novo.</p></article>
           </div>
         </div>
       </div>
@@ -810,11 +928,11 @@
     <!-- TRAJETÓRIA -->
     <section id="trajetoria" class="section experience">
       <div class="container">
-        <div class="mono section-kicker reveal">02 / TRAJETÓRIA</div>
+        <div class="mono section-kicker reveal">03 / TRAJETÓRIA</div>
         <h2 class="section-title reveal">Uma carreira de RH que ganhou uma camada cada vez mais <span class="accent">analítica.</span></h2>
         <p class="section-copy reveal">
-          A linha do tempo destaca os momentos em que minha atuação deixou de ser apenas operacional
-          e passou a combinar escala, governança, análise, automação e decisão.
+          A linha do tempo mostra como uma base sólida em operação de RH evoluiu para benefícios,
+          remuneração, relações trabalhistas, People Analytics, transformação digital e decisões orientadas por dados.
         </p>
 
         <div class="timeline">
@@ -1045,7 +1163,7 @@
       <div class="container">
         <div class="projects-intro">
           <div>
-            <div class="mono section-kicker reveal">03 / PROJETOS</div>
+            <div class="mono section-kicker reveal">04 / PROJETOS</div>
             <h2 class="section-title reveal">Projetos reais, feitos para <span class="accent">resolver.</span></h2>
           </div>
           <p class="section-copy reveal">
@@ -1456,7 +1574,7 @@
     <!-- STACK -->
     <section id="stack" class="section stack">
       <div class="container">
-        <div class="mono section-kicker reveal">04 / STACK</div>
+        <div class="mono section-kicker reveal">05 / STACK</div>
         <h2 class="section-title reveal">Ferramentas são meios. <span class="accent">O valor está na aplicação.</span></h2>
         <p class="section-copy reveal">Tecnologias e repertórios que venho conectando à minha experiência de negócio.</p>
 
@@ -1481,7 +1599,15 @@
             <span class="mono">negócio & rh</span>
             <h3>Domínio funcional</h3>
             <div class="stack-list">
-              <span>R&B</span><span>Cargos & Salários</span><span>Benefícios</span><span>Remuneração Variável</span><span>TOTVS</span><span>SAP</span>
+              <span>R&B</span><span>Cargos & Salários</span><span>Benefícios</span><span>Remuneração Variável</span><span>Relações Trabalhistas</span><span>Direito do Trabalho</span><span>Governança</span><span>TOTVS</span><span>SAP</span>
+            </div>
+          </div>
+
+          <div class="stack-card reveal">
+            <span class="mono">digital & criação</span>
+            <h3>Repertório multidisciplinar</h3>
+            <div class="stack-list">
+              <span>WordPress</span><span>Web Design</span><span>E-commerce</span><span>Edição de Vídeo</span><span>Fotografia</span><span>Conteúdo Digital</span>
             </div>
           </div>
         </div>
@@ -1492,10 +1618,10 @@
     <section id="contato" class="section contact">
       <div class="container contact-grid">
         <div class="reveal">
-          <div class="mono section-kicker" style="color:#c9e8ff">05 / CONTATO</div>
+          <div class="mono section-kicker" style="color:#c9e8ff">06 / CONTATO</div>
           <h2>Dados com contexto. <span>Soluções com propósito.</span></h2>
           <p class="contact-copy">
-            Tenho interesse em desafios que conectem RH, dados, analytics, automação e transformação de processos.
+            Tenho interesse em desafios na interseção entre RH, Direito, dados, analytics, automação e transformação digital.
             Se quiser conversar sobre projetos, oportunidades ou trocar experiências, meu contato está aqui.
           </p>
         </div>
@@ -1511,7 +1637,7 @@
 
   <footer>
     <div class="container footer-inner">
-      <span>Leonardo Roseno · RH, Dados & Automação</span>
+      <span>Leonardo Roseno · RH, Direito, Dados & Tecnologia</span>
       <span>Fortaleza, CE · 2026</span>
     </div>
   </footer>
