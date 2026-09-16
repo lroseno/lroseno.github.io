@@ -6,6 +6,14 @@
   <meta name="description" content="Portfólio de Leonardo Roseno: RH, Direito, Remuneração & Benefícios, People Analytics, Dados, Automação e Transformação Digital.">
   <title>Leonardo Roseno | RH, Direito, Dados & Tecnologia</title>
 
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Leonardo Roseno | RH, Direito, Dados & Tecnologia">
+  <meta property="og:description" content="Remuneração & Benefícios, People Analytics, visão jurídica, dados, automação e transformação digital aplicados a problemas reais de negócio.">
+  <meta property="og:url" content="https://lroseno.github.io/">
+  <meta property="og:image" content="https://lroseno.github.io/assets/leonardo-roseno.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#091522">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -250,53 +258,143 @@
     .metric span{display:block;color:var(--muted);font-size:.82rem;margin-top:5px}
 
 
-    /* EDUCATION / FORMAÇÃO */
+    /* EDUCATION */
     .education{
       background:
-        radial-gradient(circle at 82% 18%,rgba(23,105,255,.10),transparent 28%),
+        radial-gradient(circle at 88% 14%,rgba(23,105,255,.10),transparent 28%),
         var(--paper);
       border-bottom:1px solid var(--line);
     }
-    .education-intro{
-      display:grid;grid-template-columns:1.05fr .95fr;gap:72px;align-items:end;
+    .education-head{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:72px;
+      align-items:end;
     }
-    .education-intro .section-copy{margin:0}
-    .education-manifesto{
-      margin-top:54px;display:grid;grid-template-columns:repeat(4,1fr);
-      border:1px solid var(--line);border-radius:20px;overflow:hidden;background:white;box-shadow:var(--shadow);
+    .education-head .section-copy{margin:0}
+    .education-line{
+      position:relative;
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+      margin-top:58px;
     }
-    .edu-pillar{padding:28px;min-height:190px;border-right:1px solid var(--line);position:relative;overflow:hidden}
-    .edu-pillar:last-child{border-right:0}
-    .edu-pillar::after{content:"";position:absolute;width:100px;height:100px;border-radius:50%;right:-46px;bottom:-52px;background:rgba(23,105,255,.07)}
-    .edu-pillar .mono{color:var(--blue);font-size:.6rem}
-    .edu-pillar strong{display:block;margin-top:14px;font-size:1.2rem;letter-spacing:-.03em}
-    .edu-pillar p{margin-top:9px;color:var(--muted);font-size:.83rem}
-    .education-timeline{margin-top:68px;position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-    .education-timeline::before{content:"";position:absolute;top:19px;left:8%;right:8%;height:1px;background:linear-gradient(90deg,var(--blue),#92b8ff,var(--blue));opacity:.55}
-    .education-item{position:relative;padding-top:50px}
-    .education-dot{position:absolute;top:12px;left:22px;width:14px;height:14px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 7px rgba(23,105,255,.10);z-index:2}
-    .education-card{height:100%;background:rgba(255,255,255,.72);backdrop-filter:blur(12px);border:1px solid var(--line);border-radius:18px;padding:24px;transition:.3s ease}
-    .education-card:hover{transform:translateY(-6px);border-color:#a9c3f4;box-shadow:0 20px 55px rgba(9,21,34,.08)}
-    .education-year{color:var(--blue);margin-bottom:12px;display:block}
-    .education-card h3{font-size:1.18rem;line-height:1.25;letter-spacing:-.03em;margin-bottom:9px}
-    .education-card .edu-type{color:#3c5266;font-weight:700;font-size:.82rem;margin-bottom:12px}
-    .education-card p{color:var(--muted);font-size:.82rem}
-    .education-card.current{background:var(--ink);color:white;border-color:var(--line-dark)}
-    .education-card.current h3{color:white}.education-card.current .edu-type{color:var(--cyan)}.education-card.current p{color:#9fb2c4}.education-card.current .education-year{color:var(--cyan)}
-    .education-quote{margin-top:32px;background:var(--blue);color:white;border-radius:18px;padding:30px 34px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center}
-    .education-quote .quote-mark{font-family:"IBM Plex Mono",monospace;font-size:3rem;line-height:1;color:#bfe7ff}
-    .education-quote p{font-size:clamp(1.05rem,1.7vw,1.35rem);font-weight:700;line-height:1.5}
-    .digital-dna{margin-top:56px;border-top:1px solid var(--line);padding-top:50px}
-    .digital-dna-head{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start;margin-bottom:28px}
-    .digital-dna-head h3{font-size:clamp(1.9rem,3.2vw,3.2rem);line-height:1.05;letter-spacing:-.05em}
-    .digital-dna-head h3 span{color:var(--blue)}
-    .digital-dna-head p{color:var(--muted);font-size:1rem}
-    .digital-dna-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-    .digital-card{border:1px solid var(--line);background:rgba(255,255,255,.55);border-radius:16px;padding:22px;min-height:190px;transition:.3s ease}
-    .digital-card:hover{transform:translateY(-5px);border-color:#a9c3f4;background:white}
-    .digital-card .mono{color:var(--blue);font-size:.58rem}
-    .digital-card h4{margin:14px 0 8px;font-size:1.02rem}
-    .digital-card p{color:var(--muted);font-size:.8rem}
+    .education-line::before{
+      content:"";
+      position:absolute;
+      top:18px;
+      left:7%;
+      right:7%;
+      height:1px;
+      background:linear-gradient(90deg,var(--blue),#a3c2ff,var(--blue));
+      opacity:.6;
+    }
+    .education-step{
+      position:relative;
+      padding-top:50px;
+    }
+    .education-step::before{
+      content:"";
+      position:absolute;
+      top:11px;left:22px;
+      width:14px;height:14px;border-radius:50%;
+      background:var(--blue);
+      box-shadow:0 0 0 7px rgba(23,105,255,.10);
+      z-index:2;
+    }
+    .education-card{
+      height:100%;
+      padding:24px;
+      border-radius:18px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.74);
+      backdrop-filter:blur(12px);
+      transition:.3s ease;
+    }
+    .education-card:hover{
+      transform:translateY(-6px);
+      border-color:#a8c1ef;
+      box-shadow:0 20px 55px rgba(9,21,34,.08);
+    }
+    .education-card.current{
+      background:var(--ink);
+      border-color:var(--line-dark);
+      color:white;
+    }
+    .education-card .mono{color:var(--blue);font-size:.58rem}
+    .education-card.current .mono{color:var(--cyan)}
+    .education-card h3{
+      font-size:1.18rem;
+      line-height:1.22;
+      letter-spacing:-.03em;
+      margin:12px 0 8px;
+    }
+    .education-card p{
+      color:var(--muted);
+      font-size:.82rem;
+    }
+    .education-card.current p{color:#a7bacb}
+    .education-quote{
+      margin-top:28px;
+      border-radius:18px;
+      padding:26px 30px;
+      background:linear-gradient(135deg,var(--blue),#0d55d8);
+      color:white;
+      font-size:clamp(1rem,1.55vw,1.26rem);
+      font-weight:700;
+      line-height:1.55;
+    }
+
+    /* DIGITAL DNA */
+    .digital-dna{
+      background:var(--ink);
+      color:white;
+      border-top:1px solid var(--line-dark);
+      border-bottom:1px solid var(--line-dark);
+      padding:56px 0;
+      position:relative;
+      overflow:hidden;
+    }
+    .digital-dna::after{
+      content:"";
+      position:absolute;
+      width:360px;height:360px;border-radius:50%;
+      right:-120px;top:-170px;
+      background:radial-gradient(circle,rgba(23,105,255,.28),transparent 67%);
+      pointer-events:none;
+    }
+    .digital-inner{
+      position:relative;z-index:1;
+      display:grid;
+      grid-template-columns:.85fr 1.15fr;
+      gap:70px;
+      align-items:center;
+    }
+    .digital-dna h2{
+      font-size:clamp(2rem,4vw,4.4rem);
+      line-height:.98;
+      letter-spacing:-.055em;
+    }
+    .digital-dna h2 span{color:var(--cyan)}
+    .digital-copy{color:#aebdcc;font-size:1rem}
+    .digital-copy strong{color:white}
+    .digital-chips{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:22px;
+    }
+    .digital-chips span{
+      border:1px solid #35506a;
+      background:rgba(255,255,255,.035);
+      color:#c6d6e5;
+      border-radius:999px;
+      padding:8px 11px;
+      font-family:"IBM Plex Mono",monospace;
+      font-size:.62rem;
+      text-transform:uppercase;
+      letter-spacing:.08em;
+    }
 
     /* EXPERIENCE */
     .experience{background:var(--ink);color:white}
@@ -669,7 +767,7 @@
 
     /* responsive */
     @media(max-width:1000px){
-      .hero-grid,.profile-grid,.projects-intro,.project-head,.contact-grid,.education-intro{grid-template-columns:1fr}
+      .hero-grid,.profile-grid,.projects-intro,.project-head,.contact-grid,.education-head,.digital-inner{grid-template-columns:1fr}
       .hero-grid{gap:55px}
       .portrait-wrap{max-width:560px}
       .profile-index{position:static}
@@ -681,13 +779,9 @@
       .timeline::before{left:126px}
       .timeline-item{grid-template-columns:105px 34px 1fr}
       .journey-note{grid-template-columns:1fr}
-      .education-manifesto{grid-template-columns:1fr 1fr}
-      .education-timeline{grid-template-columns:1fr 1fr}
-      .education-timeline::before{display:none}
-      .education-item{padding-top:24px}
-      .education-dot{top:0}
-      .digital-dna-head{grid-template-columns:1fr}
-      .digital-dna-grid{grid-template-columns:1fr 1fr}
+      .education-line{grid-template-columns:1fr 1fr}
+      .education-line::before{display:none}
+      .education-step{padding-top:24px}
     }
     @media(max-width:760px){
       .container{width:min(var(--max),calc(100% - 30px))}
@@ -719,11 +813,8 @@
       .architecture{grid-template-columns:1fr}
       .contact-grid{gap:45px}
       .footer-inner{flex-direction:column}
-      .education-manifesto,.education-timeline,.digital-dna-grid{grid-template-columns:1fr}
-      .edu-pillar{border-right:0;border-bottom:1px solid var(--line)}
-      .edu-pillar:last-child{border-bottom:0}
-      .education-quote{grid-template-columns:1fr}
-      .digital-dna-head{gap:18px}
+      .education-line{grid-template-columns:1fr}
+      .digital-inner{gap:28px}
     }
     @media(max-width:480px){
       .hero-actions{display:grid}
@@ -752,8 +843,8 @@
       <nav class="nav-links" aria-label="Navegação principal">
         <a href="#sobre">Sobre</a>
         <a href="#formacao">Formação</a>
-        <a href="#trajetoria">Trajetória</a>
         <a href="#projetos">Projetos</a>
+        <a href="#trajetoria">Trajetória</a>
         <a href="#stack">Stack</a>
         <a class="nav-contact" href="#contato">Contato</a>
       </nav>
@@ -774,7 +865,8 @@
 
           <p class="hero-lead">
             Conecto <strong>Remuneração & Benefícios, People Analytics, visão jurídica e tecnologia</strong>
-            para transformar desafios de pessoas em decisões mais estruturadas, seguras e orientadas por dados.
+            para transformar desafios de pessoas em decisões mais estruturadas, seguras
+            e orientadas por dados.
           </p>
 
           <div class="hero-actions">
@@ -785,10 +877,8 @@
           <div class="hero-tags" aria-label="Áreas de atuação">
             <span class="tag">Remuneração & Benefícios</span>
             <span class="tag">People Analytics</span>
-            <span class="tag">Direito Trabalhista</span>
             <span class="tag">Power BI</span>
             <span class="tag">Automação</span>
-            <span class="tag">Transformação Digital</span>
             <span class="tag">IA aplicada ao RH</span>
             <span class="tag">Data Analytics</span>
           </div>
@@ -826,7 +916,7 @@
         <div class="profile-index reveal">
           <div class="mono section-kicker">01 / SOBRE</div>
           <div class="big-number">15+</div>
-          <p class="section-copy">anos construindo repertório de negócio antes de aprofundar a camada técnica de dados.</p>
+          <p class="section-copy">anos de experiência conectando operação, negócio e evolução contínua em Recursos Humanos.</p>
         </div>
 
         <div class="reveal">
@@ -834,30 +924,23 @@
 
           <div class="profile-text" style="margin-top:34px">
             <p>
-              Minha trajetória começou nas rotinas de <strong>Departamento Pessoal</strong> e evoluiu por folha,
-              relações trabalhistas, benefícios, remuneração e People Analytics. Com o tempo, ficou cada vez mais
-              claro que eu gosto de ir além da execução: entender por que um processo existe, quais riscos envolve,
-              o que os dados revelam e como ele pode funcionar melhor.
+              Minha trajetória começou em <strong>Departamento Pessoal</strong> e evoluiu por folha,
+              relações trabalhistas, benefícios, remuneração e People Analytics. Ao longo desse caminho,
+              passei a olhar processos não apenas pela execução, mas também pelo risco, pelo impacto financeiro
+              e pela qualidade das decisões que eles sustentam.
             </p>
 
             <p>
-              Sou formado em <strong>Gestão de Recursos Humanos e Direito</strong>, com pós-graduação em
-              <strong>Direito Trabalhista e Previdenciário</strong>, e atualmente aprofundo minha formação em
-              <strong>Data Analytics</strong>. Essa combinação orienta a forma como penso: pessoas, legislação,
-              impacto financeiro e evidências precisam conversar antes de uma boa decisão.
+              Sou formado em <strong>Gestão de Recursos Humanos e Direito</strong>, pós-graduado em
+              <strong>Direito Trabalhista e Previdenciário</strong> e atualmente estudo
+              <strong>Data Analytics</strong>. Essa combinação influencia diretamente minha forma de trabalhar:
+              conectar pessoas, regras, negócio e evidências.
             </p>
 
             <p>
-              Também sou genuinamente apaixonado por <strong>tecnologia e pelo universo digital</strong>.
-              Já atuei com câmera, fotografia e edição de vídeos, estudei Web Design e desenvolvi sites em WordPress,
-              incluindo projetos de e-commerce e site para pousada. Durante a pandemia, empreendi com produtos personalizados,
-              uma fase em que precisei me reinventar, aprender rápido e transformar criatividade em solução.
-            </p>
-
-            <p>
-              Hoje conecto esse repertório à minha atuação em RH: <strong>informação que vira decisão,
-              processo que vira automação e necessidade que vira solução.</strong> Fora do trabalho, gosto de viajar,
-              conhecer novos lugares e viver experiências que ampliem minha visão de mundo.
+              Sou apaixonado por tecnologia e pelo universo digital. Gosto de desafios que exigem curiosidade,
+              aprendizado rápido e capacidade de transformar complexidade em algo útil:
+              <strong>informação que vira decisão e processo que vira solução.</strong>
             </p>
           </div>
 
@@ -882,278 +965,55 @@
     <!-- FORMAÇÃO -->
     <section id="formacao" class="section education">
       <div class="container">
-        <div class="education-intro">
+        <div class="education-head">
           <div>
             <div class="mono section-kicker reveal">02 / FORMAÇÃO</div>
-            <h2 class="section-title reveal">Três perspectivas. <span class="accent">Uma visão de negócio.</span></h2>
+            <h2 class="section-title reveal">Uma formação que amplia <span class="accent">a forma de decidir.</span></h2>
           </div>
+
           <p class="section-copy reveal">
-            Minha formação acompanha a evolução da minha carreira. Recursos Humanos construiu a base em pessoas e processos.
-            O Direito ampliou minha leitura sobre relações de trabalho, risco e governança. Data Analytics adiciona a camada
-            técnica para transformar informação em evidência e decisão.
+            Minha formação não representa caminhos separados. Recursos Humanos, Direito e Dados
+            se complementam na forma como analiso pessoas, processos, riscos e decisões de negócio.
           </p>
         </div>
 
-        <div class="education-manifesto reveal">
-          <div class="edu-pillar"><span class="mono">pessoas</span><strong>Recursos Humanos</strong><p>Gestão de pessoas, remuneração, benefícios, folha, relações de trabalho e experiência do colaborador.</p></div>
-          <div class="edu-pillar"><span class="mono">regras</span><strong>Direito</strong><p>Legislação, relações trabalhistas, previdência, risco, compliance e segurança das decisões.</p></div>
-          <div class="edu-pillar"><span class="mono">evidências</span><strong>Dados</strong><p>Analytics, indicadores, modelagem, visualização e leitura de cenários para apoiar decisões.</p></div>
-          <div class="edu-pillar"><span class="mono">conexão</span><strong>Estratégia</strong><p>O ponto em que pessoas, legislação, impacto financeiro e dados passam a sustentar a mesma decisão.</p></div>
-        </div>
-
-        <div class="education-timeline">
-          <article class="education-item reveal"><span class="education-dot"></span><div class="education-card"><span class="education-year mono">2013</span><h3>Gestão de Recursos Humanos</h3><div class="edu-type">Graduação · Estácio</div><p>Formação que consolidou minha base em gestão de pessoas, Departamento Pessoal, benefícios, remuneração e processos de RH.</p></div></article>
-          <article class="education-item reveal"><span class="education-dot"></span><div class="education-card"><span class="education-year mono">2024</span><h3>Direito</h3><div class="edu-type">Bacharelado · Estácio</div><p>Ampliação da visão sobre relações de trabalho, contratos, legislação, riscos, compliance e tomada de decisão organizacional.</p></div></article>
-          <article class="education-item reveal"><span class="education-dot"></span><div class="education-card"><span class="education-year mono">2026</span><h3>Direito Trabalhista e Previdenciário</h3><div class="edu-type">Pós-graduação · Anhanguera</div><p>Aprofundamento técnico em temas diretamente conectados às relações de trabalho, previdência e governança das práticas de pessoas.</p></div></article>
-          <article class="education-item reveal"><span class="education-dot"></span><div class="education-card current"><span class="education-year mono">em andamento</span><h3>Data Analytics</h3><div class="edu-type">Digital College</div><p>Formação em análise de dados, bancos de dados, visualização e ferramentas que ampliam minha capacidade de transformar informação em decisão.</p></div></article>
-        </div>
-
-        <div class="education-quote reveal"><div class="quote-mark">+</div><p>RH entende as pessoas. Direito ajuda a interpretar as regras. Dados mostram as evidências. Estratégia é a capacidade de conectar os três.</p></div>
-
-        <div class="digital-dna">
-          <div class="digital-dna-head">
-            <h3 class="reveal">Tecnologia não entrou agora. <span>Ela sempre esteve por perto.</span></h3>
-            <p class="reveal">Minha curiosidade pelo digital atravessa diferentes fases da minha história. Antes mesmo de aplicar automação, BI e IA ao RH, eu já explorava imagem, vídeo, web e empreendedorismo. Essa mistura de repertórios continua influenciando a forma como crio soluções hoje.</p>
-          </div>
-          <div class="digital-dna-grid">
-            <article class="digital-card reveal"><span class="mono">audiovisual</span><h4>Câmera, fotografia e edição</h4><p>Experiência com captação de imagens, fotografia e edição de vídeos, desenvolvendo olhar visual, narrativa e atenção aos detalhes.</p></article>
-            <article class="digital-card reveal"><span class="mono">web</span><h4>Web Design & WordPress</h4><p>Formação em Web Design e experiência na criação de sites em WordPress, incluindo projetos de e-commerce e site para pousada.</p></article>
-            <article class="digital-card reveal"><span class="mono">reinvenção</span><h4>Empreendedorismo na pandemia</h4><p>Criei e conduzi um negócio de personalizados em um período de reinvenção, conectando criatividade, atendimento e execução.</p></article>
-            <article class="digital-card reveal"><span class="mono">curiosidade</span><h4>Viagens, tecnologia e desafios</h4><p>Gosto de viajar, conhecer novos lugares, experimentar ferramentas e entrar em projetos que me desafiem a aprender algo novo.</p></article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TRAJETÓRIA -->
-    <section id="trajetoria" class="section experience">
-      <div class="container">
-        <div class="mono section-kicker reveal">03 / TRAJETÓRIA</div>
-        <h2 class="section-title reveal">Uma carreira de RH que ganhou uma camada cada vez mais <span class="accent">analítica.</span></h2>
-        <p class="section-copy reveal">
-          A linha do tempo mostra como uma base sólida em operação de RH evoluiu para benefícios,
-          remuneração, relações trabalhistas, People Analytics, transformação digital e decisões orientadas por dados.
-        </p>
-
-        <div class="timeline">
-
-          <article class="timeline-item reveal">
-
-    <div class="timeline-date">
-        DEZ/2024 — ATUAL
-    </div>
-
-    <div class="timeline-dot"></div>
-
-    <div class="timeline-card featured">
-
-        <div class="timeline-meta">
-
-            <h3 class="company">
-                Grupo Cordeiro
-            </h3>
-
-            <span class="scope-badge">
-                R&B · PEOPLE ANALYTICS · DADOS · TRANSFORMAÇÃO DIGITAL
-            </span>
-
-        </div>
-
-
-        <div class="role">
-            Analista Sênior de Remuneração e Benefícios
-        </div>
-
-
-        <p>
-            Atuação estratégica em Remuneração Total, Benefícios e People Analytics,
-            conectando estrutura salarial, inteligência de mercado, remuneração variável,
-            orçamento de pessoal, indicadores e tecnologia para apoiar lideranças e
-            diretoria na tomada de decisão.
-        </p>
-
-
-        <div class="timeline-points">
-
-            <div>
-                Implantação e evolução do Plano de Cargos e Salários, com avaliação
-                e classificação de cargos pela metodologia de pontos de Benedito Pontes,
-                estruturação de classes, steps salariais e critérios de movimentação
-            </div>
-
-            <div>
-                Condução de pesquisas salariais e benchmarking de mercado, com análise
-                de posicionamento salarial, competitividade externa e equidade interna
-            </div>
-
-            <div>
-                Gestão de remuneração variável, premiações e incentivos, incluindo
-                apuração, regras, validações, governança e suporte aos ciclos de pagamento
-            </div>
-
-            <div>
-                Desenvolvimento de simulações salariais, cenários de movimentação,
-                projeções e estudos de impacto financeiro para promoções, mérito,
-                enquadramentos e ajustes salariais
-            </div>
-
-            <div>
-                Construção e acompanhamento de orçamento de pessoal, projeções de custos
-                e análises para suporte ao planejamento financeiro de RH
-            </div>
-
-            <div>
-                Desenvolvimento de dashboards, indicadores e análises de People Analytics,
-                transformando dados de pessoas em informações para tomada de decisão
-            </div>
-
-            <div>
-                Gestão estratégica de benefícios, negociação com fornecedores,
-                análise de custos e iniciativas de eficiência financeira e experiência
-                do colaborador
-            </div>
-
-            <div>
-                Participação em projetos de transformação digital do RH, com automações,
-                Inteligência Artificial e soluções digitais voltadas à eficiência,
-                governança e melhoria dos processos internos
-            </div>
-
-            <div>
-                Atuação consultiva junto às áreas corporativas e operacionais,
-                conectando necessidades de negócio às práticas de remuneração,
-                benefícios e inteligência de RH
-            </div>
-
-        </div>
-
-    </div>
-
-</article>
-
-          <article class="timeline-item reveal">
-            <div class="timeline-date">JUN/2022 — OUT/2024</div>
-            <div class="timeline-dot"></div>
-
-            <div class="timeline-card featured">
-              <div class="timeline-meta">
-                <h3 class="company">Brisanet Telecomunicações</h3>
-                <span class="scope-badge">9 MIL+ COLABORADORES · BENEFÍCIOS · PEOPLE ANALYTICS</span>
-              </div>
-
-              <div class="role">Analista de Benefícios Sênior · Team Leader</div>
-
-              <p>
-                Atuação como Team Leader na implantação e consolidação da área de Benefícios,
-                conduzindo a estruturação de processos, políticas e governança corporativa
-                para uma operação com mais de 9 mil colaboradores.
-              </p>
-
-              <div class="timeline-points">
-                <div>
-                  Estruturação e consolidação da área de Benefícios, com definição de processos,
-                  políticas, governança e rotinas corporativas
-                </div>
-
-                <div>
-                  Gestão estratégica do portfólio de benefícios, equilibrando sustentabilidade
-                  financeira, competitividade de mercado, experiência do colaborador e retenção
-                </div>
-
-                <div>
-                  Desenvolvimento e revisão de políticas internas com base em benchmarking,
-                  convenções coletivas, compliance trabalhista e práticas de mercado
-                </div>
-
-                <div>
-                  Liderança na implantação de soluções e parcerias estratégicas, incluindo
-                  Wellhub, IVI Saúde Mental, NEON e Santander
-                </div>
-
-                <div>
-                  Negociação com fornecedores, revisão de processos e interface com folha de
-                  pagamento, com foco em eficiência operacional, acuracidade e otimização de custos
-                </div>
-
-                <div>
-                  Aplicação de People Analytics, indicadores e estudos gerenciais para suporte
-                  à tomada de decisão e evolução dos programas de benefícios
-                </div>
-
-                <div>
-                  Atuação consultiva junto às lideranças e áreas parceiras, contribuindo para
-                  estratégias de engajamento, valorização e fortalecimento da proposta de valor
-                  ao colaborador (EVP)
-                </div>
-
-                <div>
-                  Sistemas e ferramentas: TOTVS RM e Fortes
-                </div>
-              </div>
+        <div class="education-line">
+          <article class="education-step reveal">
+            <div class="education-card">
+              <span class="mono">base</span>
+              <h3>Gestão de Recursos Humanos</h3>
+              <p>Gestão de pessoas, Departamento Pessoal, benefícios, remuneração e processos de RH.</p>
             </div>
           </article>
 
-          <article class="timeline-item reveal">
-            <div class="timeline-date">MAI/2021 — JUN/2022</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-card featured">
-              <div class="timeline-meta">
-                <h3 class="company">Farmácias Pague Menos</h3>
-                <span class="scope-badge">23 MIL COLABORADORES</span>
-              </div>
-              <div class="role">Analista de Benefícios Sênior · anteriormente Analista de DP</div>
-              <p>
-                Atuação em uma das maiores operações de varejo farmacêutico do país,
-                com foco em gestão corporativa de benefícios, governança financeira e suporte aos RHs regionais.
-              </p>
-              <div class="timeline-points">
-                <div>Gestão de saldos, rateios, faturas e controle orçamentário de benefícios</div>
-                <div>Operação e sustentação de benefícios em contexto de cerca de 23 mil colaboradores</div>
-                <div>Indicadores, relatórios gerenciais e análises operacionais</div>
-                <div>Suporte consultivo a RHs regionais e padronização de processos</div>
-                <div>Melhoria contínua e automações integradas à folha</div>
-                <div>Base em ponto, jornada, folha, férias, rescisões e conformidade</div>
-              </div>
+          <article class="education-step reveal">
+            <div class="education-card">
+              <span class="mono">ampliação</span>
+              <h3>Direito</h3>
+              <p>Relações de trabalho, legislação, contratos, riscos, compliance e visão jurídica aplicada ao negócio.</p>
             </div>
           </article>
 
-          <article class="timeline-item reveal">
-            <div class="timeline-date">2010 — 2022</div>
-            <div class="timeline-dot"></div>
-            <div class="timeline-card">
-              <div class="timeline-meta">
-                <h3 class="company">A base que sustenta a evolução</h3>
-                <span class="scope-badge">DP · RH GENERALISTA · ADMINISTRAÇÃO</span>
-              </div>
-              <div class="role">Departamento Pessoal e RH em diferentes contextos e segmentos</div>
-              <p>
-                Antes da especialização em Benefícios, R&B e Analytics, construí uma base ampla em administração
-                de pessoal: folha, admissões, rescisões, encargos, ponto, benefícios, auditorias, fiscalizações,
-                eSocial e atendimento a colaboradores e lideranças.
-              </p>
-
-              <div class="foundation">
-                <div class="foundation-item"><strong>Fortaleza4u</strong><span>Encarregado RH/ADM · 2019–2022</span></div>
-                <div class="foundation-item"><strong>B&C Açougues</strong><span>Analista de DP · 2018–2019 · 10 empresas</span></div>
-                <div class="foundation-item"><strong>Marques & Fontenele</strong><span>Analista de DP · 2016–2018</span></div>
-                <div class="foundation-item"><strong>Grupo TB Hub</strong><span>Analista de DP · 2016</span></div>
-                <div class="foundation-item"><strong>Office Assessoria</strong><span>Encarregado de Setor Pessoal · 2015</span></div>
-                <div class="foundation-item"><strong>Grupo Rabelo</strong><span>Assistente de DP IV · 2013–2015</span></div>
-                <div class="foundation-item"><strong>Belmetal</strong><span>Assistente de DP · 2012–2013</span></div>
-                <div class="foundation-item"><strong>Têxtil Santa Inês</strong><span>Assistente de Administração de Pessoal · 2010–2012</span></div>
-              </div>
+          <article class="education-step reveal">
+            <div class="education-card">
+              <span class="mono">especialização</span>
+              <h3>Direito Trabalhista e Previdenciário</h3>
+              <p>Aprofundamento técnico em temas diretamente conectados às relações de trabalho e à governança de pessoas.</p>
             </div>
           </article>
 
+          <article class="education-step reveal">
+            <div class="education-card current">
+              <span class="mono">agora</span>
+              <h3>Data Analytics</h3>
+              <p>Análise de dados, bancos de dados, visualização e ferramentas para transformar informação em evidência e decisão.</p>
+            </div>
+          </article>
         </div>
 
-        <div class="journey-note reveal">
-          <h3>Da operação à decisão. <span>Do processo ao dado.</span></h3>
-          <p>
-            O que mudou ao longo da carreira não foi o interesse por pessoas, mas a forma de resolver problemas:
-            primeiro dominando a operação, depois estruturando políticas e benefícios, e hoje usando analytics,
-            automação e tecnologia para ampliar escala, precisão e capacidade de decisão.
-          </p>
+        <div class="education-quote reveal">
+          RH entende as pessoas. Direito amplia a leitura das regras e dos riscos.
+          Dados mostram as evidências. Estratégia conecta tudo isso ao negócio.
         </div>
       </div>
     </section>
@@ -1163,12 +1023,12 @@
       <div class="container">
         <div class="projects-intro">
           <div>
-            <div class="mono section-kicker reveal">04 / PROJETOS</div>
+            <div class="mono section-kicker reveal">03 / PROJETOS</div>
             <h2 class="section-title reveal">Projetos reais, feitos para <span class="accent">resolver.</span></h2>
           </div>
           <p class="section-copy reveal">
-            Três projetos que mostram como conecto conhecimento de negócio, experiência do usuário,
-            dados, Business Intelligence e automação para transformar processos de RH.
+            Cases selecionados que mostram como conecto contexto de negócio, dados, automação,
+            experiência do usuário e tecnologia. Esta seção foi pensada para crescer junto com meu portfólio.
           </p>
         </div>
 
@@ -1176,82 +1036,150 @@
         <article class="project">
           <div class="project-head reveal">
             <div>
-              <div class="project-number">PROJETO 01 · RH TECH / UX</div>
-              <h3>Central de Benefícios</h3>
-              <span class="status">no ar</span>
-              <div class="project-actions">
-                <a class="link-btn" href="https://beneficioscordeiro.lovable.app" target="_blank" rel="noopener noreferrer">Abrir projeto ↗</a>
-              </div>
+              <div class="project-number">PROJETO 01 · POWER BI / PEOPLE ANALYTICS / R&B</div>
+              <h3>Acompanhamento de Premiações</h3>
+              <span class="status">em operação</span>
             </div>
 
             <div class="project-summary">
               <p>
-                Informações sobre benefícios estavam espalhadas entre documentos, mensagens e diferentes canais.
-                O resultado era uma experiência fragmentada para quem precisava apenas entender um benefício,
-                acessar um serviço ou saber com quem falar.
+                O projeto nasceu de uma solicitação da diretoria para ampliar a visibilidade
+                sobre o fluxo de premiações, identificar gargalos, responsáveis e pontos de atenção,
+                além de consolidar o impacto financeiro do processo em uma visão executiva.
               </p>
+
               <p>
-                A solução foi uma central digital organizada pela necessidade do colaborador,
-                com busca, categorias, navegação mobile, conteúdo orientativo e direcionamento para atendimento.
+                Estruturei uma solução conectando a base operacional no ecossistema Microsoft 365
+                ao Power BI, com tratamento no Power Query, modelo semântico, indicadores gerenciais
+                e atualização automatizada ao longo do dia.
               </p>
 
               <div class="project-facts">
-                <div class="fact"><span class="mono">o que faz</span><p>Centraliza e organiza informações de benefícios em uma experiência única.</p></div>
-                <div class="fact"><span class="mono">para quem</span><p>Colaboradores e áreas de RH/DP.</p></div>
-                <div class="fact"><span class="mono">saída</span><p>Busca, categorias, orientações, links e jornadas de benefícios.</p></div>
-                <div class="fact"><span class="mono">stack</span><p>Lovable · IA · UX/UI · Web responsiva.</p></div>
-                <div class="fact"><span class="mono">meu papel</span><p>Concepção, arquitetura da informação, UX, desenvolvimento e implantação.</p></div>
-                <div class="fact"><span class="mono">status</span><p>Solução publicada e disponível online.</p></div>
+                <div class="fact"><span class="mono">problema</span><p>Dificuldade de acompanhar status, gargalos, responsáveis e impacto financeiro das premiações.</p></div>
+                <div class="fact"><span class="mono">solução</span><p>Painel executivo para acompanhamento mensal do fluxo de premiações.</p></div>
+                <div class="fact"><span class="mono">fonte</span><p>Base operacional em Excel / SharePoint no ecossistema Microsoft 365.</p></div>
+                <div class="fact"><span class="mono">stack</span><p>Power BI · Power Query · DAX · SharePoint · Excel · Power BI Service.</p></div>
+                <div class="fact"><span class="mono">saída</span><p>Volumes, valores, gargalos, responsáveis, status e detalhamento para tomada de decisão.</p></div>
+                <div class="fact"><span class="mono">meu papel</span><p>Levantamento da necessidade, estruturação da base, tratamento, indicadores, visualização e publicação.</p></div>
               </div>
 
               <div class="decision">
-                <strong>Decisão de projeto:</strong> organizar a informação pela necessidade de quem consulta,
-                e não pela estrutura interna do RH.
+                <strong>Decisão de projeto:</strong> transformar um controle operacional de premiações
+                em uma visão executiva orientada por dados, capaz de mostrar onde o processo está impactando
+                e quais pontos exigem atuação.
               </div>
             </div>
           </div>
 
-          <div class="project-slider reveal" data-slider data-autoplay="6200" style="--slides:4">
+          <div class="architecture reveal" aria-label="Arquitetura resumida do projeto de Power BI">
+            <div class="arch-step"><span class="mono">01</span><strong>Base operacional</strong><p>Competência, elegibilidade, valor, status, responsável e observações.</p></div>
+            <div class="arch-step"><span class="mono">02</span><strong>Power Query</strong><p>Tratamento, padronização e preparação dos dados.</p></div>
+            <div class="arch-step"><span class="mono">03</span><strong>Modelo semântico</strong><p>Campos, medidas e lógica analítica para os indicadores.</p></div>
+            <div class="arch-step"><span class="mono">04</span><strong>Power BI</strong><p>Dashboard executivo, filtros, gargalos e indicadores financeiros.</p></div>
+            <div class="arch-step"><span class="mono">05</span><strong>Power BI Service</strong><p>Publicação online e atualizações programadas ao longo do dia.</p></div>
+          </div>
+
+          <div class="before-after reveal">
+            <div class="ba-card">
+              <span class="mono">antes</span>
+              <ul>
+                <li>Controle operacional disperso</li>
+                <li>Dificuldade para visualizar gargalos rapidamente</li>
+                <li>Consolidação manual para responder à diretoria</li>
+                <li>Baixa visibilidade sobre responsáveis e status</li>
+                <li>Leitura financeira fragmentada do processo</li>
+              </ul>
+            </div>
+
+            <div class="ba-card after">
+              <span class="mono">depois</span>
+              <ul>
+                <li>Visão única do fluxo de premiações</li>
+                <li>Gargalos identificados por etapa e responsável</li>
+                <li>Indicadores disponíveis para consulta online</li>
+                <li>Valores previstos, pendentes e pagos consolidados</li>
+                <li>Atualização automatizada ao longo do dia</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="project-slider dark reveal" data-slider data-autoplay="7200" style="--slides:6">
             <div class="slider-shell">
               <div class="slider-topbar">
                 <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
-                <div class="slider-label mono">Central de Benefícios · produto digital</div>
-                <div class="slider-count">01 / 04</div>
+                <div class="slider-label mono">Power BI · acompanhamento executivo de premiações</div>
+                <div class="slider-count">01 / 06</div>
               </div>
 
               <div class="slider-viewport">
                 <div class="slider-track">
+
                   <figure class="project-slide">
                     <div class="slide-media">
-                      <img src="assets/landing-beneficios.png" alt="Visão geral da Central de Benefícios">
+                      <img loading="lazy" decoding="async" src="assets/premiacoes-dashboard.png" alt="Dashboard executivo de acompanhamento de premiações no Power BI">
                       <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
                     </div>
-                    <figcaption class="slide-caption"><div><strong>Visão geral da solução</strong><p>Centralização dos benefícios em uma experiência única e organizada.</p></div><span class="slide-index">01 / 04</span></figcaption>
+                    <figcaption class="slide-caption">
+                      <div><strong>Visão executiva</strong><p>Dashboard consolidado com volumes, valores, status, filtros, gargalos e resumo executivo do processo.</p></div>
+                      <span class="slide-index">01 / 06</span>
+                    </figcaption>
                   </figure>
 
                   <figure class="project-slide">
                     <div class="slide-media">
-                      <img src="assets/beneficios-home.png" alt="Tela inicial da Central de Benefícios">
+                      <img loading="lazy" decoding="async" src="assets/premiacoes-gargalos.png" alt="Visual de gargalos do fluxo de premiações">
                       <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
                     </div>
-                    <figcaption class="slide-caption"><div><strong>Entrada simples e orientada</strong><p>Busca, pilares e caminhos de navegação pensados pela necessidade do colaborador.</p></div><span class="slide-index">02 / 04</span></figcaption>
+                    <figcaption class="slide-caption">
+                      <div><strong>Gestão de gargalos</strong><p>Leitura rápida das etapas em que o fluxo está impactando e dos pontos que exigem atuação.</p></div>
+                      <span class="slide-index">02 / 06</span>
+                    </figcaption>
                   </figure>
 
                   <figure class="project-slide">
                     <div class="slide-media">
-                      <img src="assets/beneficios-categorias.png" alt="Benefícios organizados por categorias">
+                      <img loading="lazy" decoding="async" src="assets/premiacoes-sharepoint.png" alt="Base operacional utilizada no acompanhamento de premiações">
                       <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
                     </div>
-                    <figcaption class="slide-caption"><div><strong>Arquitetura da informação</strong><p>Benefícios organizados em categorias para reduzir esforço de busca e dúvidas recorrentes.</p></div><span class="slide-index">03 / 04</span></figcaption>
+                    <figcaption class="slide-caption">
+                      <div><strong>Base operacional estruturada</strong><p>Controle com competência, elegibilidade, periodicidade, valor, status, responsável e demais campos necessários ao processo.</p></div>
+                      <span class="slide-index">03 / 06</span>
+                    </figcaption>
                   </figure>
 
-                  <figure class="project-slide is-mobile">
+                  <figure class="project-slide">
                     <div class="slide-media">
-                      <img src="assets/beneficios-mobile.png" alt="Central de Benefícios em dispositivo móvel">
+                      <img loading="lazy" decoding="async" src="assets/premiacoes-power-query.png" alt="Tratamento da base de premiações no Power Query">
                       <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
                     </div>
-                    <figcaption class="slide-caption"><div><strong>Experiência mobile</strong><p>Acesso responsivo para consulta rápida no celular, em diferentes contextos da jornada.</p></div><span class="slide-index">04 / 04</span></figcaption>
+                    <figcaption class="slide-caption">
+                      <div><strong>Tratamento dos dados</strong><p>Preparação, padronização e transformação da base no Power Query antes do consumo analítico.</p></div>
+                      <span class="slide-index">04 / 06</span>
+                    </figcaption>
                   </figure>
+
+                  <figure class="project-slide">
+                    <div class="slide-media">
+                      <img loading="lazy" decoding="async" src="assets/premiacoes-modelo-dados.png" alt="Modelo semântico do projeto de acompanhamento de premiações">
+                      <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
+                    </div>
+                    <figcaption class="slide-caption">
+                      <div><strong>Modelo semântico</strong><p>Estrutura de campos, medidas e lógica analítica utilizada para sustentar os indicadores do relatório.</p></div>
+                      <span class="slide-index">05 / 06</span>
+                    </figcaption>
+                  </figure>
+
+                  <figure class="project-slide">
+                    <div class="slide-media">
+                      <img loading="lazy" decoding="async" src="assets/premiacoes-atualizacao.png" alt="Configuração de atualização programada no Power BI Service">
+                      <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
+                    </div>
+                    <figcaption class="slide-caption">
+                      <div><strong>Atualização automatizada</strong><p>Relatório publicado no Power BI Service com atualizações programadas ao longo do dia.</p></div>
+                      <span class="slide-index">06 / 06</span>
+                    </figcaption>
+                  </figure>
+
                 </div>
 
                 <button class="slider-arrow slider-prev" type="button" aria-label="Imagem anterior">←</button>
@@ -1260,11 +1188,14 @@
             </div>
 
             <div class="slider-thumbs" aria-label="Navegação das imagens">
-              <button class="slider-thumb active" type="button" data-slide-to="0"><img src="assets/landing-beneficios.png" alt=""><span>01 · visão geral</span></button>
-              <button class="slider-thumb" type="button" data-slide-to="1"><img src="assets/beneficios-home.png" alt=""><span>02 · início</span></button>
-              <button class="slider-thumb" type="button" data-slide-to="2"><img src="assets/beneficios-categorias.png" alt=""><span>03 · categorias</span></button>
-              <button class="slider-thumb" type="button" data-slide-to="3"><img src="assets/beneficios-mobile.png" alt=""><span>04 · mobile</span></button>
+              <button class="slider-thumb active" type="button" data-slide-to="0"><img loading="lazy" decoding="async" src="assets/premiacoes-dashboard.png" alt=""><span>01 · dashboard</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="1"><img loading="lazy" decoding="async" src="assets/premiacoes-gargalos.png" alt=""><span>02 · gargalos</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="2"><img loading="lazy" decoding="async" src="assets/premiacoes-sharepoint.png" alt=""><span>03 · base</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="3"><img loading="lazy" decoding="async" src="assets/premiacoes-power-query.png" alt=""><span>04 · power query</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="4"><img loading="lazy" decoding="async" src="assets/premiacoes-modelo-dados.png" alt=""><span>05 · modelo</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="5"><img loading="lazy" decoding="async" src="assets/premiacoes-atualizacao.png" alt=""><span>06 · atualização</span></button>
             </div>
+
             <div class="slider-progress" aria-hidden="true"><span></span></div>
           </div>
         </article>
@@ -1347,37 +1278,37 @@
               <div class="slider-viewport">
                 <div class="slider-track">
                   <figure class="project-slide">
-                    <div class="slide-media"><img src="assets/automacao-fluxo.png" alt="Fluxo completo no Power Automate"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
+                    <div class="slide-media"><img loading="lazy" decoding="async" src="assets/automacao-fluxo.png" alt="Fluxo completo no Power Automate"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
                     <figcaption class="slide-caption"><div><strong>Arquitetura do fluxo</strong><p>Recorrência, leitura da base, condição de negócio, envio do e-mail e atualização do registro.</p></div><span class="slide-index">01 / 07</span></figcaption>
                   </figure>
 
                   <figure class="project-slide">
-                    <div class="slide-media"><img src="assets/automacao-recorrencia.png" alt="Configuração da recorrência diária no Power Automate"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
+                    <div class="slide-media"><img loading="lazy" decoding="async" src="assets/automacao-recorrencia.png" alt="Configuração da recorrência diária no Power Automate"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
                     <figcaption class="slide-caption"><div><strong>Execução diária programada</strong><p>O fluxo roda todos os dias para verificar quais registros precisam de comunicação.</p></div><span class="slide-index">02 / 07</span></figcaption>
                   </figure>
 
                   <figure class="project-slide">
-                    <div class="slide-media"><img src="assets/automacao-base-excel.png" alt="Leitura da base Excel no Power Automate"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
+                    <div class="slide-media"><img loading="lazy" decoding="async" src="assets/automacao-base-excel.png" alt="Leitura da base Excel no Power Automate"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
                     <figcaption class="slide-caption"><div><strong>Fonte de dados estruturada</strong><p>A automação consulta uma tabela Excel hospedada no ecossistema Microsoft 365.</p></div><span class="slide-index">03 / 07</span></figcaption>
                   </figure>
 
                   <figure class="project-slide">
-                    <div class="slide-media"><img src="assets/automacao-email.png" alt="Configuração do e-mail dinâmico no Power Automate"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
+                    <div class="slide-media"><img loading="lazy" decoding="async" src="assets/automacao-email.png" alt="Configuração do e-mail dinâmico no Power Automate"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
                     <figcaption class="slide-caption"><div><strong>Comunicação dinâmica</strong><p>Destinatário, assunto, competência, premiação, área e prazo são alimentados pela base.</p></div><span class="slide-index">04 / 07</span></figcaption>
                   </figure>
 
                   <figure class="project-slide">
-                    <div class="slide-media"><img src="assets/automacao-execucao.png" alt="Execução bem-sucedida da automação"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
+                    <div class="slide-media"><img loading="lazy" decoding="async" src="assets/automacao-execucao.png" alt="Execução bem-sucedida da automação"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
                     <figcaption class="slide-caption"><div><strong>Execução real</strong><p>Detalhamento de uma execução concluída, com as etapas processadas pelo fluxo.</p></div><span class="slide-index">05 / 07</span></figcaption>
                   </figure>
 
                   <figure class="project-slide">
-                    <div class="slide-media"><img src="assets/automacao-historico.png" alt="Histórico de execuções bem-sucedidas"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
+                    <div class="slide-media"><img loading="lazy" decoding="async" src="assets/automacao-historico.png" alt="Histórico de execuções bem-sucedidas"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
                     <figcaption class="slide-caption"><div><strong>Histórico de produção</strong><p>Execuções recorrentes bem-sucedidas evidenciam que a automação faz parte da rotina real.</p></div><span class="slide-index">06 / 07</span></figcaption>
                   </figure>
 
                   <figure class="project-slide">
-                    <div class="slide-media"><img src="assets/automacao-resultado.png" alt="E-mails enviados automaticamente pelo fluxo"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
+                    <div class="slide-media"><img loading="lazy" decoding="async" src="assets/automacao-resultado.png" alt="E-mails enviados automaticamente pelo fluxo"><button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button></div>
                     <figcaption class="slide-caption"><div><strong>Resultado final</strong><p>Comunicações entregues aos responsáveis sem preparação manual a cada ciclo.</p></div><span class="slide-index">07 / 07</span></figcaption>
                   </figure>
                 </div>
@@ -1388,13 +1319,13 @@
             </div>
 
             <div class="slider-thumbs" aria-label="Navegação das imagens">
-              <button class="slider-thumb active" type="button" data-slide-to="0"><img src="assets/automacao-fluxo.png" alt=""><span>01 · fluxo</span></button>
-              <button class="slider-thumb" type="button" data-slide-to="1"><img src="assets/automacao-recorrencia.png" alt=""><span>02 · recorrência</span></button>
-              <button class="slider-thumb" type="button" data-slide-to="2"><img src="assets/automacao-base-excel.png" alt=""><span>03 · base</span></button>
-              <button class="slider-thumb" type="button" data-slide-to="3"><img src="assets/automacao-email.png" alt=""><span>04 · e-mail</span></button>
-              <button class="slider-thumb" type="button" data-slide-to="4"><img src="assets/automacao-execucao.png" alt=""><span>05 · execução</span></button>
-              <button class="slider-thumb" type="button" data-slide-to="5"><img src="assets/automacao-historico.png" alt=""><span>06 · histórico</span></button>
-              <button class="slider-thumb" type="button" data-slide-to="6"><img src="assets/automacao-resultado.png" alt=""><span>07 · resultado</span></button>
+              <button class="slider-thumb active" type="button" data-slide-to="0"><img loading="lazy" decoding="async" src="assets/automacao-fluxo.png" alt=""><span>01 · fluxo</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="1"><img loading="lazy" decoding="async" src="assets/automacao-recorrencia.png" alt=""><span>02 · recorrência</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="2"><img loading="lazy" decoding="async" src="assets/automacao-base-excel.png" alt=""><span>03 · base</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="3"><img loading="lazy" decoding="async" src="assets/automacao-email.png" alt=""><span>04 · e-mail</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="4"><img loading="lazy" decoding="async" src="assets/automacao-execucao.png" alt=""><span>05 · execução</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="5"><img loading="lazy" decoding="async" src="assets/automacao-historico.png" alt=""><span>06 · histórico</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="6"><img loading="lazy" decoding="async" src="assets/automacao-resultado.png" alt=""><span>07 · resultado</span></button>
             </div>
             <div class="slider-progress" aria-hidden="true"><span></span></div>
 
@@ -1405,150 +1336,82 @@
         <article class="project">
           <div class="project-head reveal">
             <div>
-              <div class="project-number">PROJETO 03 · POWER BI / PEOPLE ANALYTICS / R&B</div>
-              <h3>Acompanhamento de Premiações</h3>
-              <span class="status">em operação</span>
+              <div class="project-number">PROJETO 03 · RH TECH / UX</div>
+              <h3>Central de Benefícios</h3>
+              <span class="status">no ar</span>
+              <div class="project-actions">
+                <a class="link-btn" href="https://beneficioscordeiro.lovable.app" target="_blank" rel="noopener noreferrer">Abrir projeto ↗</a>
+              </div>
             </div>
 
             <div class="project-summary">
               <p>
-                O projeto nasceu de uma solicitação da diretoria para ampliar a visibilidade
-                sobre o fluxo de premiações, identificar gargalos, responsáveis e pontos de atenção,
-                além de consolidar o impacto financeiro do processo em uma visão executiva.
+                Informações sobre benefícios estavam espalhadas entre documentos, mensagens e diferentes canais.
+                O resultado era uma experiência fragmentada para quem precisava apenas entender um benefício,
+                acessar um serviço ou saber com quem falar.
               </p>
-
               <p>
-                Estruturei uma solução conectando a base operacional no ecossistema Microsoft 365
-                ao Power BI, com tratamento no Power Query, modelo semântico, indicadores gerenciais
-                e atualização automatizada ao longo do dia.
+                A solução foi uma central digital organizada pela necessidade do colaborador,
+                com busca, categorias, navegação mobile, conteúdo orientativo e direcionamento para atendimento.
               </p>
 
               <div class="project-facts">
-                <div class="fact"><span class="mono">problema</span><p>Dificuldade de acompanhar status, gargalos, responsáveis e impacto financeiro das premiações.</p></div>
-                <div class="fact"><span class="mono">solução</span><p>Painel executivo para acompanhamento mensal do fluxo de premiações.</p></div>
-                <div class="fact"><span class="mono">fonte</span><p>Base operacional em Excel / SharePoint no ecossistema Microsoft 365.</p></div>
-                <div class="fact"><span class="mono">stack</span><p>Power BI · Power Query · DAX · SharePoint · Excel · Power BI Service.</p></div>
-                <div class="fact"><span class="mono">saída</span><p>Volumes, valores, gargalos, responsáveis, status e detalhamento para tomada de decisão.</p></div>
-                <div class="fact"><span class="mono">meu papel</span><p>Levantamento da necessidade, estruturação da base, tratamento, indicadores, visualização e publicação.</p></div>
+                <div class="fact"><span class="mono">o que faz</span><p>Centraliza e organiza informações de benefícios em uma experiência única.</p></div>
+                <div class="fact"><span class="mono">para quem</span><p>Colaboradores e áreas de RH/DP.</p></div>
+                <div class="fact"><span class="mono">saída</span><p>Busca, categorias, orientações, links e jornadas de benefícios.</p></div>
+                <div class="fact"><span class="mono">stack</span><p>Lovable · IA · UX/UI · Web responsiva.</p></div>
+                <div class="fact"><span class="mono">meu papel</span><p>Concepção, arquitetura da informação, UX, desenvolvimento e implantação.</p></div>
+                <div class="fact"><span class="mono">status</span><p>Solução publicada e disponível online.</p></div>
               </div>
 
               <div class="decision">
-                <strong>Decisão de projeto:</strong> transformar um controle operacional de premiações
-                em uma visão executiva orientada por dados, capaz de mostrar onde o processo está impactando
-                e quais pontos exigem atuação.
+                <strong>Decisão de projeto:</strong> organizar a informação pela necessidade de quem consulta,
+                e não pela estrutura interna do RH.
               </div>
             </div>
           </div>
 
-          <div class="architecture reveal" aria-label="Arquitetura resumida do projeto de Power BI">
-            <div class="arch-step"><span class="mono">01</span><strong>Base operacional</strong><p>Competência, elegibilidade, valor, status, responsável e observações.</p></div>
-            <div class="arch-step"><span class="mono">02</span><strong>Power Query</strong><p>Tratamento, padronização e preparação dos dados.</p></div>
-            <div class="arch-step"><span class="mono">03</span><strong>Modelo semântico</strong><p>Campos, medidas e lógica analítica para os indicadores.</p></div>
-            <div class="arch-step"><span class="mono">04</span><strong>Power BI</strong><p>Dashboard executivo, filtros, gargalos e indicadores financeiros.</p></div>
-            <div class="arch-step"><span class="mono">05</span><strong>Power BI Service</strong><p>Publicação online e atualizações programadas ao longo do dia.</p></div>
-          </div>
-
-          <div class="before-after reveal">
-            <div class="ba-card">
-              <span class="mono">antes</span>
-              <ul>
-                <li>Controle operacional disperso</li>
-                <li>Dificuldade para visualizar gargalos rapidamente</li>
-                <li>Consolidação manual para responder à diretoria</li>
-                <li>Baixa visibilidade sobre responsáveis e status</li>
-                <li>Leitura financeira fragmentada do processo</li>
-              </ul>
-            </div>
-
-            <div class="ba-card after">
-              <span class="mono">depois</span>
-              <ul>
-                <li>Visão única do fluxo de premiações</li>
-                <li>Gargalos identificados por etapa e responsável</li>
-                <li>Indicadores disponíveis para consulta online</li>
-                <li>Valores previstos, pendentes e pagos consolidados</li>
-                <li>Atualização automatizada ao longo do dia</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-slider dark reveal" data-slider data-autoplay="7200" style="--slides:6">
+          <div class="project-slider reveal" data-slider data-autoplay="6200" style="--slides:4">
             <div class="slider-shell">
               <div class="slider-topbar">
                 <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
-                <div class="slider-label mono">Power BI · acompanhamento executivo de premiações</div>
-                <div class="slider-count">01 / 06</div>
+                <div class="slider-label mono">Central de Benefícios · produto digital</div>
+                <div class="slider-count">01 / 04</div>
               </div>
 
               <div class="slider-viewport">
                 <div class="slider-track">
-
                   <figure class="project-slide">
                     <div class="slide-media">
-                      <img src="assets/premiacoes-dashboard.png" alt="Dashboard executivo de acompanhamento de premiações no Power BI">
+                      <img loading="lazy" decoding="async" src="assets/landing-beneficios.png" alt="Visão geral da Central de Benefícios">
                       <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
                     </div>
-                    <figcaption class="slide-caption">
-                      <div><strong>Visão executiva</strong><p>Dashboard consolidado com volumes, valores, status, filtros, gargalos e resumo executivo do processo.</p></div>
-                      <span class="slide-index">01 / 06</span>
-                    </figcaption>
+                    <figcaption class="slide-caption"><div><strong>Visão geral da solução</strong><p>Centralização dos benefícios em uma experiência única e organizada.</p></div><span class="slide-index">01 / 04</span></figcaption>
                   </figure>
 
                   <figure class="project-slide">
                     <div class="slide-media">
-                      <img src="assets/premiacoes-gargalos.png" alt="Visual de gargalos do fluxo de premiações">
+                      <img loading="lazy" decoding="async" src="assets/beneficios-home.png" alt="Tela inicial da Central de Benefícios">
                       <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
                     </div>
-                    <figcaption class="slide-caption">
-                      <div><strong>Gestão de gargalos</strong><p>Leitura rápida das etapas em que o fluxo está impactando e dos pontos que exigem atuação.</p></div>
-                      <span class="slide-index">02 / 06</span>
-                    </figcaption>
+                    <figcaption class="slide-caption"><div><strong>Entrada simples e orientada</strong><p>Busca, pilares e caminhos de navegação pensados pela necessidade do colaborador.</p></div><span class="slide-index">02 / 04</span></figcaption>
                   </figure>
 
                   <figure class="project-slide">
                     <div class="slide-media">
-                      <img src="assets/premiacoes-sharepoint.png" alt="Base operacional utilizada no acompanhamento de premiações">
+                      <img loading="lazy" decoding="async" src="assets/beneficios-categorias.png" alt="Benefícios organizados por categorias">
                       <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
                     </div>
-                    <figcaption class="slide-caption">
-                      <div><strong>Base operacional estruturada</strong><p>Controle com competência, elegibilidade, periodicidade, valor, status, responsável e demais campos necessários ao processo.</p></div>
-                      <span class="slide-index">03 / 06</span>
-                    </figcaption>
+                    <figcaption class="slide-caption"><div><strong>Arquitetura da informação</strong><p>Benefícios organizados em categorias para reduzir esforço de busca e dúvidas recorrentes.</p></div><span class="slide-index">03 / 04</span></figcaption>
                   </figure>
 
-                  <figure class="project-slide">
+                  <figure class="project-slide is-mobile">
                     <div class="slide-media">
-                      <img src="assets/premiacoes-power-query.png" alt="Tratamento da base de premiações no Power Query">
+                      <img loading="lazy" decoding="async" src="assets/beneficios-mobile.png" alt="Central de Benefícios em dispositivo móvel">
                       <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
                     </div>
-                    <figcaption class="slide-caption">
-                      <div><strong>Tratamento dos dados</strong><p>Preparação, padronização e transformação da base no Power Query antes do consumo analítico.</p></div>
-                      <span class="slide-index">04 / 06</span>
-                    </figcaption>
+                    <figcaption class="slide-caption"><div><strong>Experiência mobile</strong><p>Acesso responsivo para consulta rápida no celular, em diferentes contextos da jornada.</p></div><span class="slide-index">04 / 04</span></figcaption>
                   </figure>
-
-                  <figure class="project-slide">
-                    <div class="slide-media">
-                      <img src="assets/premiacoes-modelo-dados.png" alt="Modelo semântico do projeto de acompanhamento de premiações">
-                      <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
-                    </div>
-                    <figcaption class="slide-caption">
-                      <div><strong>Modelo semântico</strong><p>Estrutura de campos, medidas e lógica analítica utilizada para sustentar os indicadores do relatório.</p></div>
-                      <span class="slide-index">05 / 06</span>
-                    </figcaption>
-                  </figure>
-
-                  <figure class="project-slide">
-                    <div class="slide-media">
-                      <img src="assets/premiacoes-atualizacao.png" alt="Configuração de atualização programada no Power BI Service">
-                      <button class="zoom-btn" type="button" data-zoom>Ampliar ↗</button>
-                    </div>
-                    <figcaption class="slide-caption">
-                      <div><strong>Atualização automatizada</strong><p>Relatório publicado no Power BI Service com atualizações programadas ao longo do dia.</p></div>
-                      <span class="slide-index">06 / 06</span>
-                    </figcaption>
-                  </figure>
-
                 </div>
 
                 <button class="slider-arrow slider-prev" type="button" aria-label="Imagem anterior">←</button>
@@ -1557,33 +1420,173 @@
             </div>
 
             <div class="slider-thumbs" aria-label="Navegação das imagens">
-              <button class="slider-thumb active" type="button" data-slide-to="0"><img src="assets/premiacoes-dashboard.png" alt=""><span>01 · dashboard</span></button>
-              <button class="slider-thumb" type="button" data-slide-to="1"><img src="assets/premiacoes-gargalos.png" alt=""><span>02 · gargalos</span></button>
-              <button class="slider-thumb" type="button" data-slide-to="2"><img src="assets/premiacoes-sharepoint.png" alt=""><span>03 · base</span></button>
-              <button class="slider-thumb" type="button" data-slide-to="3"><img src="assets/premiacoes-power-query.png" alt=""><span>04 · power query</span></button>
-              <button class="slider-thumb" type="button" data-slide-to="4"><img src="assets/premiacoes-modelo-dados.png" alt=""><span>05 · modelo</span></button>
-              <button class="slider-thumb" type="button" data-slide-to="5"><img src="assets/premiacoes-atualizacao.png" alt=""><span>06 · atualização</span></button>
+              <button class="slider-thumb active" type="button" data-slide-to="0"><img loading="lazy" decoding="async" src="assets/landing-beneficios.png" alt=""><span>01 · visão geral</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="1"><img loading="lazy" decoding="async" src="assets/beneficios-home.png" alt=""><span>02 · início</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="2"><img loading="lazy" decoding="async" src="assets/beneficios-categorias.png" alt=""><span>03 · categorias</span></button>
+              <button class="slider-thumb" type="button" data-slide-to="3"><img loading="lazy" decoding="async" src="assets/beneficios-mobile.png" alt=""><span>04 · mobile</span></button>
             </div>
-
             <div class="slider-progress" aria-hidden="true"><span></span></div>
           </div>
         </article>
       </div>
     </section>
 
+    <!-- TRAJETÓRIA -->
+    <section id="trajetoria" class="section experience">
+      <div class="container">
+        <div class="mono section-kicker reveal">04 / TRAJETÓRIA</div>
+        <h2 class="section-title reveal">Da operação à decisão. <span class="accent">Do processo ao dado.</span></h2>
+        <p class="section-copy reveal">
+          Uma trajetória construída em RH, com evolução para benefícios, remuneração,
+          relações trabalhistas, People Analytics e transformação digital.
+        </p>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">DEZ/2024 — ATUAL</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card featured">
+              <div class="timeline-meta">
+                <h3 class="company">Grupo Cordeiro</h3>
+                <span class="scope-badge">R&B · PEOPLE ANALYTICS · TRANSFORMAÇÃO DIGITAL</span>
+              </div>
+              <div class="role">Analista Sênior de Remuneração e Benefícios</div>
+              <p>
+                Atuação estratégica em Remuneração Total, Benefícios e People Analytics,
+                conectando estrutura salarial, remuneração variável, orçamento, indicadores
+                e tecnologia à tomada de decisão.
+              </p>
+              <div class="timeline-points">
+                <div>Implantação e evolução de Cargos & Salários com metodologia de pontos</div>
+                <div>Pesquisas salariais, benchmarking, equidade interna e posicionamento de mercado</div>
+                <div>Remuneração variável, premiações, simulações e estudos de impacto financeiro</div>
+                <div>Orçamento de pessoal, dashboards e indicadores de People Analytics</div>
+                <div>Automação, IA e projetos de transformação digital aplicados ao RH</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">JUN/2022 — OUT/2024</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card featured">
+              <div class="timeline-meta">
+                <h3 class="company">Brisanet Telecomunicações</h3>
+                <span class="scope-badge">9 MIL+ COLABORADORES · BENEFÍCIOS</span>
+              </div>
+              <div class="role">Analista de Benefícios Sênior · Team Leader</div>
+              <p>
+                Atuação na implantação e consolidação da área de Benefícios, estruturando processos,
+                políticas e governança para uma operação com mais de 9 mil colaboradores.
+              </p>
+              <div class="timeline-points">
+                <div>Estruturação da área e governança corporativa de benefícios</div>
+                <div>Gestão do portfólio com foco em custo, experiência e competitividade</div>
+                <div>Implantação de parcerias e soluções voltadas a bem-estar e experiência</div>
+                <div>People Analytics, indicadores, estudos gerenciais e suporte à decisão</div>
+                <div>Negociação com fornecedores e interface com folha de pagamento</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">MAI/2021 — JUN/2022</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card featured">
+              <div class="timeline-meta">
+                <h3 class="company">Farmácias Pague Menos</h3>
+                <span class="scope-badge">23 MIL COLABORADORES</span>
+              </div>
+              <div class="role">Analista de Benefícios Sênior · anteriormente Analista de DP</div>
+              <p>
+                Gestão corporativa de benefícios em uma operação de grande escala,
+                com governança financeira, indicadores e suporte aos RHs regionais.
+              </p>
+              <div class="timeline-points">
+                <div>Gestão de saldos, rateios, faturas e orçamento de benefícios</div>
+                <div>Operação e sustentação em contexto de aproximadamente 23 mil colaboradores</div>
+                <div>Indicadores, relatórios gerenciais e análises operacionais</div>
+                <div>Integração com folha, melhoria contínua e suporte aos RHs regionais</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2010 — 2022</div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3 class="company">A base que sustenta a evolução</h3>
+                <span class="scope-badge">DP · RH GENERALISTA · ADMINISTRAÇÃO</span>
+              </div>
+              <div class="role">Departamento Pessoal e RH em diferentes contextos e segmentos</div>
+              <p>
+                Construí uma base ampla em folha, admissões, rescisões, encargos, ponto,
+                benefícios, auditorias, fiscalizações, eSocial e atendimento a colaboradores e lideranças.
+              </p>
+
+              <div class="foundation">
+                <div class="foundation-item"><strong>Fortaleza4u</strong><span>Encarregado RH/ADM · 2019–2022</span></div>
+                <div class="foundation-item"><strong>B&C Açougues</strong><span>Analista de DP · 2018–2019 · 10 empresas</span></div>
+                <div class="foundation-item"><strong>Marques & Fontenele</strong><span>Analista de DP · 2016–2018</span></div>
+                <div class="foundation-item"><strong>Grupo TB Hub</strong><span>Analista de DP · 2016</span></div>
+                <div class="foundation-item"><strong>Office Assessoria</strong><span>Encarregado de Setor Pessoal · 2015</span></div>
+                <div class="foundation-item"><strong>Grupo Rabelo</strong><span>Assistente de DP IV · 2013–2015</span></div>
+                <div class="foundation-item"><strong>Belmetal</strong><span>Assistente de DP · 2012–2013</span></div>
+                <div class="foundation-item"><strong>Têxtil Santa Inês</strong><span>Assistente de Administração de Pessoal · 2010–2012</span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DNA DIGITAL -->
+    <section class="digital-dna">
+      <div class="container digital-inner">
+        <div class="reveal">
+          <div class="mono section-kicker" style="color:#89d8ff">ALÉM DO CURRÍCULO</div>
+          <h2>O digital sempre fez parte <span>da história.</span></h2>
+        </div>
+
+        <div class="reveal">
+          <p class="digital-copy">
+            Antes de aplicar BI, automação e IA ao RH, eu já explorava outras formas de tecnologia e criação.
+            Atuei com <strong>câmera, fotografia e edição de vídeos</strong>, estudei
+            <strong>Web Design</strong> e desenvolvi sites em <strong>WordPress</strong>, incluindo
+            e-commerce e projetos para hospedagem. Durante a pandemia, também empreendi no segmento
+            de personalizados, uma experiência de reinvenção que fortaleceu minha capacidade de aprender,
+            criar e executar. Fora do trabalho, gosto de <strong>viajar, conhecer novos lugares e experimentar novas tecnologias.</strong>
+          </p>
+
+          <div class="digital-chips">
+            <span>Audiovisual</span>
+            <span>WordPress</span>
+            <span>Web Design</span>
+            <span>Empreendedorismo</span>
+            <span>Tecnologia</span>
+            <span>Viagens</span>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- STACK -->
     <section id="stack" class="section stack">
       <div class="container">
         <div class="mono section-kicker reveal">05 / STACK</div>
         <h2 class="section-title reveal">Ferramentas são meios. <span class="accent">O valor está na aplicação.</span></h2>
-        <p class="section-copy reveal">Tecnologias e repertórios que venho conectando à minha experiência de negócio.</p>
+        <p class="section-copy reveal">
+          Competências que conecto à minha experiência de negócio para analisar, automatizar,
+          estruturar e apoiar decisões.
+        </p>
 
         <div class="stack-grid">
           <div class="stack-card reveal">
             <span class="mono">dados & bi</span>
             <h3>Análise e visualização</h3>
             <div class="stack-list">
-              <span>Power BI</span><span>Power Query</span><span>Power BI Service</span><span>Excel Avançado</span><span>SharePoint</span><span>PostgreSQL</span><span>DbSchema</span><span>People Analytics</span>
+              <span>Power BI</span><span>Power Query</span><span>Power BI Service</span>
+              <span>Excel Avançado</span><span>PostgreSQL</span><span>People Analytics</span>
             </div>
           </div>
 
@@ -1591,23 +1594,26 @@
             <span class="mono">automação & ia</span>
             <h3>Processos e soluções</h3>
             <div class="stack-list">
-              <span>Power Automate</span><span>Lovable</span><span>IA aplicada ao RH</span><span>GitHub Pages</span><span>Microsoft 365</span>
+              <span>Power Automate</span><span>IA aplicada ao RH</span><span>Lovable</span>
+              <span>Microsoft 365</span><span>SharePoint</span>
             </div>
           </div>
 
           <div class="stack-card reveal">
-            <span class="mono">negócio & rh</span>
+            <span class="mono">rh & negócio</span>
             <h3>Domínio funcional</h3>
             <div class="stack-list">
-              <span>R&B</span><span>Cargos & Salários</span><span>Benefícios</span><span>Remuneração Variável</span><span>Relações Trabalhistas</span><span>Direito do Trabalho</span><span>Governança</span><span>TOTVS</span><span>SAP</span>
+              <span>Remuneração & Benefícios</span><span>Cargos & Salários</span>
+              <span>Remuneração Variável</span><span>Orçamento</span><span>People Analytics</span>
             </div>
           </div>
 
           <div class="stack-card reveal">
-            <span class="mono">digital & criação</span>
-            <h3>Repertório multidisciplinar</h3>
+            <span class="mono">direito & governança</span>
+            <h3>Visão jurídica aplicada</h3>
             <div class="stack-list">
-              <span>WordPress</span><span>Web Design</span><span>E-commerce</span><span>Edição de Vídeo</span><span>Fotografia</span><span>Conteúdo Digital</span>
+              <span>Direito Trabalhista</span><span>Previdenciário</span>
+              <span>Relações Trabalhistas</span><span>Compliance</span><span>Governança</span>
             </div>
           </div>
         </div>
@@ -1621,8 +1627,9 @@
           <div class="mono section-kicker" style="color:#c9e8ff">06 / CONTATO</div>
           <h2>Dados com contexto. <span>Soluções com propósito.</span></h2>
           <p class="contact-copy">
-            Tenho interesse em desafios na interseção entre RH, Direito, dados, analytics, automação e transformação digital.
-            Se quiser conversar sobre projetos, oportunidades ou trocar experiências, meu contato está aqui.
+            Tenho interesse em desafios na interseção entre RH, Direito, dados, analytics,
+            automação e transformação digital. Se quiser conversar sobre projetos, oportunidades
+            ou trocar experiências, meu contato está aqui.
           </p>
         </div>
 
