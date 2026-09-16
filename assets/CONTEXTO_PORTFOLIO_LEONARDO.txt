@@ -1,0 +1,661 @@
+CONTEXTO DE CONTINUIDADE — PORTFÓLIO LEONARDO ROSENO
+====================================================
+
+COMO USAR ESTE ARQUIVO
+----------------------
+Ao abrir um novo chat no ChatGPT, envie:
+1. Este arquivo CONTEXTO_PORTFOLIO_LEONARDO.txt
+2. O index.html mais recente publicado no GitHub
+3. As imagens/arquivos do novo projeto que deseja incluir
+
+Depois escreva algo como:
+"Use o arquivo de contexto como fonte de verdade do meu portfólio. Preserve o design e a estrutura atuais. Quero incluir um novo projeto sem remover ou simplificar os projetos existentes. Analise primeiro o index.html atual e depois faça as alterações."
+
+IMPORTANTE:
+- O index.html mais recente sempre prevalece sobre qualquer versão descrita neste TXT.
+- Este arquivo serve para recuperar o raciocínio, posicionamento, arquitetura e decisões de design.
+- Nunca recriar o site do zero sem necessidade.
+- Antes de alterar o código, ler o index.html atual inteiro.
+- Manter compatibilidade com GitHub Pages.
+- Não inventar métricas, resultados, tecnologias ou responsabilidades não fornecidas por Leonardo.
+- Projetos futuros devem entrar mantendo a mesma linguagem visual premium.
+
+----------------------------------------------------
+1. IDENTIDADE PROFISSIONAL / POSICIONAMENTO
+----------------------------------------------------
+
+Nome:
+Leonardo Roseno
+
+Site:
+https://lroseno.github.io/
+
+LinkedIn:
+https://linkedin.com/in/leonardoroseno
+
+E-mail:
+lrs.roseno@gmail.com
+
+Local:
+Fortaleza, CE
+
+Posicionamento central:
+RH + Direito + Dados + Tecnologia
+
+Mensagem estratégica:
+Leonardo conecta experiência profunda em Recursos Humanos, formação jurídica, Remuneração & Benefícios, People Analytics, dados, automação e transformação digital.
+
+A ideia NÃO é apresentá-lo como alguém "em transição de RH para Dados".
+A narrativa correta é EVOLUÇÃO e AMPLIAÇÃO DE REPERTÓRIO:
+
+Departamento Pessoal
+→ Benefícios
+→ Remuneração & Benefícios
+→ People Analytics
+→ Dados
+→ Automação
+→ IA / Transformação Digital
+
+A formação jurídica acrescenta:
+- visão trabalhista e previdenciária
+- leitura de riscos
+- governança
+- compliance
+- relações de trabalho
+- apoio a decisões mais seguras
+
+Mensagem-conceito:
+"RH entende as pessoas. Direito amplia a leitura das regras e dos riscos. Dados mostram as evidências. Estratégia conecta tudo isso ao negócio."
+
+Tom do portfólio:
+- profissional
+- contemporâneo
+- estratégico
+- humano
+- premium
+- orientado a dados
+- tecnológico sem parecer portfólio de desenvolvedor puro
+- evitar excesso de texto e linguagem genérica de currículo
+
+----------------------------------------------------
+2. FORMAÇÃO
+----------------------------------------------------
+
+Formações que devem permanecer fortes no portfólio:
+
+- Gestão de Recursos Humanos
+- Direito
+- Pós-graduação em Direito Trabalhista e Previdenciário
+- Data Analytics — em andamento
+
+A formação deve ser mostrada como uma combinação multidisciplinar, e não apenas uma lista de diplomas.
+
+Conceito visual definido:
+linha do tempo premium e compacta:
+RH → Direito → Pós → Data Analytics
+
+Evitar transformar esta seção em currículo acadêmico longo.
+
+----------------------------------------------------
+3. QUEM SOU / LADO PESSOAL
+----------------------------------------------------
+
+Pontos pessoais que podem aparecer de forma breve e elegante:
+
+- apaixonado por tecnologia e universo digital
+- gosta de desafios e de aprender
+- gosta de viajar e conhecer novos lugares
+- já atuou com câmera / filmagem
+- fotografia
+- edição de vídeos
+- curso de Web Design
+- experiência criando sites em WordPress
+- já desenvolveu projetos de e-commerce e site para pousada
+- durante a pandemia empreendeu no segmento de personalizados
+- esse período é apresentado como reinvenção, criatividade, aprendizado e execução
+
+Esta parte deve humanizar o portfólio, não competir com os projetos.
+
+Nome sugerido da faixa:
+"Além do currículo"
+ou
+"O digital sempre fez parte da história."
+
+----------------------------------------------------
+4. EXPERIÊNCIA PROFISSIONAL — NARRATIVA
+----------------------------------------------------
+
+GRUPO CORDEIRO
+Cargo:
+Analista Sênior de Remuneração e Benefícios
+
+Período:
+dez/2024 — atual
+
+Posicionamento:
+R&B · People Analytics · Transformação Digital
+
+Pontos prioritários:
+- Remuneração Total
+- Benefícios
+- People Analytics
+- implantação e evolução de Cargos & Salários
+- metodologia de pontos de Benedito Pontes
+- classes e steps salariais
+- critérios de movimentação
+- pesquisa salarial e benchmarking
+- equidade interna e competitividade externa
+- remuneração variável
+- premiações e incentivos
+- simulações salariais e financeiras
+- orçamento de pessoal
+- dashboards e indicadores
+- automação
+- IA aplicada ao RH
+- transformação digital
+- atuação consultiva junto a liderança e diretoria
+
+Evitar deixar esse bloco excessivamente longo.
+No portfólio, priorizar de 4 a 5 destaques de maior impacto.
+
+BRISANET TELECOMUNICAÇÕES
+Cargo:
+Analista de Benefícios Sênior / atuação como Team Leader
+
+Período:
+jun/2022 — out/2024
+
+Contexto:
+mais de 9 mil colaboradores
+
+Pontos prioritários:
+- implantação e consolidação da área de Benefícios
+- processos, políticas e governança
+- portfólio estratégico de benefícios
+- sustentabilidade financeira
+- experiência do colaborador
+- benchmarking
+- convenções coletivas
+- compliance trabalhista
+- parcerias como Wellhub, IVI Saúde Mental, NEON e Santander
+- negociação com fornecedores
+- interface com folha
+- People Analytics
+- indicadores e estudos gerenciais
+- EVP
+
+Sistemas:
+TOTVS RM e Fortes
+
+FARMÁCIAS PAGUE MENOS
+Cargo:
+Analista de Benefícios Sênior
+Anteriormente Analista de DP
+
+Período:
+mai/2021 — jun/2022
+
+Contexto:
+aproximadamente 23 mil colaboradores
+
+Pontos prioritários:
+- gestão de saldos
+- rateios e faturas
+- orçamento de benefícios
+- governança financeira
+- suporte aos RHs regionais
+- indicadores e relatórios
+- melhoria contínua
+- integração com folha
+- base forte em DP
+
+EXPERIÊNCIAS ANTERIORES
+Manter resumidas como "A base que sustenta a evolução":
+
+- Fortaleza4u
+- B&C Açougues
+- Marques & Fontenele
+- Grupo TB Hub
+- Office Assessoria
+- Grupo Rabelo
+- Belmetal
+- Têxtil Santa Inês
+
+Conceito:
+mostrar que DP e RH operacional construíram a base da atuação estratégica atual.
+
+----------------------------------------------------
+5. ORDEM E ARQUITETURA ATUAL DO SITE
+----------------------------------------------------
+
+Estrutura recomendada e já definida:
+
+01 SOBRE
+02 FORMAÇÃO
+03 PROJETOS
+04 TRAJETÓRIA
+   ALÉM DO CURRÍCULO
+05 STACK
+06 CONTATO
+
+Decisão importante:
+PROJETOS aparecem antes da TRAJETÓRIA para que recrutadores e visitantes encontrem rapidamente provas reais de entrega.
+
+O site deve ser escalável para receber novos projetos no futuro.
+
+----------------------------------------------------
+6. ORDEM ATUAL DOS PROJETOS
+----------------------------------------------------
+
+PROJETO 01
+Acompanhamento de Premiações
+Power BI · People Analytics · R&B
+
+PROJETO 02
+Automação de Prazos de Premiação
+Power Automate · R&B
+
+PROJETO 03
+Central de Benefícios
+RH Tech · UX
+
+Regra:
+Novos projetos podem ser reorganizados por força estratégica.
+Não assumir automaticamente que o projeto mais novo deve ser o último.
+Priorizar os cases que melhor reforçam o posicionamento atual.
+
+----------------------------------------------------
+7. PROJETO 01 — POWER BI / ACOMPANHAMENTO DE PREMIAÇÕES
+----------------------------------------------------
+
+Nome:
+Acompanhamento de Premiações
+
+Origem:
+solicitação da diretoria para ampliar a visibilidade do fluxo de premiações.
+
+Problema:
+- dificuldade para visualizar gargalos
+- identificar áreas/responsáveis
+- acompanhar status
+- consolidar impacto financeiro
+- necessidade de informações executivas para decisão
+
+Solução:
+Power BI integrado à base operacional do ecossistema Microsoft 365.
+
+Arquitetura:
+Base operacional
+→ Power Query
+→ Modelo semântico
+→ Power BI
+→ Power BI Service
+→ Visão executiva
+
+Stack:
+- Power BI
+- Power Query
+- DAX
+- Excel
+- SharePoint
+- Power BI Service
+- Microsoft 365
+
+Papel de Leonardo:
+- entendimento da necessidade
+- tradução da demanda em indicadores
+- estruturação da base
+- tratamento dos dados
+- definição de regras
+- construção de indicadores
+- visualização
+- publicação
+- atualização automatizada
+
+Mensagem forte:
+"Transformei um controle operacional de premiações em uma visão executiva orientada por dados."
+
+Arquivos de imagem usados:
+assets/premiacoes-dashboard.png
+assets/premiacoes-gargalos.png
+assets/premiacoes-sharepoint.png
+assets/premiacoes-power-query.png
+assets/premiacoes-modelo-dados.png
+assets/premiacoes-atualizacao.png
+
+Slides:
+01 Visão executiva
+02 Gestão de gargalos
+03 Base operacional
+04 Tratamento dos dados
+05 Modelo semântico
+06 Atualização automatizada
+
+Observação:
+Evitar expor nomes, valores individuais, e-mails ou dados internos confidenciais em imagens públicas.
+
+----------------------------------------------------
+8. PROJETO 02 — POWER AUTOMATE
+----------------------------------------------------
+
+Nome:
+Automação de Prazos de Premiação
+
+Status:
+Em operação
+
+Arquitetura real:
+Recorrência diária
+→ leitura de tabela Excel
+→ aplicação a cada registro
+→ condição lógica
+→ envio de e-mail pelo Outlook
+→ atualização da linha processada
+
+Ecossistema:
+- Power Automate
+- Excel
+- SharePoint
+- Outlook
+- Microsoft 365
+
+Pontos importantes:
+- fluxo real em produção
+- execução recorrente há meses
+- automação baseada em regra de negócio
+- comunicação personalizada
+- atualização da própria base após processamento
+
+Arquivos:
+assets/automacao-fluxo.png
+assets/automacao-recorrencia.png
+assets/automacao-base-excel.png
+assets/automacao-email.png
+assets/automacao-execucao.png
+assets/automacao-historico.png
+assets/automacao-resultado.png
+
+Não inventar:
+- horas economizadas
+- percentual de redução
+- ROI
+- número de e-mails
+salvo se Leonardo fornecer métricas reais.
+
+----------------------------------------------------
+9. PROJETO 03 — CENTRAL DE BENEFÍCIOS
+----------------------------------------------------
+
+URL:
+https://beneficioscordeiro.lovable.app
+
+Conceito:
+central digital de benefícios orientada pela necessidade do colaborador.
+
+Problema:
+informações de benefícios descentralizadas entre documentos, mensagens e diferentes canais.
+
+Solução:
+- busca
+- categorias
+- navegação por necessidade
+- experiência mobile
+- orientações
+- links
+- direcionamento para atendimento
+
+Stack:
+- Lovable
+- IA
+- UX/UI
+- Web responsiva
+
+Papel:
+- concepção
+- arquitetura da informação
+- UX
+- desenvolvimento
+- implantação
+
+Arquivos:
+assets/landing-beneficios.png
+assets/beneficios-home.png
+assets/beneficios-categorias.png
+assets/beneficios-mobile.png
+
+----------------------------------------------------
+10. STACK PROFISSIONAL
+----------------------------------------------------
+
+Organização recomendada:
+
+DADOS & BI
+- Power BI
+- Power Query
+- Power BI Service
+- Excel Avançado
+- PostgreSQL
+- People Analytics
+
+AUTOMAÇÃO & IA
+- Power Automate
+- IA aplicada ao RH
+- Lovable
+- Microsoft 365
+- SharePoint
+
+RH & NEGÓCIO
+- Remuneração & Benefícios
+- Cargos & Salários
+- Remuneração Variável
+- Orçamento
+- People Analytics
+
+DIREITO & GOVERNANÇA
+- Direito Trabalhista
+- Previdenciário
+- Relações Trabalhistas
+- Compliance
+- Governança
+
+WordPress, Web Design, vídeo e fotografia NÃO precisam competir com a stack profissional principal.
+Podem aparecer em "Além do currículo / DNA digital".
+
+----------------------------------------------------
+11. DESIGN SYSTEM / IDENTIDADE VISUAL
+----------------------------------------------------
+
+Estética:
+premium, editorial, clean, data-oriented.
+
+Paleta principal:
+- off-white / paper
+- navy profundo
+- azul cobalto
+- cyan como acento
+
+Fontes:
+- Manrope para interface e textos
+- IBM Plex Mono para labels técnicos e microtextos
+
+Características:
+- grid sutil
+- bastante respiro
+- cards com bordas discretas
+- cantos arredondados
+- sombras suaves
+- animações sutis
+- timeline escura
+- projetos claros/escuros alternando ritmo visual
+- sliders com thumbnails
+- lightbox para ampliar imagens
+- scroll progress
+- reveal on scroll
+- ticker de competências
+
+Não mudar para:
+- visual corporativo genérico
+- excesso de gradientes
+- muitas cores
+- excesso de ícones
+- visual de currículo PDF
+- visual de portfólio de programador puro
+
+----------------------------------------------------
+12. FOTOS DO PORTFÓLIO
+----------------------------------------------------
+
+Fotos escolhidas:
+
+CAPA / HERO:
+assets/leonardo-hero.webp
+
+Descrição:
+foto com blazer xadrez e camiseta preta.
+
+Uso:
+- primeira tela
+- posicionamento executivo contemporâneo
+- preservar características originais
+- usar CSS para recorte/posicionamento
+
+SOBRE / LADO HUMANO:
+assets/leonardo-sobre.webp
+
+Descrição:
+foto de preto, sorrindo, fundo escuro.
+
+Uso:
+- Sobre ou Além do currículo
+- reforçar proximidade e personalidade
+
+Regra:
+não usar muitas fotos no site.
+Duas são suficientes para manter coerência e não transformar o portfólio em ensaio fotográfico.
+
+Formato atual das fotos principais:
+- leonardo-hero.webp — 1365x2048 px, aproximadamente 152 KB
+- leonardo-sobre.webp — 1365x2048 px, aproximadamente 314 KB
+
+Decisão técnica:
+usar WebP para as fotos principais, preservando boa qualidade visual com arquivo leve.
+Evitar recomprimir agressivamente, pois isso gera artefatos visíveis principalmente em áreas escuras.
+
+----------------------------------------------------
+13. PERFORMANCE E CÓDIGO
+----------------------------------------------------
+
+Hospedagem:
+GitHub Pages
+
+Repositório/site:
+lroseno.github.io
+
+Regras:
+- manter HTML/CSS/JS simples e compatível com GitHub Pages
+- imagens de projeto com loading="lazy" quando possível
+- hero não precisa de lazy load
+- evitar dependências desnecessárias
+- não quebrar sliders existentes ao incluir novo projeto
+- evitar IDs duplicados
+- manter responsividade
+- testar desktop e mobile
+- preservar reduced-motion accessibility
+- manter alt text nas imagens
+- preservar lightbox e navegação por setas
+- otimizar imagens pesadas quando necessário
+
+----------------------------------------------------
+14. SOCIAL / WHATSAPP / LINKEDIN
+----------------------------------------------------
+
+O HTML deve conter Open Graph para melhorar o preview do link.
+
+Título recomendado:
+Leonardo Roseno | RH, Direito, Dados & Tecnologia
+
+Descrição:
+Remuneração & Benefícios, People Analytics, visão jurídica, dados, automação e transformação digital aplicados a problemas reais de negócio.
+
+URL:
+https://lroseno.github.io/
+
+Imagem:
+preferencialmente a foto hero ou futura imagem de capa específica para compartilhamento.
+
+----------------------------------------------------
+15. COMO INCLUIR UM NOVO PROJETO NO FUTURO
+----------------------------------------------------
+
+Ao receber novo projeto, o assistente deve primeiro entender:
+
+- qual problema existia
+- quem demandou
+- objetivo
+- solução criada
+- dados/fontes
+- ferramentas
+- arquitetura do processo
+- papel de Leonardo
+- status: teste, piloto, operação etc.
+- evidências disponíveis
+- screenshots
+- resultados reais
+- riscos de privacidade
+- aprendizados
+- possibilidade de demonstrar antes/depois
+
+Depois decidir:
+- posição do projeto na página
+- título
+- subtítulo
+- narrativa
+- arquitetura visual
+- screenshots do slider
+- stack
+- como ele reforça RH + Direito + Dados + Tecnologia
+
+Novo projeto deve seguir o mesmo sistema visual, mas NÃO precisa ser uma cópia exata dos cards anteriores.
+Pode ganhar elementos próprios se isso ajudar a explicar melhor o case.
+
+Evitar:
+- inventar resultados
+- exagerar impacto
+- expor dados pessoais/corporativos
+- deixar todos os projetos com textos gigantes
+- repetir explicações já presentes em outros cases
+
+----------------------------------------------------
+16. PROMPT PARA NOVO CHAT
+----------------------------------------------------
+
+Copie e cole esta mensagem no início de um novo chat:
+
+"Estou dando continuidade ao meu portfólio profissional hospedado em https://lroseno.github.io/.
+
+Estou anexando:
+1. CONTEXTO_PORTFOLIO_LEONARDO.txt, que contém as decisões de posicionamento, design e estrutura construídas anteriormente.
+2. Meu index.html MAIS RECENTE, que deve ser tratado como a fonte de verdade do código atual.
+
+Meu posicionamento central é RH + Direito + Dados + Tecnologia. O portfólio deve permanecer premium, estratégico, visual e escalável para novos projetos.
+
+Não recrie o site do zero e não remova projetos ou funcionalidades existentes sem necessidade. Antes de editar, analise o index.html atual. Ao incluir um projeto, preserve o design system, responsividade, sliders, lightbox e animações já existentes.
+
+Agora quero incluir o seguinte novo projeto:
+[DESCREVA AQUI O NOVO PROJETO]"
+
+----------------------------------------------------
+17. REGRA DE OURO
+----------------------------------------------------
+
+O objetivo do portfólio não é reproduzir todo o currículo.
+
+O visitante deve concluir rapidamente:
+
+"Leonardo tem profundidade em RH, uma formação jurídica que amplia sua leitura de negócio e usa dados e tecnologia para resolver problemas reais."
+
+Priorizar:
+CLAREZA + EVIDÊNCIA + PROJETOS REAIS + POSICIONAMENTO.
+
+Última atualização deste contexto:
+setembro/2026 — fotos principais migradas para WebP e index atualizado
