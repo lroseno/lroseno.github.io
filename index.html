@@ -10,7 +10,7 @@
   <meta property="og:title" content="Leonardo Roseno | RH, Direito, Dados & Tecnologia">
   <meta property="og:description" content="Remuneração & Benefícios, People Analytics, visão jurídica, dados, automação e transformação digital aplicados a problemas reais de negócio.">
   <meta property="og:url" content="https://lroseno.github.io/">
-  <meta property="og:image" content="https://lroseno.github.io/assets/leonardo-roseno.jpg">
+  <meta property="og:image" content="https://lroseno.github.io/assets/leonardo-hero.webp">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#091522">
 
@@ -211,7 +211,8 @@
     }
     .portrait-card img{
       width:100%;height:100%;object-fit:cover;
-      filter:saturate(.88) contrast(1.04);
+      object-position:center 26%;
+      filter:saturate(.94) contrast(1.01);
     }
     .portrait-label{
       position:absolute;
@@ -244,6 +245,44 @@
       color:var(--blue);
       font-size:5.5rem;line-height:1;
       letter-spacing:-.08em;
+    }
+    .about-photo-card{
+      position:relative;
+      margin-top:30px;
+      border-radius:22px;
+      overflow:hidden;
+      aspect-ratio:4/5;
+      background:var(--ink);
+      border:1px solid rgba(9,21,34,.12);
+      box-shadow:0 24px 60px rgba(9,21,34,.12);
+    }
+    .about-photo-card img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      object-position:center 24%;
+      filter:saturate(.94) contrast(1.01);
+    }
+    .about-photo-card::after{
+      content:"";
+      position:absolute;
+      inset:auto 0 0 0;
+      height:34%;
+      background:linear-gradient(to top,rgba(9,21,34,.48),transparent);
+      pointer-events:none;
+    }
+    .about-photo-label{
+      position:absolute;
+      left:16px;
+      right:16px;
+      bottom:15px;
+      z-index:2;
+      color:white;
+      font-family:"IBM Plex Mono",monospace;
+      font-size:.58rem;
+      line-height:1.5;
+      letter-spacing:.08em;
+      text-transform:uppercase;
     }
     .profile-text{font-size:1.28rem;line-height:1.72;color:#314456}
     .profile-text p+p{margin-top:24px}
@@ -771,6 +810,7 @@
       .hero-grid{gap:55px}
       .portrait-wrap{max-width:560px}
       .profile-index{position:static}
+      .about-photo-card{max-width:420px}
       .metric-row{grid-template-columns:1fr 1fr 1fr}
       .project-head{gap:24px}
       .architecture{grid-template-columns:1fr 1fr}
@@ -886,7 +926,7 @@
 
         <div class="portrait-wrap reveal">
           <div class="portrait-card">
-            <img src="assets/leonardo-roseno.jpg" alt="Leonardo Roseno">
+            <img src="assets/leonardo-hero.webp" alt="Leonardo Roseno">
           </div>
 
           <div class="data-card">
@@ -917,6 +957,10 @@
           <div class="mono section-kicker">01 / SOBRE</div>
           <div class="big-number">15+</div>
           <p class="section-copy">anos de experiência conectando operação, negócio e evolução contínua em Recursos Humanos.</p>
+          <div class="about-photo-card">
+            <img src="assets/leonardo-sobre.webp" alt="Retrato profissional de Leonardo Roseno" loading="lazy" decoding="async">
+            <div class="about-photo-label">RH · Direito · Dados · Tecnologia</div>
+          </div>
         </div>
 
         <div class="reveal">
